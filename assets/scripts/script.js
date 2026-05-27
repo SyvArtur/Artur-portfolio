@@ -97,20 +97,20 @@ if (!isMobile) {
 const container = document.querySelector(".leaf-layer");
 
 const images = [
-"/assets/images/10_bubna.webp","/assets/images/10_chervi.webp","/assets/images/10_kresti.webp","/assets/images/10_pika.webp",
-"/assets/images/2_bubna.webp","/assets/images/2_chervi.webp","/assets/images/2_kresti.webp","/assets/images/2_pika.webp",
-"/assets/images/3_bubna.webp","/assets/images/3_chervi.webp","/assets/images/3_kresti.webp","/assets/images/3_pika.webp",
-"/assets/images/4_bubna.webp","/assets/images/4_chervi.webp","/assets/images/4_kresti.webp","/assets/images/4_pika.webp",
-"/assets/images/5_bubna.webp","/assets/images/5_chervi.webp","/assets/images/5_kresti.webp","/assets/images/5_pika.webp",
-"/assets/images/6_bubna.webp","/assets/images/6_chervi.webp","/assets/images/6_kresti.webp","/assets/images/6_pika.webp",
-"/assets/images/7_bubna.webp","/assets/images/7_chervi.webp","/assets/images/7_kresti.webp","/assets/images/7_pika.webp",
-"/assets/images/8_bubna.webp","/assets/images/8_chervi.webp","/assets/images/8_kresti.webp","/assets/images/8_pika.webp",
-"/assets/images/9_bubna.webp","/assets/images/9_chervi.webp","/assets/images/9_kresti.webp","/assets/images/9_pika.webp",
-"/assets/images/BlackJoker.webp","/assets/images/D_bubna.webp","/assets/images/D_chervi.webp","/assets/images/D_kresti.webp","/assets/images/D_pika.webp",
-"/assets/images/iznanka.webp","/assets/images/Joker_card.webp",
-"/assets/images/K_bubna.webp","/assets/images/K_chervi.webp","/assets/images/K_kresti.webp","/assets/images/K_pika.webp",
-"/assets/images/T_bubna.webp","/assets/images/T_chervi.webp","/assets/images/T_kresti.webp","/assets/images/T_pika.webp",
-"/assets/images/V_bubna.webp","/assets/images/V_chervi.webp","/assets/images/V_kresti.webp","/assets/images/V_pika.webp"
+"../assets/images/10_bubna.webp","../assets/images/10_chervi.webp","../assets/images/10_kresti.webp","../assets/images/10_pika.webp",
+"../assets/images/2_bubna.webp","../assets/images/2_chervi.webp","../assets/images/2_kresti.webp","../assets/images/2_pika.webp",
+"../assets/images/3_bubna.webp","../assets/images/3_chervi.webp","../assets/images/3_kresti.webp","../assets/images/3_pika.webp",
+"../assets/images/4_bubna.webp","../assets/images/4_chervi.webp","../assets/images/4_kresti.webp","../assets/images/4_pika.webp",
+"../assets/images/5_bubna.webp","../assets/images/5_chervi.webp","../assets/images/5_kresti.webp","../assets/images/5_pika.webp",
+"../assets/images/6_bubna.webp","../assets/images/6_chervi.webp","../assets/images/6_kresti.webp","../assets/images/6_pika.webp",
+"../assets/images/7_bubna.webp","../assets/images/7_chervi.webp","../assets/images/7_kresti.webp","../assets/images/7_pika.webp",
+"../assets/images/8_bubna.webp","../assets/images/8_chervi.webp","../assets/images/8_kresti.webp","../assets/images/8_pika.webp",
+"../assets/images/9_bubna.webp","../assets/images/9_chervi.webp","../assets/images/9_kresti.webp","../assets/images/9_pika.webp",
+"../assets/images/BlackJoker.webp","../assets/images/D_bubna.webp","../assets/images/D_chervi.webp","../assets/images/D_kresti.webp","../assets/images/D_pika.webp",
+"../assets/images/iznanka.webp","../assets/images/Joker_card.webp",
+"../assets/images/K_bubna.webp","../assets/images/K_chervi.webp","../assets/images/K_kresti.webp","../assets/images/K_pika.webp",
+"../assets/images/T_bubna.webp","../assets/images/T_chervi.webp","../assets/images/T_kresti.webp","../assets/images/T_pika.webp",
+"../assets/images/V_bubna.webp","../assets/images/V_chervi.webp","../assets/images/V_kresti.webp","../assets/images/V_pika.webp"
 ];
 
 let active = 0;
