@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Site</title>
+    <link rel="stylesheet" href="/assets/styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .hero-text {
+            left: 6%;
+        }
+    </style>
+</head>
+
+<body>
+<header class="header">
+    <div class="container menu">
+        <img src="/assets/images/Logo.webp" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="Index.html" class="active">HOME</a></li>
+                <li><a href="About_Game.html">ABOUT GAME</a></li>
+                <li><a href="Peculiarities.html">FEATURES</a></li>
+                <li><a href="About_Me.html">ABOUT ME</a></li>
+                <li><a href="https://play.google.com/store/apps/details?id=com.Spinyminds.MyGame" target="_blank" rel="noopener noreferrer">DOWNLOAD</a></li>
+            </ul>
+        </nav>
+
+        <div class="lang-switch">
+            <a href="/Index.html" class="lang-btn active">EN</a>
+            <a href="/ru/Index.html" class="lang-btn">RU</a>
+        </div>
+    </div>
+</header>
+
+<main class="wrapper">
+
+<section class="hero">
+	<div id="score" data-label="Score">Score: 0</div>
+    <img src="/assets/images/Score.webp" class="score" alt="Score indicator">
+
+    <div class="leaf-layer"></div>
+
+    <div class="joker-stage">
+        <img src="/assets/images/ball.webp" class="ball" alt="Ball">
+        <img src="/assets/images/Joker.webp" class="joker-layer" alt="Joker character">
+
+        <div class="eye" id="eye1">
+            <img src="/assets/images/eye.webp" class="iris" alt="Eye iris">
+        </div>
+        <div class="eye" id="eye2">
+            <img src="/assets/images/eye.webp" class="iris" alt="Eye iris">
+        </div>
+    </div>
+
+    <img src="/assets/images/Fly.gif" class="fly-layer" alt="Flying animation">
+    <img src="/assets/images/Sun.webp" class="sun" alt="Sun">
+    <img src="/assets/images/Wave.gif" class="wave" alt="Wave animation">
+
+    <div class="hero-text">
+        <h2>PLAY<br>JOKER JUMP!</h2>
+        <h3>Catch cards, avoid traps<br>and set your record!</h3>
+    </div>
+
+    <a class="download-btn btn2"
+       href="https://play.google.com/store/apps/details?id=com.Spinyminds.MyGame"
+       target="_blank" rel="noopener noreferrer">
+        <img src="/assets/images/Download.webp" alt="Download">
+        <span class="download-text">Download on <br>GOOGLE PLAY</span>
+    </a>
+</section>
+
+<div class="container content">
+    <h1>Why you'll like <span class="game-title">JOKER JUMP</span></h1>
+
+    <div class="small_cards">
+
+        <div class="small_card-wrapper">
+            <div class="small_card">
+                <div class="small_card-icon" style="background-image: url('assets/images/Sing_1.webp');"></div>
+            </div>
+            <h2>SIMPLE CONTROLS</h2>
+            <h3>Easy to start playing, hard to stop!</h3>
+        </div>
+
+        <div class="small_card-wrapper">
+            <div class="small_card">
+                <div class="small_card-icon" style="background-image: url('assets/images/Sing_2.webp');"></div>
+            </div>
+            <h2>COLLECT COINS</h2>
+            <h3>Collect coins and unlock new Joker skins!</h3>
+        </div>
+
+        <div class="small_card-wrapper">
+            <div class="small_card">
+                <div class="small_card-icon" style="background-image: url('assets/images/Sing_3.webp');"></div>
+            </div>
+            <h2>BREAK RECORDS</h2>
+            <h3>Jump higher and reach the leaderboard!</h3>
+        </div>
+
+        <div class="small_card-wrapper">
+            <div class="small_card">
+                <div class="small_card-icon" style="background-image: url('assets/images/Sing_4.webp');"></div>
+            </div>
+            <h2>PLAY ANYWHERE</h2>
+            <h3>Short sessions, offline and without internet!</h3>
+        </div>
+
+    </div>
+
+<section class="container content">
+
+<h4>Game screenshots:</h4>
+
+<div class="gallery">
+    <button class="nav prev">‹</button>
+
+    <div class="gallery-wrapper">
+        <div class="gallery-track">
+            <img src="/assets/images/Screens_1.webp" alt="Gameplay screenshot 1">
+            <img src="/assets/images/Screens_2.webp" alt="Gameplay screenshot 2">
+            <img src="/assets/images/Screens_3.webp" alt="Gameplay screenshot 3">
+            <img src="/assets/images/Screens_4.webp" alt="Gameplay screenshot 4">
+            <img src="/assets/images/Screens_5.webp" alt="Gameplay screenshot 5">
+            <img src="/assets/images/Screens_6.webp" alt="Gameplay screenshot 6">
+            <img src="/assets/images/Screens_7.webp" alt="Gameplay screenshot 7">
+            <img src="/assets/images/Screens_8.webp" alt="Gameplay screenshot 8">
+        </div>
+    </div>
+
+    <button class="nav next">›</button>
+</div>
+
+<h4>The game is full of adventures!</h4>
+
+<div class="layout-grid">
+
+    <div class="wrapper">
+        <div class="card">
+            <img src="/assets/images/Card_01_en.webp" alt="Game card 1">
+            <div class="overlay"></div>
+            <div class="card-content"></div>
+            <div class="glare"></div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="card">
+            <img src="/assets/images/Card_02_en.webp" alt="Game card 2">
+            <div class="overlay"></div>
+            <div class="card-content"></div>
+            <div class="glare"></div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="card">
+            <img src="/assets/images/Card_03_en.webp" alt="Game card 3">
+            <div class="overlay"></div>
+            <div class="card-content"></div>
+            <div class="glare"></div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="card">
+            <img src="/assets/images/Card_04_en.webp" alt="Game card 4">
+            <div class="overlay"></div>
+            <div class="card-content"></div>
+            <div class="glare"></div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="card">
+            <img src="/assets/images/Card_05_en.webp" alt="Game card 5">
+            <div class="overlay"></div>
+            <div class="card-content"></div>
+            <div class="glare"></div>
+        </div>
+    </div>
+
+</div>
+
+<div class="plaque-wrapper">
+
+    <img src="/assets/images/Purple_plaque.webp" class="Purple_plaque" alt="Purple plaque">
+
+    <div class="plaque-text">
+        <h2>READY FOR </br>A NEW RECORD?</h2>
+        <h3>Download Joker Jump and start jumping!</h3>
+    </div>
+
+    <a class="download-btn btn1"
+       href="https://play.google.com/store/apps/details?id=com.Spinyminds.MyGame"
+       target="_blank" rel="noopener noreferrer">
+        <img src="/assets/images/Download.webp" alt="Download Game">
+        <span class="download-text">Download on <br>GOOGLE PLAY</span>
+    </a>
+
+</div>
+
+</section>
+
+</div>
+</main>
+
+<script src="/assets/scripts/script.js"></script>
+</body>
+</html>
