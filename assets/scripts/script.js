@@ -95,24 +95,26 @@ if (!isMobile) {
 
 
 const container = document.querySelector(".leaf-layer");
+const BASE = window.IMAGE_BASE;
 
-const images = [
-"../assets/images/10_bubna.webp","../assets/images/10_chervi.webp","../assets/images/10_kresti.webp","../assets/images/10_pika.webp",
-"../assets/images/2_bubna.webp","../assets/images/2_chervi.webp","../assets/images/2_kresti.webp","../assets/images/2_pika.webp",
-"../assets/images/3_bubna.webp","../assets/images/3_chervi.webp","../assets/images/3_kresti.webp","../assets/images/3_pika.webp",
-"../assets/images/4_bubna.webp","../assets/images/4_chervi.webp","../assets/images/4_kresti.webp","../assets/images/4_pika.webp",
-"../assets/images/5_bubna.webp","../assets/images/5_chervi.webp","../assets/images/5_kresti.webp","../assets/images/5_pika.webp",
-"../assets/images/6_bubna.webp","../assets/images/6_chervi.webp","../assets/images/6_kresti.webp","../assets/images/6_pika.webp",
-"../assets/images/7_bubna.webp","../assets/images/7_chervi.webp","../assets/images/7_kresti.webp","../assets/images/7_pika.webp",
-"../assets/images/8_bubna.webp","../assets/images/8_chervi.webp","../assets/images/8_kresti.webp","../assets/images/8_pika.webp",
-"../assets/images/9_bubna.webp","../assets/images/9_chervi.webp","../assets/images/9_kresti.webp","../assets/images/9_pika.webp",
-"../assets/images/BlackJoker.webp","../assets/images/D_bubna.webp","../assets/images/D_chervi.webp","../assets/images/D_kresti.webp","../assets/images/D_pika.webp",
-"../assets/images/iznanka.webp","../assets/images/Joker_card.webp",
-"../assets/images/K_bubna.webp","../assets/images/K_chervi.webp","../assets/images/K_kresti.webp","../assets/images/K_pika.webp",
-"../assets/images/T_bubna.webp","../assets/images/T_chervi.webp","../assets/images/T_kresti.webp","../assets/images/T_pika.webp",
-"../assets/images/V_bubna.webp","../assets/images/V_chervi.webp","../assets/images/V_kresti.webp","../assets/images/V_pika.webp"
+const files = [
+  "10_bubna.webp","10_chervi.webp","10_kresti.webp","10_pika.webp",
+  "2_bubna.webp","2_chervi.webp","2_kresti.webp","2_pika.webp",
+  "3_bubna.webp","3_chervi.webp","3_kresti.webp","3_pika.webp",
+  "4_bubna.webp","4_chervi.webp","4_kresti.webp","4_pika.webp",
+  "5_bubna.webp","5_chervi.webp","5_kresti.webp","5_pika.webp",
+  "6_bubna.webp","6_chervi.webp","6_kresti.webp","6_pika.webp",
+  "7_bubna.webp","7_chervi.webp","7_kresti.webp","7_pika.webp",
+  "8_bubna.webp","8_chervi.webp","8_kresti.webp","8_pika.webp",
+  "9_bubna.webp","9_chervi.webp","9_kresti.webp","9_pika.webp",
+  "BlackJoker.webp","D_bubna.webp","D_chervi.webp","D_kresti.webp","D_pika.webp",
+  "iznanka.webp","Joker_card.webp",
+  "K_bubna.webp","K_chervi.webp","K_kresti.webp","K_pika.webp",
+  "T_bubna.webp","T_chervi.webp","T_kresti.webp","T_pika.webp",
+  "V_bubna.webp","V_chervi.webp","V_kresti.webp","V_pika.webp"
 ];
 
+const images = files.map(f => BASE + f);
 let active = 0;
 const max = 8;
 function createLeaf() {
