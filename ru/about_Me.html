@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Артур Сивоконь - Резюме</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../assets/styles/about_me.css">
+
+	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+	<script src="../assets/scripts/emailjs.js"></script>
+	
+<style>
+.section-title {
+  font-size: 21px;
+  margin-bottom: 16px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="mail-modal" id="mailModal">
+
+	<div class="mail-window">
+
+		<button class="close-btn"
+				onclick="closeMailModal()">
+			✕
+		</button>
+
+		<h2>Отправить сообщение</h2>
+
+		<input
+			type="email"
+			id="replyEmail"
+			placeholder="Ваш Email"
+		>
+
+		<input
+			type="text"
+			id="subject"
+			placeholder="Тема"
+		>
+
+		<textarea
+			id="message"
+			placeholder="Сообщение"
+		></textarea>
+
+		<button class="send-btn"
+				onclick="sendMail()">
+			Отправить
+		</button>
+
+	</div>
+</div>
+
+<header class="header">
+
+	<div class="container menu">
+
+		<img src="../assets/images/Logo.webp" alt="Logo" class="logo">
+
+		<nav>
+
+			<ul>
+
+				<li>
+					<a href="index.html">ГЛАВНАЯ</a>
+				</li>
+
+				<li>
+					<a href="about_Game.html">ОБ ИГРЕ</a>
+				</li>
+
+				<li>
+					<a href="peculiarities.html">ОСОБЕННОСТИ</a>
+				</li>
+
+				<li>
+					<a
+						href="about_Me.html"
+						class="active"
+					>
+						ОБ АВТОРЕ
+					</a>
+				</li>
+
+				<li>
+					<a
+						href="https://play.google.com/store/apps/details?id=com.Spinyminds.MyGame"
+						target="_blank" rel="noopener noreferrer"
+					>
+						СКАЧАТЬ
+					</a>
+				</li>
+
+			</ul>
+
+		</nav>
+
+		<div class="lang-switch">
+			<a href="../about_Me.html" class="lang-btn">EN</a>
+			<a href="about_Me.html" class="lang-btn active">RU</a>
+		</div>
+
+	</div>
+
+</header>
+
+<section class="hero card">
+
+	<div class="hero-avatar">
+		<img src="../assets/images/avatar.webp" alt="Avatar" class="avatar">
+	</div>
+
+	<div class="hero-text">
+		<h1>АРТУР<br>СИВОКОНЬ</h1>
+		<h2>UNITY РАЗРАБОТЧИК / TECHNICAL ARTIST</h2>
+	</div>
+
+	<div class="hero-graphics">
+		<img src="../assets/images/cubes.webp" alt="">
+	</div>
+
+	<div class="hero-bottom">
+
+		<p>
+			Разработчик с опытом работы над крупным MMORPG-проектом Corepunk.
+			Специализируюсь на разработке игровых систем, интеграции фич
+			в существующий код, оптимизации и создании инструментов для разработчиков.
+			Люблю разбираться в сложном коде и делать его лучше.
+		</p>
+
+		<div class="contacts">
+
+			<div class="contact-item email-trigger" onclick="openMailModal()">
+				<img src="../assets/images/mail.webp" alt="">
+				<span>Связаться по email</span>
+			</div>
+
+			<div class="contact-item">
+				<img src="../assets/images/location.webp" alt="">
+				<a href="https://www.google.com/maps/search/?api=1&query=Straffan%2C+Ireland" target="_blank" rel="noopener noreferrer">
+					Штраффан, Ирландия
+				</a>
+			</div>
+
+			<div class="contact-item">
+				<img src="../assets/images/github.webp" alt="">
+				<a href="https://github.com/SyvArtur/SquidGame" target="_blank" rel="noopener noreferrer">
+					github.com/SyvArtur/SquidGame
+				</a>
+			</div>
+
+			<div class="contact-item">
+				<img src="../assets/images/linkedin.webp" alt="">
+				<a href="https://linkedin.com/in/artur-syvokin-73a1a3296"
+				   target="_blank" rel="noopener noreferrer">
+					linkedin.com/in/artur-syvokin-73a1a3296
+				</a>
+			</div>
+
+		</div>
+
+	</div>
+
+</section>
+
+<main class="container">
+
+<div class="background-glow"></div>
+
+<aside class="sidebar">
+
+<section class="card">
+
+	<h2 class="section-title">
+		<img src="../assets/images/stack-icon.webp" alt="">
+		ТЕХНОЛОГИИ
+	</h2>
+
+	<div class="stack-group">
+
+		<h3>РАЗРАБОТКА ИГР</h3>
+
+		<div class="tags">
+			<span>Unity</span>
+			<span>C#</span>
+			<span>OOP</span>
+			<span>Gameplay Systems</span>
+			<span>Tools Development</span>
+			<span>Client-Server</span>
+			<span>Synchronization</span>
+			<span>Debugging</span>
+			<span>Optimization</span>
+		</div>
+
+	</div>
+
+	<div class="stack-group">
+
+		<h3>ФРЕЙМВОРКИ, БИБЛИОТЕКИ И ПАКЕТЫ</h3>
+
+		<div class="tags">
+			<span>ML.Agents</span>
+			<span>Mirror</span>
+			<span>Zenject</span>
+			<span>Telegram.Bot</span>
+			<span>Selenium</span>
+			<span>uGUI</span>
+			<span>Google AdMob</span>
+			<span>Cinemachine</span>
+			<span>DoTween</span>
+			<span>Newtonsoft.Json</span>
+		</div>
+
+	</div>
+
+	<div class="stack-group">
+
+		<h3>ЗНАНИЕ ПАТТЕРНОВ ПРОЕКТИРОВАНИЯ</h3>
+
+		<div class="tags">
+			<span>Observer</span>
+			<span>Factory</span>
+			<span>Builder</span>
+			<span>State</span>
+			<span>Visitor</span>
+			<span>Bridge</span>
+			<span>MVC</span>
+			<span>MVA</span>
+			<span>Abstract factory</span>
+			<span>Command</span>
+			<span>Flyweight</span>
+			<span>Decorator</span>
+			<span>Adapter</span>
+			<span>MVP</span>
+			<span>MVVM</span>
+		</div>
+
+	</div>
+
+	<div class="stack-group">
+
+		<h3>БАЗЫ ДАННЫХ</h3>
+
+		<div class="tags">
+			<span>MySQL</span>
+			<span>MongoDB</span>
+		</div>
+
+	</div>
+
+	<div class="stack-group">
+
+		<h3>ИНЖЕНЕРИЯ И АРХИТЕКТУРА</h3>
+
+		<div class="tags">
+			<span>System Design</span>
+			<span>Code Analysis</span>
+			<span>Refactoring</span>
+			<span>Integration</span>
+			<span>Production Code</span>
+		</div>
+
+	</div>
+
+	<div class="stack-group">
+
+		<h3>ИНСТРУМЕНТЫ И РАБОЧИЙ ПРОЦЕСС</h3>
+
+		<div class="tags">
+			<span>Git</span>
+			<span>SVN</span>
+			<span>Jenkins</span>
+			<span>Jira</span>
+			<span>Notion</span>
+			<span>Rider</span>
+			<span>Visual Studio</span>
+		</div>
+
+	</div>
+
+	<div class="stack-group">
+
+		<h3>ГРАФИКА И TECHNICAL ART</h3>
+
+		<div class="tags">
+			<span>VFX</span>
+			<span>Shader Graph</span>
+			<span>Animation</span>
+			<span>Post Processing</span>
+			<span>Weather Systems</span>
+			<span>Texture Optimization</span>
+		</div>
+
+	</div>
+
+</section>
+
+<div class="card">
+
+	<h2 class="section-title">
+		<img src="../assets/images/education-icon.webp" alt="">
+		ОБРАЗОВАНИЕ
+	</h2>
+
+	<div class="education-item">
+		<h3>БАКАЛАВР</h3>
+		<p>Факультет информационных технологий,</p>
+		<p>Ужгородский национальный университет</p>
+	</div>
+
+	<div class="education-item">
+		<h3>СРЕДНЕЕ СПЕЦИАЛЬНОЕ ОБРАЗОВАНИЕ</h3>
+		<p>Инженер-технолог,</p>
+		<p>Естественно-гуманитарный профессиональный колледж,</p>
+		<p>Ужгородский национальный университет</p>
+	</div>
+
+</div>
+
+<div class="card">
+
+	<h2 class="section-title">
+		<img src="../assets/images/language-icon.webp" alt="">
+		ЯЗЫКИ
+	</h2>
+
+	<div class="language-item">
+		<span>Русский</span>
+
+		<div class="dots">
+			<i class="active"></i>
+			<i class="active"></i>
+			<i class="active"></i>
+		</div>
+
+		<small>Родной</small>
+	</div>
+
+	<div class="language-item">
+		<span>Украинский</span>
+
+		<div class="dots">
+			<i class="active"></i>
+			<i class="active"></i>
+			<i class="active"></i>
+		</div>
+
+		<small>Родной</small>
+	</div>
+
+	<div class="language-item">
+		<span>Английский</span>
+
+		<div class="dots">
+			<i class="active"></i>
+			<i></i>
+			<i></i>
+		</div>
+
+		<small>Средний</small>
+	</div>
+
+</div>
+
+</aside>
+
+<section class="content">
+
+<div class="card">
+
+	<h2 class="section-title">
+		<img src="../assets/images/experience-icon.webp" alt="">
+		ОПЫТ РАБОТЫ
+	</h2>
+
+	<div class="experience-item">
+
+		<h3>Technical Artist / Developer</h3>
+		<h4>Corepunk (MMORPG)</h4>
+
+		<span class="date">Март 2024 – Март 2026</span>
+
+		<p>
+			Получил большой опыт работы с клиент-серверной архитектурой
+			и масштабируемыми системами в крупном проекте.
+			Постоянно фокусировался на написании чистого,
+			поддерживаемого кода, соответствующего хорошим
+			принципам проектирования.
+
+			Моя роль часто включала рефакторинг и улучшение существующего кода,
+			что позволило вносить значимый вклад в зрелую production-кодовую базу.
+
+			На протяжении разработки тесно взаимодействовал с разными командами
+			на всех этапах создания игры.
+
+			Работал с такими инструментами, как Jira, Notion, Slack, Jenkins, SVN и Git,
+			а также занимался реализацией фич, оптимизацией и отладкой
+			в реальной production-среде.
+		</p>
+
+		<div class="experience-grid">
+
+			<div class="info-box">
+
+				<h5>РАБОТА С КОДОМ</h5>
+
+				<ul>
+					<li>Анализ и понимание существующего кода</li>
+					<li>Расширение существующих систем</li>
+					<li>Разработка новой игровой логики</li>
+					<li>Исправление сложных багов</li>
+					<li>Рефакторинг и оптимизация</li>
+					<li>Интеграция фич в production-код</li>
+				</ul>
+
+			</div>
+
+			<div class="info-box">
+
+				<h5>ГРАФИКА И ВИЗУАЛ</h5>
+
+				<ul>
+					<li>Сборка персонажей из модульных частей</li>
+					<li>Работа с анимациями</li>
+					<li>Оптимизация текстур</li>
+					<li>Карты погоды</li>
+					<li>Постобработка и эффекты камеры</li>
+				</ul>
+
+			</div>
+
+			<div class="info-box">
+
+				<h5>ИГРОВОЙ МИР И ВЗАИМОДЕЙСТВИЯ</h5>
+
+				<ul>
+					<li>Следы на изогнутых поверхностях</li>
+					<li>Эффекты волн на траве от взрывов</li>
+					<li>Системы окружения и коллизий</li>
+				</ul>
+
+			</div>
+
+			<div class="info-box">
+
+				<h5>ЭФФЕКТЫ И МАГИЯ</h5>
+
+				<ul>
+					<li>Создание VFX и магических эффектов</li>
+					<li>Интеграция VFX и аудио</li>
+					<li>Обработка событий способностей</li>
+				</ul>
+
+			</div>
+
+			<div class="info-box full-width">
+
+				<h5>ИНСТРУМЕНТЫ РАЗРАБОТКИ</h5>
+
+				<ul>
+					<li>Разработка внутренних инструментов для команды</li>
+					<li>Улучшение debug-панелей</li>
+					<li>Ускорение тестирования игровых механик</li>
+				</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="experience-item second-job">
+
+		<h3>Indie Game Developer</h3>
+
+		<span class="date">2021 – 2024</span>
+
+		<p>
+			Создал многопользовательскую игру на Unity,
+			используя принципы OOP, сетевую библиотеку Mirror
+			и систему контроля версий Git.
+
+			Реализовал клиент-серверную архитектуру
+			и экспериментировал с обучением нейросетей
+			с помощью ML-Agents.
+		</p>
+
+	</div>
+
+</div>
+
+<div class="projects-section">
+
+    <div class="card projects-card">
+
+        <h2 class="section-title">
+            <img src="../assets/images/project-icon.webp" alt="">
+            ПРОЕКТЫ
+        </h2>
+
+        <div class="projects-row">
+
+            <div class="project-card">
+
+                <div class="squidgame-main">
+                    <img
+                        src="../assets/images/jokerjump.webp"
+                        alt="jokerjump logo"
+                        class="squidgame-logo"
+                    >
+
+                    <div class="squidgame-title">
+                        <h2>JOKER JUMP</h2>
+                        <span class="badge">Ранний проект</span>
+                    </div>
+                </div>
+
+                <div>
+                    <p>
+                        Мой первый учебный проект.
+                        Простая аркада на реакцию.
+                    </p>
+
+                    <ul>
+                        <li>Базовая игровая механика</li>
+                        <li>UI и система рекордов</li>
+                        <li>Интеграция AdMob</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="info-box">
+
+                <div class="squidgame-main">
+                    <img
+                        src="../assets/images/corepunk.webp"
+                        alt="corepunk logo"
+                        class="squidgame-logo"
+                    >
+
+                    <div class="squidgame-title">
+                        <h2>COREPUNK</h2>
+                        <span class="badge">Коммерческий проект</span>
+                    </div>
+                </div>
+
+                <div>
+                    <p>
+                        MMORPG с большой кодовой базой
+                        и сложной архитектурой.
+                    </p>
+
+                    <ul>
+                        <li>Разработка игровых систем</li>
+                        <li>Поддержка и улучшение</li>
+                        <li>Оптимизация и инструменты</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <section class="squidgame-showcase">
+
+            <div class="squidgame-layout">
+
+                <div class="squidgame-left">
+
+                    <div class="squidgame-main">
+
+                        <img
+                            src="../assets/images/squid-logo.webp"
+                            alt="squidgame logo"
+                            class="squidgame-logo"
+                        >
+
+                        <div class="squidgame-title">
+                            <h2>SQUIDGAME</h2>
+                            <h3>3D МНОГОПОЛЬЗОВА-<br>ТЕЛЬСКАЯ ИГРА</h3>
+                            <span class="badge">Ранний проект</span>
+                        </div>
+
+                    </div>
+
+                    <p class="squidgame-description">
+                        Мой второй учебный проект.<br>
+                        3D многопользовательская игра от третьего лица, в которой игроки соревнуются
+                        в серии смертельных испытаний.
+                        <br>
+                        Быстрые раунды, простые правила и возрастающая сложность.
+                    </p>
+
+                </div>
+
+                <div class="squidgame-right">
+
+                    <div class="squid-feature">
+                        <img src="../assets/images/network-icon.webp" alt="">
+                        <div>
+                            <h4>Мультиплеер</h4>
+                            <p>Соревнуйтесь с другими игроками</p>
+                        </div>
+                    </div>
+
+                    <div class="squid-feature">
+                        <img src="../assets/images/controller-icon.webp" alt="">
+                        <div>
+                            <h4>Мини-игры</h4>
+                            <p>Разные механики в каждом испытании</p>
+                        </div>
+                    </div>
+
+                    <div class="squid-feature">
+                        <img src="../assets/images/ai-icon.webp" alt="">
+                        <div>
+                            <h4>ИИ противники</h4>
+                            <p>NPC, обученные с помощью ML-Agents</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="squidgame-bottom">
+
+                <div class="squidgame-bottom-left">
+
+                    <p>
+                        Разработано с использованием принципов ООП и паттернов проектирования
+                        (Factory Method, Observer и др.) с фокусом на
+                        чистый код, масштабируемость и архитектуру.
+                    </p>
+
+                </div>
+
+                <div class="squidgame-stack">
+                    <span>Unity</span>
+                    <span>C#</span>
+                    <span>Mirror</span>
+                    <span>ML-Agents</span>
+                    <span>OOP</span>
+                    <span>SOLID</span>
+                </div>
+
+            </div>
+
+            <div class="squidgame-right">
+
+                <h3>ПРЕДПРОСМОТР МИНИ-ИГР</h3>
+
+                <div class="squidgame-gallery">
+
+                    <div class="squid-shot">
+                        <img src="../assets/images/squid1.webp" alt="">
+                        <p>Красный свет,<br>зелёный свет</p>
+                    </div>
+
+                    <div class="squid-shot">
+                        <img src="../assets/images/squid2.webp" alt="">
+                        <p>Цветные<br>платформы</p>
+                    </div>
+
+                    <div class="squid-shot">
+                        <img src="../assets/images/squid3.webp" alt="">
+                        <p>Фруктовая<br>память</p>
+                    </div>
+
+                    <div class="squid-shot">
+                        <img src="../assets/images/squid4.webp" alt="">
+                        <p>Вождение и стрельба<br>(режим обучения)</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <div class="card projects-card">
+
+        <h2 class="section-title">
+            <img src="../assets/images/goal-icon.webp" alt="">
+            ЧТО Я ИЩУ
+        </h2>
+
+        <p>
+            Я ищу позицию Unity Developer / Game Developer
+            в команде, где я смогу:
+        </p>
+
+        <ul class="simple-list">
+            <li>Работать над сложными системами</li>
+            <li>Развивать и поддерживать код</li>
+            <li>Создавать инструменты и улучшать процессы</li>
+            <li>Вносить вклад в создание качественной игры</li>
+        </ul>
+
+        <div class="availability">
+            <div class="contact-item email-trigger" onclick="openMailModal()">
+                Доступен для полной занятости. Напишите мне на email
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+</main>
+</body>
+</html>
