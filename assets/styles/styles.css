@@ -16,7 +16,7 @@ html {
 body {
     animation: fadeIn 0.2s ease;
     font-family: "Nunito", sans-serif;
-    background: url('/assets/images/fon.webp') repeat;
+    background: url('../images/fon.webp') repeat;
 }
 
 h1,
@@ -84,9 +84,11 @@ h3 {
     height: 100%;
     padding: 0 40px;
 }
+
 nav {
   margin-left: auto;
 }
+
 .menu ul {
     display: flex;
     gap: 6px 20px;
@@ -109,7 +111,7 @@ nav {
     max-width: 900px;
     height: 650px;
     margin: 0 auto;
-    background: url('/assets/images/Cap.webp') no-repeat left top;
+    background: url('../images/Cap.webp') no-repeat left top;
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -167,10 +169,11 @@ nav {
     height: 80%;
     object-fit: contain;
     margin-left: 455px;
-	margin-top: 100px;
+    margin-top: 100px;
     z-index: 2;
     pointer-events: none;
 }
+
 .ball {
     position: absolute;
     inset: 0;
@@ -234,21 +237,11 @@ nav {
 }
 
 @keyframes sunDance {
-    0% {
-        transform: rotate(-8deg) translateY(0) scaleY(1) scaleX(0.95);
-    }
-    25% {
-        transform: rotate(0deg) translateY(-5px) scaleY(1.05);
-    }
-    50% {
-        transform: rotate(10deg) translateY(0) scaleY(1.0);
-    }
-    75% {
-        transform: rotate(0deg) translateY(-5px) scaleY(1.10);
-    }
-    100% {
-        transform: rotate(-8deg) translateY(0) scaleY(1) scaleX(0.95);
-    }
+    0% { transform: rotate(-8deg) translateY(0) scaleY(1) scaleX(0.95); }
+    25% { transform: rotate(0deg) translateY(-5px) scaleY(1.05); }
+    50% { transform: rotate(10deg) translateY(0) scaleY(1.0); }
+    75% { transform: rotate(0deg) translateY(-5px) scaleY(1.10); }
+    100% { transform: rotate(-8deg) translateY(0) scaleY(1) scaleX(0.95); }
 }
 
 nav ul {
@@ -405,15 +398,8 @@ nav ul a.active:hover {
 }
 
 @keyframes sparkAnim {
-    0% {
-        transform: scale(0);
-        opacity: 1;
-    }
-
-    100% {
-        transform: scale(1) translate(var(--x), var(--y));
-        opacity: 0;
-    }
+    0% { transform: scale(0); opacity: 1; }
+    100% { transform: scale(1) translate(var(--x), var(--y)); opacity: 0; }
 }
 
 .small_cards {
@@ -433,7 +419,7 @@ nav ul a.active:hover {
 .small_card {
     width: 100%;
     aspect-ratio: 1 / 1;
-    background: url("/assets/images/Button.webp") no-repeat center/cover;
+    background: url("../images/Button.webp") no-repeat center/cover;
     border-radius: 20px;
     transition: transform 0.35s ease, box-shadow 0.35s ease;
     position: relative;
@@ -490,19 +476,9 @@ nav ul a.active:hover {
 }
 
 @keyframes fall {
-    0% {
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-    }
-
-    80% {
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateY(var(--fall-distance)) rotate(360deg);
-        opacity: 0;
-    }
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    80% { opacity: 1; }
+    100% { transform: translateY(var(--fall-distance)) rotate(360deg); opacity: 0; }
 }
 
 @keyframes sway {
@@ -738,7 +714,6 @@ nav ul a.active:hover {
         0 0 20px rgba(0,0,0,0.6);
 }
 
-
 .lang-switch {
   display: flex;
   align-items: center;
@@ -748,14 +723,9 @@ nav ul a.active:hover {
   padding: 3px;
   border-radius: 9px;
   background:
-    linear-gradient(
-      180deg,
-      rgba(50, 25, 100, .95),
-      rgba(18, 10, 45, .95)
-    );
+    linear-gradient(180deg, rgba(50, 25, 100, .95), rgba(18, 10, 45, .95));
   border: 1px solid rgba(141, 92, 255, .22);
-  box-shadow:
-    0 0 10px rgba(120,70,255,.12);
+  box-shadow: 0 0 10px rgba(120,70,255,.12);
 }
 
 .lang-btn {
@@ -770,28 +740,20 @@ nav ul a.active:hover {
   font-weight: 700;
   letter-spacing: .5px;
   color: rgba(255,255,255,.55);
-  transition:
-    .2s ease;
+  transition: .2s ease;
 }
+
 .lang-btn:hover {
   color: #fff;
-
-  background:
-    rgba(141,92,255,.12);
+  background: rgba(141,92,255,.12);
 }
+
 .lang-btn.active {
   color: #fff;
-
-  background:
-    linear-gradient(
-      135deg,
-      #7f4fff,
-      #ac72ff
-    );
-
-  box-shadow:
-    0 0 10px rgba(140,90,255,.35);
+  background: linear-gradient(135deg, #7f4fff, #ac72ff);
+  box-shadow: 0 0 10px rgba(140,90,255,.35);
 }
+
 .lang-switch:hover .lang-btn {
   opacity: .35;
 }
@@ -799,10 +761,9 @@ nav ul a.active:hover {
 .lang-switch .lang-btn:hover {
   opacity: 1;
 }
-@media (max-width: 900px) {
 
+@media (max-width: 900px) {
   .lang-switch {
     margin-top: 4px;
   }
-
 }

@@ -17,7 +17,7 @@ body {
   animation: fadeIn .2s ease;
   font-family: "Nunito", sans-serif;
   background:
-    url('/assets/styles/fon.webp') repeat,
+    url('../images/fon.webp') repeat,
     radial-gradient(circle at top right, rgba(122, 65, 255, .25), transparent 30%),
     radial-gradient(circle at bottom left, rgba(122, 65, 255, .15), transparent 30%),
     #050816;
