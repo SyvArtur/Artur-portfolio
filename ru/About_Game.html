@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="/assets/styles/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/assets/styles/about_game.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container menu">
+            <img src="/assets/images/Logo.webp" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="Index.html">ГЛАВНАЯ</a></li>
+                    <li><a href="About_Game.html" class="active">ОБ ИГРЕ</a></li>
+                    <li><a href="Peculiarities.html">ОСОБЕННОСТИ</a></li>
+                    <li><a href="About_Me.html">ОБ АВТОРЕ</a></li>
+                    <li><a href="https://play.google.com/store/apps/details?id=com.Spinyminds.MyGame" target="_blank" rel="noopener noreferrer">СКАЧАТЬ</a></li>
+                </ul>
+            </nav>
+				<div class="lang-switch">
+				<a href="/About_Game.html" class="lang-btn">EN</a>
+				<a href="/ru/About_Game.html" class="lang-btn active">RU</a>
+			</div>
+        </div>
+
+    </header>
+<main class="wrapper">
+<section class="hero">
+		<div id="score" data-label="Очки">Очки: 0</div>
+		<img src="/assets/images/Score.webp" class="score" alt="Score counter">
+    <div class="leaf-layer"></div>
+	<div class="joker-stage">
+		<img src="/assets/images/ball.webp" class="ball" alt="Ball">
+		<img src="/assets/images/Two_Joker.webp" class="joker-layer" alt="Joker character">
+			<div class="eye" id="eye1">
+				<img src="/assets/images/eye.webp" class="iris" alt="Eye iris">
+			</div>
+			<div class="eye" id="eye2">
+				<img src="/assets/images/eye.webp" class="iris" alt="Eye iris">
+			</div>
+	</div>
+	<img src="/assets/images/Fly.gif" class="fly-layer" alt="Flying animation">
+	<img src="/assets/images/Moon.webp" class="sun" alt="Moon">
+	<!-- <img src="/assets/images/Wave.gif" class="wave"> -->
+
+<div class="hero-text">
+    <h2>ОБ ИГРЕ</h2>
+    <h3>Joker Jump — аркада на реакцию <br>и скорость! Помогите весёлому Джокеру <br>прыгать через реку и ловить нужные <br>карты. Чем дальше вы проходите — <br>тем быстрее становится игра!</h3>
+</div>
+    <a class="download-btn btn2"
+       href="https://play.google.com/store/apps/details?id=com.Spinyminds.MyGame"
+       target="_blank" rel="noopener noreferrer">
+        <img src="/assets/images/Download.webp" alt="Download button">
+        <span class="download-text">Скачать в <br>GOOGLE PLAY</span>
+    </a>
+</section>
+
+<div class="container content">
+<section class="promo-grid">
+    <div class="promo-card video-card">
+        <div class="promo-header">
+            <img src="/assets/images/movie-icon.webp" alt="Video icon">
+            <h2>СМОТРИТЕ ТРЕЙЛЕР</h2>
+        </div>
+<div class="video-wrapper">
+    <iframe
+		loading="lazy"
+        src="https://www.youtube.com/embed/896fMaZiZb4?rel=0"
+        title="Joker Jump Trailer"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
+</div>
+    </div>
+    <div class="promo-card description-card">
+        <div class="promo-header">
+            <img src="/assets/images/book-icon.webp" alt="Book icon">
+            <h2>ОПИСАНИЕ ИГРЫ</h2>
+        </div>
+        <div class="description-content">
+            <p>
+                Джокер прыгает через реку, а на экране появляются карты.
+                Ваша задача — выбрать правильную карту до того,
+                как она исчезнет.
+            </p>
+
+            <p>
+                Но будьте внимательны! Иногда появляется Темный Джокер —
+                опасный враг, которого нужно избегать любой ценой!
+            </p>
+
+            <p>
+                С каждым уровнем игра становится быстрее и сложнее,
+                требуя максимальной концентрации и быстрой реакции.
+            </p>
+
+            <p>
+                Собирайте рекорды, открывайте новые скины
+                и станьте лучшим Джокером!
+            </p>
+        </div>
+        <img
+            src="joker-shadow.webp"
+            alt="Joker shadow decoration"
+            class="corner-joker"
+        >
+    </div>
+</section>
+
+<section class="container content">
+<h1>Как играть?</h1>
+ <div class="layout-grid">	
+     <div class="wrapper">
+    <div class="card">
+      <img src="/assets/images/Card_13.webp" alt="Instruction card 13">
+      <div class="overlay"></div>
+      <div class="card-content">
+      </div>
+      <div class="glare"></div>
+    </div>
+  </div>
+    <div class="wrapper">
+    <div class="card">
+      <img src="/assets/images/Card_14.webp" alt="Instruction card 14">
+      <div class="overlay"></div>
+      <div class="card-content">
+      </div>
+      <div class="glare"></div>
+    </div>
+  </div>
+    <div class="wrapper">
+    <div class="card">
+      <img src="/assets/images/Card_15.webp" alt="Instruction card 15">
+      <div class="overlay"></div>
+      <div class="card-content">
+      </div>
+      <div class="glare"></div>
+    </div>
+  </div>
+    <div class="wrapper">
+     <div class="card">
+      <img src="/assets/images/Card_16.webp" alt="Instruction card 16">
+      <div class="overlay"></div>
+      <div class="card-content">
+      </div>
+      <div class="glare"></div>
+     </div>
+	</div>
+	<div class="wrapper">
+    <div class="card">
+      <img src="/assets/images/Card_17.webp" alt="Instruction card 17">
+      <div class="overlay"></div>
+      <div class="card-content">
+      </div>
+      <div class="glare"></div>
+    </div>
+    </div>
+		<div class="wrapper">
+    <div class="card">
+      <img src="/assets/images/Card_18.webp" alt="Instruction card 18">
+      <div class="overlay"></div>
+      <div class="card-content">
+        <!-- <h3>Cyber City</h3> -->
+        <!-- <p>Неоновый мегаполис</p> -->
+      </div>
+      <div class="glare"></div>
+    </div>
+    </div>
+ </div>
+ 
+<div class="features-strip">
+    <div class="feature-item">
+        <img src="/assets/images/speed-icon.webp" alt="Speed icon">
+        <div>
+            <h1>УСКОРЕНИЕ</h1>
+            <p>
+                Игра становится быстрее с каждым уровнем
+            </p>
+        </div>
+    </div>
+    <div class="feature-divider"></div>
+    <div class="feature-item">
+        <img src="/assets/images/card-icon.webp" alt="Card icon">
+        <div>
+            <h1>ПРАВИЛЬНЫЙ ВЫБОР</h1>
+            <p>
+                Ловите нужные карты и избегайте ловушек
+            </p>
+        </div>
+    </div>
+    <div class="feature-divider"></div>
+    <div class="feature-item">
+        <img src="/assets/images/joker-icon.webp" alt="Joker icon">
+        <div>
+            <h1>ТЁМНЫЙ ДЖОКЕР</h1>
+            <p>
+                Опасный враг, которого нужно избегать
+            </p>
+        </div>
+    </div>
+    <div class="feature-divider"></div>
+    <div class="feature-item">
+        <img src="/assets/images/cup-icon.webp" alt="Cup icon">
+        <div>
+            <h1>РЕКОРДЫ И ДОСТИЖЕНИЯ</h1>
+            <p>
+                Набирайте очки и получайте награды
+            </p>
+        </div>
+    </div>
+</div>
+<div class="plaque-wrapper">
+    <img src="/assets/images/Joker_Card.gif" class="joker-card" alt="Animated Joker card">
+    <img src="/assets/images/Purple_plaque_2.webp" class="Purple_plaque" alt="Purple plaque">
+	    <div class="plaque-text">
+        <h2>ХОЧЕШЬ ОТКРЫТЬ<br>НОВЫЕ СКИНЫ?</h2>
+        <h3>Скачай и начни путь к достижениям!</h3>
+    </div>
+    <a
+        class="download-btn btn1"
+        href="https://play.google.com/store/apps/details?id=com.Spinyminds.MyGame"
+        target="_blank" rel="noopener noreferrer"
+    >
+        <img src="/assets/images/Download.webp" alt="Download Game">
+
+        <span class="download-text">Скачать в <br>GOOGLE PLAY</span>
+    </a>
+</div>
+</section>
+ </div>
+</main>
+<script src="/assets/scripts/script.js"></script>
+</body>
+</html>

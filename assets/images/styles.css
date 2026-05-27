@@ -1,0 +1,858 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+  background: #331E66;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+body {
+  animation: fadeIn 0.2s ease;
+  font-family: "Nunito", sans-serif;
+  background: url('fon.jpg') repeat;
+}
+
+h1 {
+  font-family: "Nunito", sans-serif;
+  color: yellow;
+  text-align: center;
+  font-weight: 900;
+  line-height: 1.1;
+  margin: 15px 0 10px 0;
+  transform: scaleX(0.95);
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 800;
+  color: yellow;
+  text-align: center;
+  margin: 5px 0;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.4);
+    transform: scaleX(0.9);
+	  line-height: 1.2;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+      transform: scaleX(0.9);
+	  line-height: 1.2;
+}
+
+/* Центральный контейнер */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    height: 100%;
+user-select:none;
+}
+
+/* МЕНЮ ПОВЕРХ КАРТИНКИ */
+.header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100%;
+    max-width: 900px;
+    height: 60px;
+
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    z-index: 3;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 40px;
+}
+
+.menu ul {
+    display: flex;
+    gap: 6px 20px; /* 10px вертикаль, 20px горизонталь */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+	margin-left: 20px; /* ← отступ слева */
+    flex-wrap: wrap; /* позволяет переноситься */
+}
+
+.menu a {
+    white-space: nowrap;
+    font-size: 14px;
+}
+/* Логотип */
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+/* HERO — теперь БЕЗ отступа */
+.hero {
+    width: 100%;
+    max-width: 900px;
+    height: 650px;
+    margin: 0 auto;
+    background: 
+        url('Cap.jpg') no-repeat left top;
+    background-size: auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+	user-select:none;
+}
+
+.score {
+	position: absolute;
+    width: auto;
+    height: 15%;
+    top: 15%;
+    left:0%;
+    transform:translate(+25%, 0%);
+    z-index: 3;
+    pointer-events: none;
+	opacity: 0.8;
+}
+#score {
+	position: absolute;
+    top: 21%;
+	left: 53px;
+	text-align: left;
+
+    font-size: 27px;
+    font-weight: bold;
+    color: yellow;
+
+    z-index: 9999;
+
+    padding: 10px 15px;
+    border-radius: 10px;
+	    pointer-events: none;
+}
+.leaf-layer {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+.joker-stage {
+    position: absolute;
+    width: 900px;
+    height: 650px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+	transform-origin: top center;
+	z-index: 2;
+	pointer-events: none;
+}
+
+.joker-layer {
+    position: absolute;
+    inset: 0;
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    margin-left: 300px;
+	margin-top: 100px;
+    z-index: 2;
+    pointer-events: none;
+}
+.ball {
+    position: absolute;
+    inset: 0;
+    width: 12%;
+    height: 12%;
+    object-fit: contain;
+    margin-left: 600px;
+	margin-top: 210px;
+    z-index: 1;
+    pointer-events: none;
+}
+/* глаз (рамка) */
+.eye {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;      /* важно — не даёт выйти */
+    border-radius: 50%;
+	z-index: 1;
+}
+
+#eye1 {
+    top: 217px;
+    left: 595px;
+}
+
+#eye2 {
+    top: 225px;
+    left: 650px;
+}
+
+/* ирис */
+.iris {
+    position: absolute;
+    width: 50%;  /* чуть меньше глаза */
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.sun {
+    width: 80px;
+    height: auto;
+
+    position: absolute;
+    top: 80px;
+    left: 800px;
+
+    animation: sunDance 3s ease-in-out infinite;
+    transform-origin: center bottom;
+
+    pointer-events: none;
+
+filter:
+    drop-shadow(0 0 10px rgba(220,240,255,0.9))
+    drop-shadow(0 0 25px rgba(140,180,255,0.5))
+    drop-shadow(0 0 50px rgba(90,120,255,0.3));
+}
+
+.wave {
+    width: auto;
+    position: absolute;
+    top: 485px;   /* вниз */
+    left: 730px; /* вправо */
+
+    pointer-events: none;
+	/*opacity: 0.8;*/
+}
+
+
+@keyframes sunDance {
+    0% {
+        transform: rotate(-8deg) translateY(0) scaleY(1) scaleX(0.95);
+    }
+    25% {
+        transform: rotate(0deg) translateY(-5px) scaleY(1.05);
+    }
+    50% {
+        transform: rotate(10deg) translateY(0) scaleY(1.0); 
+    }
+    75% {
+        transform: rotate(0deg) translateY(-5px) scaleY(1.10);
+    }
+    100% {
+        transform: rotate(-8deg) translateY(0) scaleY(1) scaleX(0.95);
+    }
+}
+
+
+
+/* Навигация */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5); /* бледные */
+    font-weight: bold;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+/* активный */
+nav a.active {
+    color: yellow;
+}
+
+/* подчёркивание */
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 0%;
+    height: 2px;
+    background: yellow;
+
+    transition: width 0.3s ease;
+}
+
+nav a.active::after {
+    width: 100%;
+}
+
+/* hover */
+nav a:hover {
+    color: yellow;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+/* Когда навели на меню — ВСЕ ссылки бледнеют */
+nav ul:hover a {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* А та, на которую навели — снова яркая */
+nav ul a:hover {
+    color: yellow;
+}
+
+/* Активная тоже должна тускнеть при общем hover */
+nav ul:hover a.active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* Но если навели именно на активную — она снова яркая */
+nav ul a.active:hover {
+    color: yellow;
+}
+/* Контент */
+.content {
+    padding: 5px;
+}
+
+
+.game-title {
+    font-size: 1.3em; /* увеличиваем только игру */
+ /*   letter-spacing: 1px;*/
+}
+
+/* сетка */
+.layout-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 0;
+}
+
+
+
+/* перспектива */
+.wrapper {
+  perspective: 900px;
+  will-change: transform;
+}
+
+/* карточка */
+.card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+
+  transform-style: preserve-3d;
+  will-change: transform;
+
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
+  transition: opacity .6s ease, transform .6s ease;
+}
+
+/* появление */
+.card.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* изображение */
+.card img {
+  width: 100%;
+  display: block;
+  transform: translateZ(20px);
+  pointer-events: none;
+}
+
+/* затемнение */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  transform: translateZ(30px);
+}
+
+/* текст */
+.card-content {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  color: white;
+  transform: translateZ(60px);
+}
+
+.card-content h3 {
+  margin: 0 0 8px;
+}
+
+.card-content p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* glare */
+.glare {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+
+/* glow */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 22px;
+  background: linear-gradient(45deg, #ff00cc, #3333ff, #ffcc00);
+  filter: blur(10px);
+  opacity: 0;
+  transition: .3s;
+}
+
+.card:hover::before {
+  opacity: .8;
+}
+
+/* частицы */
+.spark {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: gold;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+  animation: sparkAnim 0.8s ease-out forwards;
+}
+
+@keyframes sparkAnim {
+  0% { transform: scale(0); opacity: 1; }
+  100% { transform: scale(1) translate(var(--x), var(--y)); opacity: 0; }
+}
+
+/* Сетка */
+.small_cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 30px;
+  padding: 10px 0 0 0; /* или вообще 0 */
+  margin: 0 auto;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Обёртка */
+.small_card-wrapper {
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Кнопка */
+.small_card {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: url("Кнопка.png") no-repeat center/cover;
+  border-radius: 20px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Блик */
+.small_card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.4), transparent);
+  transition: 0.6s;
+}
+
+/* Значок */
+.small_card-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.35s ease;
+}
+
+/* Hover */
+.small_card-wrapper:hover .small_card {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.small_card-wrapper:hover .small_card::before {
+  left: 100%;
+}
+
+.small_card-wrapper:hover .small_card-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+
+.fall-item {
+  position: absolute;
+  top: -80px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: auto; /* вместо none */
+  cursor: pointer;      /* чтобы видно было что кликается */
+
+  animation: fall linear forwards, sway ease-in-out infinite;
+
+  will-change: transform, filter;
+}
+
+/* медленное падение */
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(var(--fall-distance)) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* лёгкое покачивание */
+@keyframes sway {
+  0%, 100% { margin-left: 0px; }
+  50% { margin-left: 30px; }
+}
+
+.fly-layer {
+    position: absolute;
+    top: 100px;
+    left: 0;
+   /* padding: 20px; /* увеличивает область клика */
+    width: 120px;
+    will-change: transform;
+    z-index: 1;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+
+
+
+.gallery {
+  position: relative;
+  max-width: 1100px;
+  margin: 10px auto;
+}
+
+.gallery-wrapper {
+  overflow: hidden;
+}
+
+.gallery-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.gallery-track img {
+  flex-shrink: 0;
+  width: calc(100% / 5);
+  padding: 6px;
+  border-radius: 12px;
+  object-fit: cover;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* кнопки */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 22px;
+  border-radius: 8px;
+  z-index: 10;
+}
+
+.prev { left: 5px; }
+.next { right: 5px; }
+
+.nav:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+.nav:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+/* 📱 адаптив */
+@media (max-width: 900px) {
+  .gallery-track img {
+    width: calc(100% / 3);
+  }
+}
+
+@media (max-width: 500px) {
+  .gallery-track img {
+    width: 100%;
+  }
+}
+
+.gallery-track {
+  cursor: grab;
+}
+
+.gallery-wrapper {
+  overflow: hidden;
+  cursor: grab; /* теперь зона ВСЯ */
+}
+
+
+
+
+
+.plaque-wrapper{
+    position:relative;
+    display:flex;
+    justify-content:center;
+
+    width:100%;
+}
+
+/* Фоновая плашка */
+.Purple_plaque{
+    display:block;
+    width:800px;
+}
+/* ТЕКСТ НА ПЛАШКЕ */
+.plaque-text{
+    position:absolute;
+
+    top:35%;
+    left:50%;
+
+    transform:translate(-36%, -20%);
+
+    text-align:center;
+    color:black;
+
+    font-family:"Nunito", sans-serif;
+}
+
+.plaque-text h2 {
+  font-size: clamp(18px, 2.2vw, 22px);
+  font-weight: 800;
+  color: yellow;
+  text-align: center;
+  margin: 0px 0;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.4);
+}
+
+.plaque-text h3 {
+  font-size: clamp(15px, 1.8vw, 18px);
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin: 5px;
+}
+
+.plaque-text_2{
+    position:absolute;
+
+    top:25%;
+    left:50%;
+
+    transform:translate(-44%, -20%);
+
+    text-align:center;
+    color:black;
+
+    font-family:"Nunito", sans-serif;
+}
+.plaque-text_2 h2 {
+  font-size: clamp(18px, 2.2vw, 22px);
+  font-weight: 800;
+  color: yellow;
+  text-align: center;
+  margin: 0px 0;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.4);
+}
+
+.plaque-text_2 h3 {
+  font-size: clamp(15px, 1.8vw, 18px);
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin: 5px;
+}
+/* Кнопка поверх плашки */
+
+.download-btn{
+    position:absolute;
+
+    display:inline-block;
+
+    transition:
+        transform 0.2s ease,
+        filter 0.2s ease,
+        box-shadow 0.2s ease;
+
+    border-radius:20px;
+    overflow:hidden;
+	transform:scale(1);
+}
+.btn1{
+    top:80%;
+    left:55%;
+    --tx: -50%;
+    --ty: -50%;
+    transform:translate(-50%, -50%) scale(1);
+}
+
+.btn2{
+    top:85%;
+    left:0%;
+    --tx: 17%;
+    --ty: -50%;
+    transform:translate(17%, -50%) scale(1);
+    z-index:2;
+}
+
+.btn3{
+    top:70%;
+    left:0%;
+    --tx: 95%;
+    --ty: -50%;
+    transform:translate(95%, -50%) scale(1);
+    z-index:2;
+}
+
+/* Наведение */
+.download-btn:hover{
+    transform:translate(var(--tx, 0), var(--ty, 0)) scale(1.04);
+
+    filter:brightness(1.08);
+    box-shadow:0 15px 35px rgba(0,0,0,0.45);
+}
+
+/* Нажатие */
+.download-btn:active{
+    transform:translate(var(--tx, 0), var(--ty, 0)) scale(0.94);
+}
+
+/* Картинка кнопки */
+.download-btn img{
+    display:block;
+    width:320px;
+    height:auto;
+
+    user-select:none;
+    pointer-events:none;
+}
+
+/* Текст на кнопке */
+.download-text{
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-35%, -50%);
+
+    color:black;
+    font-size:21px;
+
+    pointer-events:none;
+
+    font-family:"Nunito", sans-serif;
+    font-weight:900;
+    line-height:1.1;
+
+    text-align:center;
+
+    white-space:nowrap;
+}
+
+.hero-text{
+    position:absolute;
+
+    top:50%;
+    left:2%;
+
+    text-align:center;
+    color:black;
+
+    font-family:"Nunito", sans-serif;
+}
+.hero h2 {
+    font-size: 48px;
+    color: yellow;
+    text-align: center;
+    font-weight: 900;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+	opacity: 0.8;
+    line-height: 1.1;
+	transform: scaleX(0.8);
+	text-shadow:
+    0 3px 10px rgba(0,0,0,0.9),
+    0 0 20px rgba(0,0,0,0.6);
+}
+
+.hero h3 {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+	  opacity: 0.8;
+text-shadow:
+    0 3px 10px rgba(0,0,0,0.9),
+    0 0 20px rgba(0,0,0,0.6);
+}
