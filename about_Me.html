@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles/about_me.css">
+    <!-- <link rel="stylesheet" href="assets/styles/new_about_me.css"> -->
 	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-	<script src="assets/scripts/emailjs.js"></script>
 </head>
 
 <body>
@@ -52,8 +52,14 @@
 
     <header class="header">
         <div class="container menu">
-		  	            <img src="assets/images/Logo.webp" alt="Logo" class="logo">
-        <nav>
+						<img src="assets/images/Logo.webp" alt="Logo" class="logo">
+		<button class="burger-btn" id="burgerBtn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+
+		<nav id="mainNav">
             <ul>
                 <li>
                     <a href="index.html">HOME</a>
@@ -86,12 +92,11 @@
                 </li>
             </ul>
         </nav>
-			<!-- Language Switch -->
 			<div class="lang-switch">
-				<a href="about_Me.html" class="lang-btn active">EN</a>
-				<a href="ru/about_Me.html" class="lang-btn">RU</a>
-			</div>
-        </div>
+			<a href="about_Me.html" class="lang-btn" data-lang="en">EN</a>
+			<a href="ru/about_Me.html" class="lang-btn" data-lang="ru">RU</a>
+			</div>			
+		</div>
     </header>
  <section class="hero card">
 
@@ -391,33 +396,7 @@
 
 <div class="projects-row">
 
-    <div class="project-card">
-	            <div class="squidgame-main">
-                <img
-                    src="assets/images/jokerjump.webp"
-                    alt="jokerjump logo"
-                    class="squidgame-logo"
-                >
-                <div class="squidgame-title">
-                    <h2>JOKER JUMP</h2>
-                	<span class="badge">Early Project</span>
-				</div>
-				</div> 
-
-        <div>
-            <p>
-                My first educational project.
-                A simple reaction-based arcade game.
-            </p>
-
-            <ul>
-                <li>Basic gameplay mechanics</li>
-                <li>UI and high score system</li>
-                <li>AdMob integration</li>
-            </ul>
-        </div>
-    </div>
-				<div class="info-box">
+	<div class="info-box">
 	
 	            <div class="squidgame-main">
                 <img
@@ -444,7 +423,37 @@
             </ul>
         </div>
     </div>
+	
+    <div class="project-card">
+	            <div class="squidgame-main">
+                <img
+                    src="assets/images/jokerjump.webp"
+                    alt="jokerjump logo"
+                    class="squidgame-logo"
+                >
+                <div class="squidgame-title">
+                    <h2>JOKER JUMP</h2>
+                	<span class="badge">Early Project</span>
+				</div>
+				</div> 
+				
+				
+
+        <div>
+            <p>
+                My first educational project.
+                A simple reaction-based arcade game.
+            </p>
+
+            <ul>
+                <li>Basic gameplay mechanics</li>
+                <li>UI and high score system</li>
+                <li>AdMob integration</li>
+            </ul>
         </div>
+    </div>
+
+    </div>
 		
 	<section class="squidgame-showcase">
 
@@ -505,7 +514,6 @@ in a series of deadly challenges.
                     </div>
                 </div>
         </div>
-
     </div>
 
     <div class="squidgame-bottom">
@@ -582,10 +590,8 @@ in a series of deadly challenges.
 		<li>Contribute to building a high-quality game</li>
 	</ul>
 	
-		<div class="availability">
-			<div class="contact-item email-trigger" onclick="openMailModal()">
-				Available for full-time work. Contact me / Send email
-			</div>
+		<div class="availability" onclick="openMailModal()">
+		  Available for full-time work. Contact me / Send email
 		</div>
     </div>
     </div>
@@ -593,5 +599,7 @@ in a series of deadly challenges.
     </section>
  
 </main>
+	<script src="assets/scripts/emailjs.js"></script>
+	<script src="assets/scripts/burgerbtn.js"></script>
 </body>
 </html>
