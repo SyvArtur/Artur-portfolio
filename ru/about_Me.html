@@ -4,13 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Артур Сивоконь - Резюме</title>
-
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../assets/styles/about_me.css">
-
 	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 	
 <style>
@@ -27,7 +24,7 @@
 
 	<div class="mail-window">
 
-		<button class="close-btn"
+		<button type="button" class="close-btn"
 				onclick="closeMailModal()">
 			✕
 		</button>
@@ -102,6 +99,7 @@
 			</div>	
 	</div>
 </header>
+<main>
 <section class="hero card">
 
 	<div class="hero-avatar">
@@ -114,7 +112,7 @@
 	</div>
 
 	<div class="hero-graphics">
-		<img src="../assets/images/cubes.webp" alt="">
+		<img src="../assets/images/cubes.webp" alt="Decorative cubes">
 	</div>
 
 	<div class="hero-bottom">
@@ -161,7 +159,7 @@
 
 </section>
 
-<main class="container">
+<div class="container">
 
 <div class="background-glow"></div>
 
@@ -706,9 +704,9 @@
 </div>
 
 </section>
-
+</div>
 </main>
-	<script src="../assets/scripts/emailjs.js"></script>
-	<script src="../assets/scripts/burgerbtn.js"></script>
+	<script src="../assets/scripts/emailjs.js" defer></script>
+	<script src="../assets/scripts/burgerbtn.js" defer></script>
 </body>
 </html>

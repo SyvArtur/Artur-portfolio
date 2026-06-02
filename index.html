@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>My Site</title>
     <link rel="stylesheet" href="assets/styles/styles.css">
@@ -17,7 +19,13 @@
 <header class="header">
     <div class="container menu">
         <img src="assets/images/Logo.webp" alt="Logo" class="logo">
-        <nav>
+		<button class="burger-btn" id="burgerBtn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+
+		<nav id="mainNav">
             <ul>
                 <li><a href="index.html" class="active">HOME</a></li>
                 <li><a href="about_Game.html">ABOUT GAME</a></li>
@@ -26,11 +34,12 @@
                 <li><a href="https://play.google.com/store/apps/details?id=com.Spinyminds.MyGame" target="_blank" rel="noopener noreferrer">DOWNLOAD</a></li>
             </ul>
         </nav>
-
-        <div class="lang-switch">
-            <a href="index.html" class="lang-btn active">EN</a>
-            <a href="ru/index.html" class="lang-btn">RU</a>
-        </div>
+	
+		<div class="lang-switch">
+		<a href="index.html" class="lang-btn" data-lang="en">EN</a>
+		<a href="ru/index.html" class="lang-btn" data-lang="ru">RU</a>
+		</div>
+		
     </div>
 </header>
 
@@ -109,7 +118,7 @@
         </div>
 
     </div>
-
+</div>
 <section class="container content">
 
 <h4>Game screenshots:</h4>
@@ -119,14 +128,14 @@
 
     <div class="gallery-wrapper">
         <div class="gallery-track">
-            <img src="assets/images/Screens_1.webp" alt="Gameplay screenshot 1">
-            <img src="assets/images/Screens_2.webp" alt="Gameplay screenshot 2">
-            <img src="assets/images/Screens_3.webp" alt="Gameplay screenshot 3">
-            <img src="assets/images/Screens_4.webp" alt="Gameplay screenshot 4">
-            <img src="assets/images/Screens_5.webp" alt="Gameplay screenshot 5">
-            <img src="assets/images/Screens_6.webp" alt="Gameplay screenshot 6">
-            <img src="assets/images/Screens_7.webp" alt="Gameplay screenshot 7">
-            <img src="assets/images/Screens_8.webp" alt="Gameplay screenshot 8">
+              <div class="slide"><img src="assets/images/Screens_1.webp" alt="Gameplay screenshot 1"></div>
+              <div class="slide"><img src="assets/images/Screens_2.webp" alt="Gameplay screenshot 2"></div>
+              <div class="slide"><img src="assets/images/Screens_3.webp" alt="Gameplay screenshot 3"></div>
+              <div class="slide"><img src="assets/images/Screens_4.webp" alt="Gameplay screenshot 4"></div>
+              <div class="slide"><img src="assets/images/Screens_5.webp" alt="Gameplay screenshot 5"></div>
+              <div class="slide"><img src="assets/images/Screens_6.webp" alt="Gameplay screenshot 6"></div>
+              <div class="slide"><img src="assets/images/Screens_7.webp" alt="Gameplay screenshot 7"></div>
+              <div class="slide"><img src="assets/images/Screens_8.webp" alt="Gameplay screenshot 8"></div>
         </div>
     </div>
 
@@ -190,7 +199,7 @@
 
     <div class="plaque-text">
         <h2>READY FOR </br>A NEW RECORD?</h2>
-        <h3>Download Joker Jump and start jumping!</h3>
+        <h3>Download Joker Jump <br>and start jumping!</h3>
     </div>
 
     <a class="download-btn btn1"
@@ -201,14 +210,12 @@
     </a>
 
 </div>
-
 </section>
-
-</div>
 </main>
 <script>
   window.IMAGE_BASE = "assets/images/";
 </script>
-<script src="assets/scripts/script.js"></script>
+<script src="assets/scripts/script.js" defer></script>
+	<script src="assets/scripts/burgerbtn.js" defer></script>
 </body>
 </html>

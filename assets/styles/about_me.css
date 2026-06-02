@@ -1173,7 +1173,7 @@ nav ul a.active:hover {
 /* =========================
    MOBILE ADAPTIVE
 ========================= */
-
+@media (max-width: 900px),
 @media (max-width: 768px) {
 
   body {
@@ -1222,23 +1222,16 @@ nav li {
 }
 
 nav a {
-  display: block;
-  padding: 12px 0;
-  /* border-bottom: 1px solid rgba(141,92,255,.15); */
-    border-bottom: none;
-  text-align: center;
-}
-
-.lang-switch {
-  margin-top: 0;
-}
-	
-  
-
+   display: block;
+   border-bottom: none;
+   text-align: center;
+   font-size: 13px;
+   padding: 6px 8px;
+  }
   /* HEADER */
 
   .header {
-    height: auto;
+    height: 60px;
     padding: 0px 0;
   }
   .menu {
@@ -1246,7 +1239,8 @@ nav a {
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    padding: 10px 0px;
+    height: 100%;
+    padding: 0 12px;
   }
 
   .logo {
@@ -1265,10 +1259,7 @@ nav a {
     flex-wrap: wrap;
   }
 
-  nav a {
-    font-size: 13px;
-    padding: 6px 8px;
-  }
+
 
   .lang-switch {
     margin-top: 0px;
@@ -1454,7 +1445,7 @@ nav a {
   .squidgame-gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 5px;
     overflow: visible; /* убираем скролл */
   }
 
@@ -1464,7 +1455,8 @@ nav a {
   }
 
   .squid-shot img {
-    height: 220px; /* под мобилку */
+    height: 260px; /* под мобилку */
+	width: auto;
   }
 
 

@@ -73,3 +73,23 @@
 			button.disabled = false;
 		});
 	}
+	
+const currentPath = window.location.pathname;
+const currentLang = currentPath.includes("/ru/") ? "ru" : "en";
+const langButtons = document.querySelectorAll(".lang-btn");
+langButtons.forEach(btn => {
+  if (btn.dataset.lang === currentLang) {
+    btn.classList.add("active");
+  } else {
+    btn.classList.remove("active");
+  }
+});
+langButtons.forEach(btn => {
+  btn.addEventListener("click", (e) => {
+    const targetLang = btn.dataset.lang;
+    if (targetLang === currentLang) {
+      e.preventDefault();
+      return;
+    }
+  });
+});

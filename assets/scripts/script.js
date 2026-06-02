@@ -259,44 +259,34 @@ document.addEventListener("mousemove", (e) => {
 });
 
 
-
 document.addEventListener('DOMContentLoaded', () => {
   const wrapper = document.querySelector('.gallery-wrapper');
   const track = document.querySelector('.gallery-track');
-  const images = document.querySelectorAll('.gallery-track img');
+  const slides = document.querySelectorAll('.slide');
   const prevBtn = document.querySelector('.prev');
   const nextBtn = document.querySelector('.next');
 
   let index = 0;
-  let isDown = false;
-  let startX = 0;
-  let moved = 0;
 
   function getVisible() {
-    if (window.innerWidth <= 600) return 1;
-    if (window.innerWidth <= 900) return 3;
-    return 5;
+    return window.innerWidth <= 768 ? 2 :
+           window.innerWidth <= 900 ? 3 : 5;
   }
 
   function maxIndex() {
-    return Math.max(0, images.length - getVisible());
+    return Math.max(0, slides.length - getVisible());
   }
 
   function update(animate = true) {
-    const visible = getVisible();
-
     track.style.transition = animate ? "transform 0.4s ease" : "none";
 
-    const offset = (100 / visible) * index;
-    track.style.transform = `translateX(-${offset}%)`;
+    const slideWidth = 100 / getVisible();
+    track.style.transform = `translateX(-${index * slideWidth}%)`;
 
     prevBtn.disabled = index <= 0;
     nextBtn.disabled = index >= maxIndex();
   }
 
-  // ======================
-  // КНОПКИ
-  // ======================
   nextBtn.addEventListener('click', () => {
     if (index < maxIndex()) {
       index++;
@@ -311,16 +301,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // ======================
-  // DRAG (ВАЖНО: НА WRAPPER!)
-  // ======================
+  let startX = 0;
+  let moved = 0;
+  let isDown = false;
+
   wrapper.addEventListener('mousedown', (e) => {
     isDown = true;
     startX = e.clientX;
     moved = 0;
-
     track.style.transition = "none";
-    wrapper.style.cursor = "grabbing";
   });
 
   window.addEventListener('mousemove', (e) => {
@@ -328,63 +317,70 @@ document.addEventListener('DOMContentLoaded', () => {
 
     moved = e.clientX - startX;
 
-    const visible = getVisible();
-    const baseOffset = (100 / visible) * index;
-    const dragOffset = (moved / window.innerWidth) * 100;
+    const slideWidth = 100 / getVisible();
+    const base = index * slideWidth;
+    const drag = (moved / window.innerWidth) * 100;
 
-    track.style.transform = `translateX(-${baseOffset - dragOffset}%)`;
+    track.style.transform = `translateX(-${base - drag}%)`;
   });
 
   window.addEventListener('mouseup', () => {
     if (!isDown) return;
     isDown = false;
 
-    wrapper.style.cursor = "grab";
-    track.style.transition = "transform 0.4s ease";
-
     if (moved < -80 && index < maxIndex()) index++;
     if (moved > 80 && index > 0) index--;
 
-    moved = 0;
     update();
   });
 
-  // TOUCH (mobile)
+  // touch
   wrapper.addEventListener('touchstart', (e) => {
     startX = e.touches[0].clientX;
     moved = 0;
   });
 
   wrapper.addEventListener('touchmove', (e) => {
-    const currentX = e.touches[0].clientX;
-    moved = currentX - startX;
+    moved = e.touches[0].clientX - startX;
 
-    track.style.transition = "none";
+    const slideWidth = 100 / getVisible();
+    const base = index * slideWidth;
+    const drag = (moved / window.innerWidth) * 100;
 
-    const visible = getVisible();
-    const baseOffset = (100 / visible) * index;
-    const dragOffset = (moved / window.innerWidth) * 100;
-
-    track.style.transform = `translateX(-${baseOffset - dragOffset}%)`;
+    track.style.transform = `translateX(-${base - drag}%)`;
   });
 
   wrapper.addEventListener('touchend', () => {
-    track.style.transition = "transform 0.4s ease";
-
     if (moved < -80 && index < maxIndex()) index++;
     if (moved > 80 && index > 0) index--;
 
-    moved = 0;
     update();
   });
 
-  // RESIZE
   window.addEventListener('resize', () => {
     if (index > maxIndex()) index = maxIndex();
     update(false);
   });
 
-  // init
-  wrapper.style.cursor = "grab";
   update(false);
+});
+
+const currentPath = window.location.pathname;
+const currentLang = currentPath.includes("/ru/") ? "ru" : "en";
+const langButtons = document.querySelectorAll(".lang-btn");
+langButtons.forEach(btn => {
+  if (btn.dataset.lang === currentLang) {
+    btn.classList.add("active");
+  } else {
+    btn.classList.remove("active");
+  }
+});
+langButtons.forEach(btn => {
+  btn.addEventListener("click", (e) => {
+    const targetLang = btn.dataset.lang;
+    if (targetLang === currentLang) {
+      e.preventDefault();
+      return;
+    }
+  });
 });

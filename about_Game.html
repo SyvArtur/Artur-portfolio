@@ -3,29 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>My Site</title>
-
     <link rel="stylesheet" href="assets/styles/styles.css">
-
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="assets/styles/about_game.css">
-	    <style>
-        .hero-text {
-            left: 0%;
-        }
-    </style>
 </head>
-
 <body>
-
 <header class="header">
     <div class="container menu">
-
         <img src="assets/images/Logo.webp" alt="Logo" class="logo">
-
-        <nav>
+		<button class="burger-btn" id="burgerBtn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<nav id="mainNav">
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about_Game.html" class="active">ABOUT GAME</a></li>
@@ -34,12 +26,10 @@
                 <li><a href="https://play.google.com/store/apps/details?id=com.Spinyminds.MyGame" target="_blank" rel="noopener noreferrer">DOWNLOAD</a></li>
             </ul>
         </nav>
-
-        <div class="lang-switch">
-            <a href="about_Game.html" class="lang-btn active">EN</a>
-            <a href="ru/about_Game.html" class="lang-btn">RU</a>
-        </div>
-
+			<div class="lang-switch">
+			<a href="about_Game.html" class="lang-btn" data-lang="en">EN</a>
+			<a href="ru/about_Game.html" class="lang-btn" data-lang="ru">RU</a>
+			</div>	
     </div>
 </header>
 
@@ -80,7 +70,7 @@
 
         <h3>
             Joker Jump is an arcade game of reaction<br>
-            and speed! Help the веселый Joker<br>
+            and speed! Help the funny Joker<br>
             jump across the river and catch the right<br>
             cards. The further you go —<br>
             the faster the game becomes!
@@ -157,7 +147,7 @@
         </div>
 
         <img
-            src="joker-shadow.webp"
+            src="assets/images/joker-shadow.webp"
             alt="Joker shadow decoration"
             class="corner-joker"
         >
@@ -165,10 +155,10 @@
     </div>
 
 </section>
-
+</div>
 <section class="container content">
 
-<h1>How to play?</h1>
+<h2>How to play?</h2>
 
 <div class="layout-grid">
 
@@ -287,42 +277,33 @@
 </div>
 
 <div class="plaque-wrapper">
-
     <img src="assets/images/Joker_Card.gif" class="joker-card" alt="Animated Joker card">
-
     <img src="assets/images/Purple_plaque_2.webp" class="Purple_plaque" alt="Purple plaque">
-
     <div class="plaque-text">
         <h2>WANT TO UNLOCK<br>NEW SKINS?</h2>
-
-        <h3>Download the game and start your journey <br>to achievements!</h3>
+        <h3>Download the game and start <br>your journey to achievements!</h3>
     </div>
-
     <a
         class="download-btn btn1"
         href="https://play.google.com/store/apps/details?id=com.Spinyminds.MyGame"
         target="_blank" rel="noopener noreferrer"
     >
-
         <img src="assets/images/Download.webp" alt="Download Game">
-
         <span class="download-text">
             Download on <br>GOOGLE PLAY
         </span>
-
     </a>
-
 </div>
 
 </section>
 
-</div>
+
 
 </main>
 <script>
   window.IMAGE_BASE = "assets/images/";
 </script>
-<script src="assets/scripts/script.js"></script>
-
+<script src="assets/scripts/script.js" defer></script>
+<script src="assets/scripts/burgerbtn.js" defer></script>
 </body>
 </html>

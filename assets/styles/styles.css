@@ -29,10 +29,6 @@ h4 {
     transform: scaleX(0.95);
 }
 
-h1 {
-    transform: scaleX(0.95);
-}
-
 h4 {
     font-size: 28px;
 }
@@ -83,17 +79,13 @@ h3 {
     align-items: center;
     height: 100%;
     padding: 0 40px;
-}
-
-nav {
-  margin-left: auto;
+	
 }
 
 .menu ul {
     display: flex;
     gap: 6px 20px;
     list-style: none;
-    margin-left: 20px;
     flex-wrap: wrap;
 }
 
@@ -512,11 +504,15 @@ nav ul a.active:hover {
     display: flex;
     transition: transform 0.4s ease;
     cursor: grab;
+	  will-change: transform;
+	    align-items: stretch; /* важно */
 }
 
 .gallery-track img {
-    flex-shrink: 0;
-    width: calc(100% / 5);
+  flex: 0 0 auto;
+    /* width: calc(100% / 5); */
+	  width: 100%;
+  height: auto;
     padding: 6px;
     border-radius: 12px;
     object-fit: cover;
@@ -537,7 +533,9 @@ nav ul a.active:hover {
     border-radius: 8px;
     z-index: 10;
 }
-
+nav {
+  margin-left: auto;
+}
 .prev { left: 5px; }
 .next { right: 5px; }
 
@@ -584,7 +582,7 @@ nav ul a.active:hover {
 
 .plaque-text {
     top: 35%;
-    transform: translate(-36%, -20%);
+    transform: translate(-20%, -20%);
 }
 
 .plaque-text_2 {
@@ -626,7 +624,7 @@ nav ul a.active:hover {
 }
 
 .btn1 {
-    top: 80%;
+    top: 83%;
     left: 55%;
     --tx: -50%;
     --ty: -50%;
@@ -685,7 +683,7 @@ nav ul a.active:hover {
 .hero-text {
     position: absolute;
     top: 50%;
-    left: 2%;
+    left: 40px;
     text-align: center;
     color: black;
 }
@@ -718,14 +716,21 @@ nav ul a.active:hover {
   display: flex;
   align-items: center;
   gap: 3px;
-  margin-left: 10px;
+  margin-left: 2px;
   opacity: 0.6;
   padding: 3px;
   border-radius: 9px;
   background:
-    linear-gradient(180deg, rgba(50, 25, 100, .95), rgba(18, 10, 45, .95));
+    linear-gradient(
+      180deg,
+      rgba(50, 25, 100, .95),
+      rgba(18, 10, 45, .95)
+    );
+
   border: 1px solid rgba(141, 92, 255, .22);
-  box-shadow: 0 0 10px rgba(120,70,255,.12);
+
+  box-shadow:
+    0 0 10px rgba(120,70,255,.12);
 }
 
 .lang-btn {
@@ -762,8 +767,391 @@ nav ul a.active:hover {
   opacity: 1;
 }
 
-@media (max-width: 900px) {
-  .lang-switch {
-    margin-top: 4px;
+
+/* BURGER */
+
+.burger-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  gap: 5px;
+  z-index: 100;
+    position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.burger-btn span {
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  transition: .3s;
+}
+
+.burger-btn.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-btn.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-btn.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.slide {
+  flex: 0 0 50%; /* мобильная версия */
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* display: block; */
+}
+
+
+
+@media (min-width: 768px) {
+  .slide { flex: 0 0 33.333%; }
+  .btn3{
+    top:70%;
+    left:50%;
+    transform: translate(-45%, -50%) scale(1.1);
+}
+}
+
+@media (min-width: 900px) {
+  .slide { flex: 0 0 20%; }
+}
+/* ==========================================================
+   MOBILE VERSION
+   ========================================================== */
+
+@media (max-width:768px){
+
+html,
+body{
+    overflow-x:hidden;
+}
+.burger-btn {
+  display: flex;
+}
+
+nav {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,.92);
+  z-index: 999;
+
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+
+  transition: 
+    max-height 0.35s ease,
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+nav.open {
+  max-height: 400px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+nav ul {
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+}
+
+nav li {
+  width: 100%;
+}
+
+nav a {
+   display: block;
+   border-bottom: none;
+   text-align: center;
+   font-size: 13px;
+   padding: 6px 8px;
   }
+
+
+/* ---------- HEADER ---------- */
+
+.header{
+    height:60px;
+}
+
+.menu{
+    padding:0 12px;
+}
+
+.logo{
+    height:34px;
+}
+
+nav ul{
+    gap:12px;
+}
+.lang-switch {
+  margin-top: 0;
+    margin-left:5px;
+}
+
+/* ---------- HERO ---------- */
+
+.hero{
+    width:100%;
+    height:560px;
+    background-position:center top;
+    background-size:cover;
+    overflow:hidden;
+}
+
+/* ---------- SCORE ---------- */
+
+.score{
+    width:110px;
+	height: auto;
+    top:160px;
+    left:45px;
+    transform:none;
+}
+
+#score{
+    top:190px;
+    left:59px;
+    font-size:20px;
+    padding:0;
+}
+
+/* ---------- JOKER ---------- */
+
+.joker-stage{
+    /* width:900px; */
+    /* height:650px; */
+
+    transform:
+        translateX(-45%)
+		translateY(15%)
+        scale(.55);
+
+    transform-origin:top center;
+}
+
+/* ---------- TEXT ---------- */
+
+.hero-text{
+    position:absolute;
+
+    left:40px;;
+    right:auto;
+
+    top:auto;
+    bottom:110px;
+
+    text-align:center;
+
+    padding:0 15px;
+}
+
+.hero h2{
+    font-size:34px;
+    line-height:1;
+}
+
+.hero h3{
+    font-size:15px;
+    margin-top:10px;
+}
+
+/* ---------- DOWNLOAD ---------- */
+
+.btn2{
+    top:auto;
+    bottom:15px;
+    left:15px;
+
+    /* transform:translateX(-50%); */
+}
+
+.download-btn img{
+    width:220px;
+}
+
+.download-text{
+    font-size:15px;
+}
+
+/* ---------- CARDS GAME ---------- */
+
+.leaf-layer{
+    position:absolute;
+    inset:0;
+    overflow:hidden;
+    z-index:20;
+}
+
+/* увеличить карты для пальца */
+
+.fall-item{
+    min-width:70px;
+    min-height:70px;
+
+    touch-action:manipulation;
+}
+
+/* ---------- CONTENT ---------- */
+
+.content{
+    padding:15px;
+}
+
+h1{
+    font-size:28px;
+}
+
+h4{
+    font-size:26px;
+}
+
+h2{
+    font-size:18px;
+}
+
+h3{
+    font-size:14px;
+}
+
+/* ---------- FEATURES ---------- */
+
+.small_cards{
+    grid-template-columns:repeat(4, 1fr);
+    gap:12px;
+}
+
+.small_card-wrapper{
+    max-width:none;
+    width:100%;
+}
+
+/* ---------- SCREENSHOTS ---------- */
+
+.gallery{
+    margin-top:20px;
+}
+
+.gallery-track img{
+    width:100%;
+}
+
+/* ---------- ADVENTURE CARDS ---------- */
+
+.layout-grid{
+    grid-template-columns:repeat(2, 1fr);
+    gap:10px;
+}
+
+/* ---------- PLAQUE ---------- */
+
+.Purple_plaque{
+    width:100%;
+}
+
+.plaque-text{
+    width:90%;
+    left:50%;
+    top:65%;
+    transform:translate(-40%, -70%);
+}
+.plaque-text h2,
+.plaque-text_2 h2 {
+	    transform:translate(-5%, 30%);
+	    font-size:19px;
+}
+
+.plaque-text h3,
+.plaque-text_2 h3 {
+    font-size:15px;
+		    transform:translate(-5%, 30%);
+}
+.plaque-text h2{
+    font-size:19px;
+}
+
+.plaque-text h3{
+    font-size:14px;
+}
+
+/* нижняя кнопка */
+
+.btn1{
+    top:140%;
+    left:50%;
+    transform: translate(-45%, -50%) scale(1.6);
+}
+
+.btn1 img{
+    width:220px;
+}
+.btn3{
+    top:140%;
+    left:50%;
+    transform: translate(-45%, -50%) scale(1.6);
+}
+
+.btn3 img{
+    width:220px;
+}
+/* ---------- GALLERY ARROWS ---------- */
+
+.nav{
+    padding:8px 12px;
+    font-size:20px;
+}
+
+/* ---------- FLY ---------- */
+
+.fly-layer{
+    width:90px;
+}
+
+/* ---------- SUN ---------- */
+
+.sun{
+    width:55px;
+    top:80px;
+    left:60px;
+    right:auto;
+}
+
+/* ---------- WAVE ---------- */
+
+.wave{
+    width:90px;
+    top:310px;
+    left:395px;
+    right:0;
+}
+
+
+  .lang-switch {
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: 0;
+  }
+
 }

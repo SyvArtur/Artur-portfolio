@@ -12,7 +12,12 @@
     <header class="header">
         <div class="container menu">
             <img src="../assets/images/Logo.webp" alt="Logo" class="logo">
-            <nav>
+		<button class="burger-btn" id="burgerBtn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<nav id="mainNav">
                 <ul>
                     <li><a href="index.html">ГЛАВНАЯ</a></li>
                     <li><a href="about_Game.html" class="active">ОБ ИГРЕ</a></li>
@@ -22,8 +27,8 @@
                 </ul>
             </nav>
 				<div class="lang-switch">
-				<a href="../about_Game.html">EN</a>
-				<a href="about_Game.html" class="lang-btn active">RU</a>
+			<a href="../about_Game.html" class="lang-btn" data-lang="en">EN</a>
+			<a href="about_Game.html" class="lang-btn" data-lang="ru">RU</a>
 			</div>
         </div>
 
@@ -105,15 +110,15 @@
             </p>
         </div>
         <img
-            src="joker-shadow.webp"
+            src="../assets/images/joker-shadow.webp"
             alt="Joker shadow decoration"
             class="corner-joker"
         >
     </div>
 </section>
-
+ </div>
 <section class="container content">
-<h1>Как играть?</h1>
+<h2>Как играть?</h2>
  <div class="layout-grid">	
      <div class="wrapper">
     <div class="card">
@@ -204,7 +209,7 @@
     <img src="../assets/images/Purple_plaque_2.webp" class="Purple_plaque" alt="Purple plaque">
 	    <div class="plaque-text">
         <h2>ХОЧЕШЬ ОТКРЫТЬ<br>НОВЫЕ СКИНЫ?</h2>
-        <h3>Скачай и начни путь к достижениям!</h3>
+        <h3>Скачай и начни путь <br>к достижениям!</h3>
     </div>
     <a
         class="download-btn btn1"
@@ -217,11 +222,12 @@
     </a>
 </div>
 </section>
- </div>
+
 </main>
 <script>
   window.IMAGE_BASE = "../assets/images/";
 </script>
-<script src="../assets/scripts/script.js"></script>
+<script src="../assets/scripts/script.js" defer></script>
+<script src="../assets/scripts/burgerbtn.js" defer></script>
 </body>
 </html>

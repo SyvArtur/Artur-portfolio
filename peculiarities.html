@@ -23,8 +23,12 @@
     <div class="container menu">
 
         <img src="assets/images/Logo.webp" alt="Logo" class="logo">
-
-        <nav>
+		<button class="burger-btn" id="burgerBtn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<nav id="mainNav">
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about_Game.html">ABOUT GAME</a></li>
@@ -38,18 +42,17 @@
             </ul>
         </nav>
 
-        <div class="lang-switch">
-            <a href="peculiarities.html" class="lang-btn active">EN</a>
-            <a href="ru/peculiarities.html" class="lang-btn">RU</a>
-        </div>
-
+		<div class="lang-switch">
+		<a href="peculiarities.html" class="lang-btn" data-lang="en">EN</a>
+		<a href="ru/peculiarities.html" class="lang-btn" data-lang="ru">RU</a>
+		</div>
     </div>
 
 </header>
 
 <main class="wrapper">
 
-<div class="hero">
+<section class="hero">
 
 	<div id="score" data-label="Score">Score: 0</div>
 
@@ -100,7 +103,7 @@
 
     </a>
 
-</div>
+</section>
 
 <section class="container content">
 
@@ -225,7 +228,7 @@
 <script>
   window.IMAGE_BASE = "assets/images/";
 </script>
-<script src="assets/scripts/script.js"></script>
-
+<script src="assets/scripts/script.js" defer></script>
+<script src="assets/scripts/burgerbtn.js" defer></script>
 </body>
 </html>
