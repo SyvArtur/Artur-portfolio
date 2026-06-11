@@ -84,8 +84,8 @@
 .joker-card {
     position: absolute;
     left: 110px;
-    top: 0%;
-    transform: translateY(-7%);
+    bottom: 0%;
+    /* transform: translateY(-7%); */
     width: 204px;
     pointer-events: none;
     filter: drop-shadow(0 6px 12px rgba(0,0,0,0.45));
@@ -189,8 +189,8 @@
 }
 .sun {
     position: absolute;
-    top: 80px;
-    left: 550px;
+    top: 15%;
+    /* left: -30%; */
 }
 .hero-text {
             left: -1%;
@@ -202,6 +202,26 @@
     top:50%;
     transform:translate(-44%, -55%);
 }
+
+
+
+
+
+
+
+
+.joker-card{
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 27%;
+    height: auto;
+    pointer-events: none;
+}
+
+
+
+
 
 
 
@@ -231,13 +251,6 @@
 			translateY(10%)
 			scale(.8);
 	}
-		.joker-card {
-    position: absolute;
-    left: 40px;
-    top: 20%;
-    transform: translateY(-25%);
-    width: 200px;
-	}
 }
 @media (max-width: 768px) {
     .feature-item {
@@ -249,21 +262,20 @@
         height: 56px;
     }
     .feature-item h1 {
-        font-size: 16px;
+        font-size: 10px;
         text-align: center;
     }
     .feature-item p {
-        font-size: 14px;
+        font-size: 10px;
     }
-	.joker-card {
-    position: absolute;
-    left: 10px;
-    top: 0%;
-    transform: translateY(-25%);
-    width: 140px;
-	}
+	/* .joker-card { */
+    /* position: absolute; */
+    /* left: 5%; */
+    /* bottom: 0%; */
+    /* width: 120px; */
+	/* } */
 	.sun {
-    left: 380px;
+    left: 75%;
 	}
 	.layout-grid{
     grid-template-columns:repeat(3, 1fr);
@@ -272,12 +284,38 @@
 .plaque-text{
     transform:translate(-41%, -40%);
 }
+.plaque-text h2 {
+	    font-size:14px;
+}
+.plaque-text h3 {
+    font-size:10px;
+}
+
+
 .joker-stage{
     transform:
-        translateX(-53%)
-		translateY(15%)
-        scale(.6);
+        translateX(-57%)
+		translateY(16%)
+        scale(.57);
 
     transform-origin:top center;
 }
+.score{
+    width:110px;
+	height: auto;
+	top:20%;
+	left:8%;
+    transform:none;
+}
+
+#score{
+	top:25%;
+	left:11%;
+    font-size:20px;
+    padding:0;
+}
+.btn2{
+    left:5%;
+}
+
 }

@@ -1463,11 +1463,10 @@ nav a {
 
   .squid-shot {
     hight: 100%;
-    min-width: 0;
   }
 
   .squid-shot img {
-    height: 260px; /* под мобилку */
+    height: 200px; /* под мобилку */
 	width: auto;
   }
 

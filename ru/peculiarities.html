@@ -9,12 +9,21 @@
 	<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
-@media (max-width:768px){
-.hero-text{
-    transform:
-        translateX(-7%)
-}
-}
+		@media (max-width:768px){
+		.hero-text{
+			transform:
+				translateX(-7%)
+		}
+		}
+		.layout-grid {
+			grid-template-columns: repeat(4, minmax(130px, 1fr));
+		}
+		@media (max-width:768px){
+		.layout-grid{
+				grid-template-columns:repeat(3,1fr);
+			}
+		}
+
 </style>
 </head>
 <body>
@@ -114,9 +123,6 @@
       <div class="glare"></div>
      </div>
 	</div>
- </div>
-
-  <div class="layout-grid">	
 
     <div class="wrapper">
     <div class="card">
@@ -153,8 +159,15 @@
 		  <div class="glare"></div>
 		 </div>
 		</div>
-
-	 </div>
+		<div class="wrapper mobile-only">
+		<div class="card">
+			<img src="../assets/images/Card_12_ru_additional.webp" alt="Game card 12 additional">
+			<div class="overlay"></div>
+			<div class="card-content"></div>
+			<div class="glare"></div>
+		</div>
+		</div>
+</div>
 
  	<div class="plaque-wrapper">
 		<img src="../assets/images/Purple_plaque_bird.webp" class="Purple_plaque" alt="Purple plaque decoration">

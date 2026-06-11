@@ -548,30 +548,16 @@ nav {
     cursor: default;
 }
 
-@media (max-width: 900px) {
-    .gallery-track img {
-        width: calc(100% / 3);
-    }
-}
 
-@media (max-width: 500px) {
-    .gallery-track img {
-        width: 100%;
-    }
-}
 
-.plaque-wrapper {
+
+.plaque-wrapper{
     position: relative;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    width: 100%;    
+	display: flex;
+    max-width: 900px;
+    margin: 0 auto;
 }
-
-.Purple_plaque {
-    display: block;
-    width: 800px;
-}
-
 .plaque-text,
 .plaque-text_2 {
     position: absolute;
@@ -610,7 +596,9 @@ nav {
     text-align: center;
     margin: 5px;
 }
-
+.Purple_plaque{
+    width:100%;
+}
 .download-btn {
     position: absolute;
     display: inline-block;
@@ -646,7 +634,6 @@ nav {
     --tx: 95%;
     --ty: -50%;
     transform: translate(95%, -50%) scale(1);
-    z-index: 2;
 }
 
 .download-btn:hover {
@@ -683,7 +670,7 @@ nav {
 .hero-text {
     position: absolute;
     top: 50%;
-    left: 40px;
+    /* left: 40px; */
     text-align: center;
     color: black;
 }
@@ -824,7 +811,22 @@ nav {
   object-fit: cover;
   /* display: block; */
 }
+.mobile-only{
+    display:none;
+}
 
+
+@media (max-width: 900px) {
+    .gallery-track img {
+        width: calc(100% / 3);
+    }
+}
+
+@media (max-width: 500px) {
+    .gallery-track img {
+        width: 100%;
+    }
+}
 
 
 @media (min-width: 768px) {
@@ -852,7 +854,9 @@ body{
 .burger-btn {
   display: flex;
 }
-
+.mobile-only{
+    display:block;
+}
 nav {
   position: fixed;
   top: 60px;
@@ -935,14 +939,14 @@ nav ul{
 .score{
     width:110px;
 	height: auto;
-    top:160px;
-    left:45px;
+	top:30%;
+	left:8%;
     transform:none;
 }
 
 #score{
-    top:190px;
-    left:59px;
+	top:35%;
+	left:11%;
     font-size:20px;
     padding:0;
 }
@@ -954,8 +958,8 @@ nav ul{
     /* height:650px; */
 
     transform:
-        translateX(-45%)
-		translateY(15%)
+        translateX(-52%)
+		translateY(6%)
         scale(.55);
 
     transform-origin:top center;
@@ -966,7 +970,7 @@ nav ul{
 .hero-text{
     position:absolute;
 
-    left:40px;;
+	left:4.7%;
     right:auto;
 
     top:auto;
@@ -991,10 +995,8 @@ nav ul{
 
 .btn2{
     top:auto;
-    bottom:15px;
-    left:15px;
-
-    /* transform:translateX(-50%); */
+	bottom:4%;
+    left:0%;
 }
 
 .download-btn img{
@@ -1048,8 +1050,8 @@ h3{
 /* ---------- FEATURES ---------- */
 
 .small_cards{
-    grid-template-columns:repeat(4, 1fr);
-    gap:12px;
+    grid-template-columns:repeat(2, 1fr);
+    gap:11px;
 }
 
 .small_card-wrapper{
@@ -1057,6 +1059,16 @@ h3{
     width:100%;
 }
 
+
+    .small_card-wrapper h2 {
+        font-size: 17px;
+        line-height: 1.1;
+    }
+
+    .small_card-wrapper h3 {
+        font-size: 15px;
+        line-height: 1.2;
+    }
 /* ---------- SCREENSHOTS ---------- */
 
 .gallery{
@@ -1070,35 +1082,32 @@ h3{
 /* ---------- ADVENTURE CARDS ---------- */
 
 .layout-grid{
-    grid-template-columns:repeat(2, 1fr);
+    grid-template-columns:repeat(3, 1fr);
     gap:10px;
 }
 
 /* ---------- PLAQUE ---------- */
 
-.Purple_plaque{
-    width:100%;
-}
 
 .plaque-text{
     width:90%;
     left:50%;
-    top:65%;
+    top:70%;
     transform:translate(-40%, -70%);
 }
 .plaque-text h2,
 .plaque-text_2 h2 {
 	    transform:translate(-5%, 30%);
-	    font-size:19px;
+	    font-size:15px;
 }
 
 .plaque-text h3,
 .plaque-text_2 h3 {
-    font-size:15px;
+    font-size:12px;
 		    transform:translate(-5%, 30%);
 }
 .plaque-text h2{
-    font-size:19px;
+    font-size:14px;
 }
 
 .plaque-text h3{
@@ -1108,18 +1117,18 @@ h3{
 /* нижняя кнопка */
 
 .btn1{
-    top:140%;
+    top:120%;
     left:50%;
-    transform: translate(-45%, -50%) scale(1.6);
+    transform: translate(-50%, 0) scale(1.6);
 }
 
 .btn1 img{
     width:220px;
 }
 .btn3{
-    top:140%;
+    top:120%;
     left:50%;
-    transform: translate(-45%, -50%) scale(1.6);
+    transform: translate(-50%, 0) scale(1.6);
 }
 
 .btn3 img{
@@ -1142,8 +1151,10 @@ h3{
 
 .sun{
     width:55px;
-    top:80px;
-    left:60px;
+    /* top:80px; */
+    /* left:60px; */
+	top:15%;
+    left:10%;
     right:auto;
 }
 
