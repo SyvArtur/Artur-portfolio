@@ -631,13 +631,13 @@ nav {
 .btn3 {
     top: 70%;
     left: 0%;
-    --tx: 95%;
-    --ty: -50%;
+    --tx: -45%;
+    --ty: -55%;
     transform: translate(95%, -50%) scale(1);
 }
 
 .download-btn:hover {
-    transform: translate(var(--tx, 0), var(--ty, 0)) scale(1.04);
+    transform: translate(var(--tx, 0), var(--ty, 0)) scale(1.1);
     filter: brightness(1.08);
     box-shadow: 0 15px 35px rgba(0,0,0,0.45);
 }
@@ -834,7 +834,7 @@ nav {
   .btn3{
     top:70%;
     left:50%;
-    transform: translate(-45%, -50%) scale(1.1);
+    transform: translate(-45%, -50%) scale(1);
 }
 }
 
