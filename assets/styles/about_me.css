@@ -1185,8 +1185,7 @@ nav ul a.active:hover {
 /* =========================
    MOBILE ADAPTIVE
 ========================= */
-@media (max-width: 900px),
-@media (max-width: 768px) {
+@media (max-width: 900px), (max-width: 768px) {
 
   body {
     font-size: 17px;
@@ -1537,3 +1536,404 @@ nav a {
 }
 }
 
+
+
+/* =========================================================
+   VIDEO PORTFOLIO
+   ========================================================= */
+
+.portfolio-videos {
+    width: 100%;
+    margin-top: 35px;
+}
+
+.portfolio-videos__header {
+    margin-bottom: 20px;
+}
+
+.portfolio-videos__title {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   VIDEO GRID
+   ========================================================= */
+
+.portfolio-videos__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+
+/* =========================================================
+   VIDEO CARD
+   ========================================================= */
+
+.portfolio-video-card {
+    min-width: 0;
+    overflow: hidden;
+}
+
+.portfolio-video-card__preview {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #111;
+}
+
+.portfolio-video-card__preview img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.25s ease;
+}
+
+.portfolio-video-card__preview:hover img {
+    transform: scale(1.03);
+}
+
+
+/* Play button */
+
+.portfolio-video-card__play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+    border: none;
+
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+
+    font-size: 25px;
+    line-height: 1;
+
+    pointer-events: none;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+.portfolio-video-card__preview:hover .portfolio-video-card__play {
+    transform: translate(-50%, -50%) scale(1.08);
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Card title */
+
+.experience-item .portfolio-video-card__title {
+    margin: 12px 0 6px;
+    font-size: 26px;
+    line-height: 1.1;
+    font-weight: 500;
+    color: #b277ff;
+}
+
+
+/* Card description */
+
+.portfolio-video-card__description {
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 0.9;
+
+    opacity: 0.8;
+}
+
+
+/* =========================================================
+   PAGINATION
+   ========================================================= */
+
+.portfolio-videos__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 16px;
+
+    margin-top: 20px;
+	margin-bottom: 35px;
+}
+
+.portfolio-videos__page-button {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 20px;
+
+    background: rgba(255, 255, 255, 0.08);
+    color: inherit;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.portfolio-videos__page-button:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.16);
+    transform: translateY(-1px);
+}
+
+.portfolio-videos__page-button:disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.portfolio-videos__page-info {
+    min-width: 50px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   INLINE VIDEO PLAYER
+   ========================================================= */
+
+/*
+   ВАЖНО:
+   Никакого position: fixed.
+   Никакого inset: 0.
+   Никакого z-index на весь экран.
+
+   Player является обычной частью .portfolio-videos.
+*/
+
+.portfolio-player {
+    display: none;
+    width: 100%;
+    min-width: 0;
+    margin-top: 0;
+}
+
+.portfolio-player.is-open {
+    display: block;
+}
+
+
+/* Верхняя строка */
+
+.portfolio-player__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+}
+
+.portfolio-player__counter {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.portfolio-player__close {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 8px;
+
+    background: rgba(255, 255, 255, 0.08);
+    color: inherit;
+
+    font-size: 26px;
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease;
+}
+
+.portfolio-player__close:hover {
+    background: rgba(255, 255, 255, 0.16);
+}
+
+
+/* =========================================================
+   VIDEO
+   ========================================================= */
+
+.portfolio-player__video-wrapper {
+    position: relative;
+
+    width: 100%;
+    min-width: 0;
+
+    aspect-ratio: 16 / 9;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background: #000;
+}
+
+.portfolio-player__video {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
+
+    background: #000;
+}
+
+
+/* =========================================================
+   PREV / NEXT
+   ========================================================= */
+
+.portfolio-player__navigation {
+    position: absolute;
+
+    top: 50%;
+
+    width: 42px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translateY(-50%);
+
+    padding: 0;
+
+    border: none;
+    border-radius: 8px;
+
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+
+    font-size: 42px;
+    line-height: 1;
+
+    cursor: pointer;
+
+    z-index: 2;
+
+    opacity: 0.75;
+
+    transition:
+        opacity 0.2s ease,
+        background 0.2s ease;
+}
+
+.portfolio-player__navigation:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.portfolio-player__navigation--left {
+    left: 12px;
+}
+
+.portfolio-player__navigation--right {
+    right: 12px;
+}
+
+
+/* =========================================================
+   VIDEO INFO
+   ========================================================= */
+
+.portfolio-player__info {
+    margin-top: 18px;
+}
+
+.portfolio-player__title {
+    margin: 0 0 7px;
+
+    font-size: 22px;
+    line-height: 1.3;
+}
+
+.portfolio-player__description {
+    margin: 0 0 45px;
+
+    font-size: 15px;
+    line-height: 1.6;
+
+    opacity: 0.8;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .portfolio-videos__grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .portfolio-player__video-wrapper {
+        border-radius: 7px;
+    }
+
+    .portfolio-player__navigation {
+        width: 34px;
+        height: 48px;
+        font-size: 32px;
+    }
+
+    .portfolio-player__navigation--left {
+        left: 7px;
+    }
+
+    .portfolio-player__navigation--right {
+        right: 7px;
+    }
+
+    .portfolio-player__title {
+        font-size: 19px;
+    }
+
+    .portfolio-player__description {
+        font-size: 14px;
+    }
+}

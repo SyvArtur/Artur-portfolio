@@ -395,6 +395,137 @@
 			в реальной production-среде.
 		</p>
 
+
+
+	
+<section class="portfolio-videos" id="portfolioVideos">
+
+    <div class="portfolio-videos__header">
+        <h2 class="portfolio-videos__title">Примеры моих выполненных заданий</h2>
+    </div>
+
+    <!-- Сетка из 6 превью -->
+    <div
+        class="portfolio-videos__grid"
+        id="portfolioVideoGrid"
+    ></div>
+
+    <!-- Навигация страниц -->
+    <div
+        class="portfolio-videos__pagination"
+        id="portfolioVideoPagination"
+    >
+        <button
+            type="button"
+            class="portfolio-videos__page-button"
+            id="portfolioVideoPrevious"
+            aria-label="Предыдущие видео"
+        >
+            ←
+        </button>
+
+        <span
+            class="portfolio-videos__page-info"
+            id="portfolioVideoPageInfo"
+        >
+            1 / 1
+        </span>
+
+        <button
+            type="button"
+            class="portfolio-videos__page-button"
+            id="portfolioVideoNext"
+            aria-label="Следующие видео"
+        >
+            →
+        </button>
+    </div>
+
+
+    <!-- =====================================================
+         INLINE VIDEO VIEWER
+         Видео появляется на месте сетки
+         ===================================================== -->
+
+    <div
+        class="portfolio-player"
+        id="portfolioPlayer"
+        aria-hidden="true"
+    >
+
+        <div class="portfolio-player__top">
+
+            <span
+                class="portfolio-player__counter"
+                id="portfolioPlayerCounter"
+            >
+                1 / 1
+            </span>
+
+            <button
+                type="button"
+                class="portfolio-player__close"
+                id="portfolioPlayerClose"
+                aria-label="Закрыть видео"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="portfolio-player__video-wrapper">
+
+            <button
+                type="button"
+                class="portfolio-player__navigation portfolio-player__navigation--left"
+                id="portfolioPlayerPrevious"
+                aria-label="Предыдущее видео"
+            >
+                ‹
+            </button>
+
+            <video
+                class="portfolio-player__video"
+                id="portfolioPlayerVideo"
+                controls
+                playsinline
+                preload="none"
+            ></video>
+
+            <button
+                type="button"
+                class="portfolio-player__navigation portfolio-player__navigation--right"
+                id="portfolioPlayerNext"
+                aria-label="Следующее видео"
+            >
+                ›
+            </button>
+
+        </div>
+
+
+        <div class="portfolio-player__info">
+
+            <h2
+                class="portfolio-player__title"
+                id="portfolioPlayerTitle"
+            ></h2>
+
+            <p
+                class="portfolio-player__description"
+                id="portfolioPlayerDescription"
+            ></p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
 		<div class="experience-grid">
 
 			<div class="info-box">
@@ -496,54 +627,67 @@
         </h2>
 
         <div class="projects-row">
-            <div class="info-box">
-                <div class="squidgame-main">
-                    <img
-                        src="../assets/images/corepunk.webp"
-                        alt="corepunk logo"
-                        class="squidgame-logo"
-                    >
-                    <div class="squidgame-title">
-                        <h2>COREPUNK</h2>
-                        <span class="badge">Коммерческий проект</span>
-                    </div>
-                </div>
-                <div>
-                    <p>
-                        MMORPG с большой кодовой базой
-                        и сложной архитектурой.
-                    </p>
-                    <ul>
-                        <li>Разработка игровых систем</li>
-                        <li>Поддержка и улучшение</li>
-                        <li>Оптимизация и инструменты</li>
-                    </ul>
-                </div>
-            </div>
+
             <div class="project-card">
+
                 <div class="squidgame-main">
                     <img
                         src="../assets/images/jokerjump.webp"
                         alt="jokerjump logo"
                         class="squidgame-logo"
                     >
+
                     <div class="squidgame-title">
                         <h2>JOKER JUMP</h2>
                         <span class="badge">Ранний проект</span>
                     </div>
                 </div>
+
                 <div>
                     <p>
                         Мой первый учебный проект.
                         Простая аркада на реакцию.
                     </p>
+
                     <ul>
                         <li>Базовая игровая механика</li>
                         <li>UI и система рекордов</li>
                         <li>Интеграция AdMob</li>
                     </ul>
                 </div>
+
             </div>
+
+            <div class="info-box">
+
+                <div class="squidgame-main">
+                    <img
+                        src="../assets/images/corepunk.webp"
+                        alt="corepunk logo"
+                        class="squidgame-logo"
+                    >
+
+                    <div class="squidgame-title">
+                        <h2>COREPUNK</h2>
+                        <span class="badge">Коммерческий проект</span>
+                    </div>
+                </div>
+
+                <div>
+                    <p>
+                        MMORPG с большой кодовой базой
+                        и сложной архитектурой.
+                    </p>
+
+                    <ul>
+                        <li>Разработка игровых систем</li>
+                        <li>Поддержка и улучшение</li>
+                        <li>Оптимизация и инструменты</li>
+                    </ul>
+                </div>
+
+            </div>
+
         </div>
 
         <section class="squidgame-showcase">
@@ -696,5 +840,6 @@
 </main>
 	<script src="../assets/scripts/emailjs.js" defer></script>
 	<script src="../assets/scripts/burgerbtn.js" defer></script>
+	<script src="../assets/scripts/video.js" defer></script>
 </body>
 </html>

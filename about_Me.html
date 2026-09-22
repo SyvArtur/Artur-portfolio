@@ -291,6 +291,138 @@
 
 		<p>I have gained extensive experience working with client-server architecture and scalable systems in huge project, consistently focusing on writing clean, maintainable code that follows solid design principles. My role often involved refactoring and enhancing existing code, allowing me to contribute meaningfully to a mature, production-ready codebase. Throughout the development process, I collaborated closely with cross-functional teams across the full game development pipeline. Proficient with production tools like Jira, Notion, Slack, Jenkins, SVN, and Git, and have actively worked on feature implementation, optimization, and debugging in real production environments.
 		</p>
+		
+<section class="portfolio-videos" id="portfolioVideos">
+
+    <div class="portfolio-videos__header">
+        <h2 class="portfolio-videos__title">
+            Examples of completed assignments
+        </h2>
+    </div>
+
+    <!-- Сетка из 6 превью -->
+    <div
+        class="portfolio-videos__grid"
+        id="portfolioVideoGrid"
+    ></div>
+
+    <!-- Навигация страниц -->
+    <div
+        class="portfolio-videos__pagination"
+        id="portfolioVideoPagination"
+    >
+        <button
+            type="button"
+            class="portfolio-videos__page-button"
+            id="portfolioVideoPrevious"
+            aria-label="Предыдущие видео"
+        >
+            ←
+        </button>
+
+        <span
+            class="portfolio-videos__page-info"
+            id="portfolioVideoPageInfo"
+        >
+            1 / 1
+        </span>
+
+        <button
+            type="button"
+            class="portfolio-videos__page-button"
+            id="portfolioVideoNext"
+            aria-label="Следующие видео"
+        >
+            →
+        </button>
+    </div>
+
+
+    <!-- =====================================================
+         INLINE VIDEO VIEWER
+         Видео появляется на месте сетки
+         ===================================================== -->
+
+    <div
+        class="portfolio-player"
+        id="portfolioPlayer"
+        aria-hidden="true"
+    >
+
+        <div class="portfolio-player__top">
+
+            <span
+                class="portfolio-player__counter"
+                id="portfolioPlayerCounter"
+            >
+                1 / 1
+            </span>
+
+            <button
+                type="button"
+                class="portfolio-player__close"
+                id="portfolioPlayerClose"
+                aria-label="Закрыть видео"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="portfolio-player__video-wrapper">
+
+            <button
+                type="button"
+                class="portfolio-player__navigation portfolio-player__navigation--left"
+                id="portfolioPlayerPrevious"
+                aria-label="Предыдущее видео"
+            >
+                ‹
+            </button>
+
+            <video
+                class="portfolio-player__video"
+                id="portfolioPlayerVideo"
+                controls
+                playsinline
+                preload="none"
+            ></video>
+
+            <button
+                type="button"
+                class="portfolio-player__navigation portfolio-player__navigation--right"
+                id="portfolioPlayerNext"
+                aria-label="Следующее видео"
+            >
+                ›
+            </button>
+
+        </div>
+
+
+        <div class="portfolio-player__info">
+
+            <h2
+                class="portfolio-player__title"
+                id="portfolioPlayerTitle"
+            ></h2>
+
+            <p
+                class="portfolio-player__description"
+                id="portfolioPlayerDescription"
+            ></p>
+
+        </div>
+
+    </div>
+
+</section>
+		
+		
+		
+		
+		
 			<div class="experience-grid">
 
 			<div class="info-box">
@@ -570,5 +702,6 @@ in a series of deadly challenges.
 </main>
 	<script src="assets/scripts/emailjs.js" defer></script>
 	<script src="assets/scripts/burgerbtn.js" defer></script>
+	<script src="assets/scripts/video.js" defer></script>
 </body>
 </html>

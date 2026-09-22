@@ -1,0 +1,274 @@
+{
+    "videos": 
+    [
+        {
+            "file": "troll_fat.mp4",
+            "preview": "troll_fat.webp",
+
+            "en": {
+                "title": "Character Assembly System",
+                "description": "Implemented a character assembly system from separate body parts. Added dynamic model customization and ensured that all character elements remain correctly synchronized."
+            },
+
+            "ru": {
+                "title": "Система сборки персонажа",
+                "description": "Реализовал систему сборки персонажа из отдельных частей тела. Добавил динамическую замену элементов модели и обеспечил корректную синхронизацию всех частей персонажа."
+            }
+        },
+
+        {
+            "file": "troll_fat.mp4",
+            "preview": "troll_fat.webp",
+
+            "en": {
+                "title": "Character Animation Recording",
+                "description": "Developed functionality for recording and processing character animations. Integrated the recorded data into the existing animation workflow and adjusted the system to work with different character configurations."
+            },
+
+            "ru": {
+                "title": "Запись анимаций персонажа",
+                "description": "Разработал функциональность для записи и обработки анимаций персонажа. Интегрировал полученные данные в существующий процесс работы с анимациями и адаптировал систему под разные конфигурации персонажей."
+            }
+        },
+
+        {
+            "file": "troll_fat.mp4",
+            "preview": "troll_fat.webp",
+
+            "en": {
+                "title": "Texture Optimization",
+                "description": "Worked on texture optimization for game assets. Adjusted texture settings and compression to reduce memory usage while maintaining the required visual quality."
+            },
+
+            "ru": {
+                "title": "Оптимизация текстур",
+                "description": "Работал над оптимизацией текстур игровых объектов. Настроил параметры текстур и сжатия для снижения потребления памяти при сохранении необходимого качества изображения."
+            }
+        },
+
+        {
+            "file": "troll_fat.mp4",
+            "preview": "troll_fat.webp",
+
+            "en": {
+                "title": "Weather Map System",
+                "description": "Implemented functionality for controlling weather conditions across the game world. Added support for changing weather parameters based on map areas and configured the system to work with existing environment data."
+            },
+
+            "ru": {
+                "title": "Система погодных карт",
+                "description": "Реализовал систему управления погодными условиями в игровом мире. Добавил изменение параметров погоды в зависимости от участков карты и интегрировал систему с существующими данными окружения."
+            }
+        },
+
+        {
+            "file": "troll_fat.mp4",
+            "preview": "troll_fat.webp",
+
+            "en": {
+                "title": "Post-Processing and Camera Effects",
+                "description": "Implemented and integrated post-processing and camera effects for different gameplay situations. Configured effect parameters and connected them to existing gameplay events."
+            },
+
+            "ru": {
+                "title": "Post-Processing и эффекты камеры",
+                "description": "Реализовал и интегрировал эффекты постобработки и камеры для различных игровых ситуаций. Настроил параметры эффектов и связал их с существующими игровыми событиями."
+            }
+        },
+
+        {
+            "file": "troll_fat.mp4",
+            "preview": "troll_fat.webp",
+
+            "en": {
+                "title": "Footprints on Curved Surfaces",
+                "description": "Implemented a footprint system that correctly adapts decals to uneven and curved surfaces. Added surface detection and adjusted the orientation and placement of footprints according to the environment."
+            },
+
+            "ru": {
+                "title": "Следы на изогнутых поверхностях",
+                "description": "Реализовал систему следов, которая корректно работает на неровных и изогнутых поверхностях. Добавил определение поверхности и настройку положения и ориентации следов в соответствии с окружением."
+            }
+        },
+
+        {
+            "file": "troll_fat.mp4",
+            "preview": "troll_fat.webp",
+
+            "en": {
+                "title": "Grass Reaction to Explosions",
+                "description": "Implemented an environmental reaction system for grass affected by explosions and other gameplay events. Added localized movement to create a more responsive interaction between effects and the environment."
+            },
+
+            "ru": {
+                "title": "Реакция травы на взрывы",
+                "description": "Реализовал систему реакции окружения на взрывы и другие игровые события. Добавил локальное движение травы, чтобы сделать взаимодействие эффектов с окружением более заметным."
+            }
+        },
+
+        {
+            "file": "troll_fat.mp4",
+            "preview": "troll_fat.webp",
+
+            "en": {
+                "title": "Magic VFX and Ability Effects",
+                "description": "Implemented gameplay-driven visual effects for magic abilities. Connected VFX behaviour to ability events and configured parameters such as timing, movement and impact effects."
+            },
+
+            "ru": {
+                "title": "VFX магии и эффектов способностей",
+                "description": "Реализовал визуальные эффекты для магических способностей. Связал поведение VFX с игровыми событиями способностей и настроил параметры анимации, движения и эффектов попадания."
+            }
+        },
+
+        {
+            "file": "troll_fat.mp4",
+            "preview": "troll_fat.webp",
+
+            "en": {
+                "title": "Ability Event System",
+                "description": "Integrated gameplay events into the ability system to control animations, visual effects and other related actions. Focused on keeping the implementation flexible and compatible with existing gameplay logic."
+            },
+
+            "ru": {
+                "title": "Система событий способностей",
+                "description": "Интегрировал игровые события в систему способностей для управления анимациями, визуальными эффектами и связанными действиями. Сделал реализацию гибкой и совместимой с существующей игровой логикой."
+            }
+        },
+
+        {
+            "file": "troll_fat.mp4",
+            "preview": "troll_fat.webp",
+
+            "en": {
+                "title": "Environment and Collision System",
+                "description": "Worked on environment and collision-related systems used by gameplay objects. Improved interaction between objects and the world while taking into account different surface and collision configurations."
+            },
+
+            "ru": {
+                "title": "Система окружения и коллизий",
+                "description": "Работал над системами окружения и коллизий, используемыми игровыми объектами. Улучшил взаимодействие объектов с игровым миром с учётом различных типов поверхностей и конфигураций коллизий."
+            }
+        },
+
+        {
+            "file": "troll_fat.mp4",
+            "preview": "troll_fat.webp",
+
+            "en": {
+                "title": "Debug and Cheat Panel",
+                "description": "Extended the internal debug and cheat panel with additional functionality. Added controls for testing gameplay states and accessing required variables and systems during development."
+            },
+
+            "ru": {
+                "title": "Debug и Cheat Panel",
+                "description": "Расширил внутреннюю debug-панель и набор инструментов для тестирования. Добавил управление игровыми состояниями и доступ к необходимым переменным и системам во время разработки."
+            }
+        },
+
+        {
+            "file": "troll_fat.mp4",
+            "preview": "troll_fat.webp",
+
+            "en": {
+                "title": "Gameplay Testing Tools",
+                "description": "Created internal tools to simplify testing of gameplay mechanics. Added controls for quickly reproducing different game states and reducing the amount of manual setup required during development."
+            },
+
+            "ru": {
+                "title": "Инструменты для тестирования механик",
+                "description": "Создавал внутренние инструменты для упрощения тестирования игровых механик. Добавил возможность быстро воспроизводить различные игровые состояния и сократил количество ручных действий при разработке."
+            }
+        },
+
+        {
+            "file": "troll_fat.mp4",
+            "preview": "troll_fat.webp",
+
+            "en": {
+                "title": "Code Refactoring and System Integration",
+                "description": "Refactored existing gameplay code and integrated new functionality into an established codebase. Focused on improving maintainability while preserving compatibility with existing systems."
+            },
+
+            "ru": {
+                "title": "Рефакторинг и интеграция систем",
+                "description": "Проводил рефакторинг существующего игрового кода и интегрировал новую функциональность в уже сформированную кодовую базу. Основное внимание уделял поддерживаемости кода и совместимости с существующими системами."
+            }
+        },
+
+        {
+            "file": "troll_fat.mp4",
+            "preview": "troll_fat.webp",
+
+            "en": {
+                "title": "Client-Server Synchronization",
+                "description": "Worked with gameplay systems in a client-server architecture. Implemented and adjusted synchronization logic to ensure that gameplay states and important object data remain consistent between client and server."
+            },
+
+            "ru": {
+                "title": "Клиент-серверная синхронизация",
+                "description": "Работал с игровыми системами в клиент-серверной архитектуре. Реализовывал и настраивал логику синхронизации, чтобы игровые состояния и важные данные объектов корректно передавались между клиентом и сервером."
+            }
+        },
+
+        {
+            "file": "troll_fat.mp4",
+            "preview": "troll_fat.webp",
+
+            "en": {
+                "title": "Dynamic Character Customization",
+                "description": "Implemented dynamic replacement of character equipment and visual elements. Ensured that model changes are correctly reflected in the final character appearance without breaking the existing animation setup."
+            },
+
+            "ru": {
+                "title": "Динамическая кастомизация персонажа",
+                "description": "Реализовал динамическую замену экипировки и визуальных элементов персонажа. Обеспечил корректное отображение изменений модели без нарушения существующей системы анимаций."
+            }
+        },
+
+        {
+            "file": "troll_fat.mp4",
+            "preview": "troll_fat.webp",
+
+            "en": {
+                "title": "Gameplay Camera System",
+                "description": "Implemented camera behaviour for different gameplay situations. Added control over camera movement and effects while integrating the functionality with existing gameplay events."
+            },
+
+            "ru": {
+                "title": "Система игровой камеры",
+                "description": "Реализовал поведение камеры для различных игровых ситуаций. Добавил управление движением и эффектами камеры и интегрировал функциональность с существующими игровыми событиями."
+            }
+        },
+
+        {
+            "file": "troll_fat.mp4",
+            "preview": "troll_fat.webp",
+
+            "en": {
+                "title": "VFX Optimization",
+                "description": "Optimized visual effects used during gameplay by adjusting effect behaviour and reducing unnecessary processing. Focused on maintaining the visual result while improving runtime performance."
+            },
+
+            "ru": {
+                "title": "Оптимизация VFX",
+                "description": "Оптимизировал визуальные эффекты, используемые во время игры, изменив их поведение и убрав лишние вычисления. Сохранил необходимый визуальный результат при улучшении производительности."
+            }
+        },
+
+        {
+            "file": "troll_fat.mp4",
+            "preview": "troll_fat.webp",
+
+            "en": {
+                "title": "Internal Developer Tool",
+                "description": "Developed an internal tool to simplify work with game systems during development. Added a convenient interface for accessing frequently used parameters and testing functionality without modifying production code."
+            },
+
+            "ru": {
+                "title": "Внутренний инструмент разработчика",
+                "description": "Разработал внутренний инструмент для упрощения работы с игровыми системами во время разработки. Добавил удобный интерфейс для доступа к часто используемым параметрам и тестирования функциональности без изменения основного игрового кода."
+            }
+        }
+    ]
+}
