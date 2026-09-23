@@ -168,7 +168,9 @@ function getVideoText(video) {
 
         description:
             languageData.description ||
-            ""
+            "",
+		note: languageData.note || 
+			""
 
     };
 
@@ -417,6 +419,16 @@ function createVideoCard(
     description.textContent =
         text.description;
 
+	if (text.note) {
+		const note = document.createElement("span");
+
+		note.className =
+			"portfolio-video-card__note";
+
+		note.textContent = text.note;
+
+		description.appendChild(note);
+	}
 
     // -----------------------------------------------------
     // Card
@@ -512,8 +524,31 @@ function openPlayer(index) {
     // Description
     // -----------------------------------------------------
 
-    playerDescription.textContent =
-        text.description;
+	playerDescription.textContent = "";
+
+	const descriptionText =
+		document.createElement("span");
+
+	descriptionText.className =
+		"portfolio-player__description-main";
+
+	descriptionText.textContent =
+		text.description;
+
+	playerDescription.appendChild(descriptionText);
+
+	if (text.note) {
+		const note =
+			document.createElement("span");
+
+		note.className =
+			"portfolio-player__description-note";
+
+		note.textContent =
+			text.note;
+
+		playerDescription.appendChild(note);
+	}
 
 
     // -----------------------------------------------------

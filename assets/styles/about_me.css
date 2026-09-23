@@ -422,6 +422,7 @@ transition:
   color: rgba(255, 255, 255, .9);
   line-height: 1.2;
   margin-bottom: 5px;
+  opacity: 0.65; 
 }
 .card.projects-card p {
   margin-bottom: 8px;
@@ -884,12 +885,12 @@ nav ul a.active:hover {
   display: flex;
   align-items: flex-start;
   gap: 16px;
-  margin-top: 9px;
+  margin-top: 8px;
 }
 
 .squid-feature img {
-  width: 55px;
-  height: 55px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
   opacity: .95;
 }
@@ -904,6 +905,7 @@ nav ul a.active:hover {
 .squid-feature p {
   color: #b9bfd9;
   line-height: 1.1;
+    font-size: 14px;
 }
 
 .squidgame-right h3 {
@@ -973,19 +975,20 @@ nav ul a.active:hover {
   max-width: 520px;
   color: #d5d9eb;
   line-height: 1.5;
-  font-size: 15px;
-  margin-bottom: 2px;
+  font-size: 16px;
+  margin-top: 2px;
+  margin-bottom: 1px;
 }
 
 .squidgame-stack {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 8px;
+  gap: 6px;
 }
 
 .squidgame-stack span {
-  padding: 8px 16px;
+  padding: 8px 10px;
   border-radius: 400px;
   background: rgba(141, 92, 255, .08);
   border: 1px solid rgba(141, 92, 255, .35);
@@ -1899,6 +1902,48 @@ nav a {
     opacity: 0.8;
 }
 
+.portfolio-player__description {
+    margin: 0 0 50px;
+
+    font-size: 15px;
+    line-height: 1.6;
+
+    opacity: 0.8;
+}
+
+.portfolio-player__description-main {
+    display: block;
+}
+
+.portfolio-player__description-note {
+    display: block;
+
+    margin-top: 8px;
+
+    font-size: 12px;
+    line-height: 1.2;
+
+    opacity: 0.45;
+}
+.portfolio-video-card__note {
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 14px;
+    line-height: 1.2;
+
+    opacity: 0.55;
+}
+
+
+.project-card {
+    padding: 22px;
+}
+
+.squidgame-showcase {
+    padding: 22px;
+}
 
 /* =========================================================
    MOBILE
