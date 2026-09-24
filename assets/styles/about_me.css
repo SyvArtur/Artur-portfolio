@@ -264,7 +264,7 @@ transition:
 
 .experience-item h3 {
   font-size: 32px;
-
+  margin-bottom: 12px;
 }
 
 .experience-item h4 {
@@ -566,7 +566,7 @@ nav ul a.active:hover {
 
 .logo {
   height: 40px;
-  width: auto;
+c
 }
 
 .sidebar,
@@ -848,7 +848,14 @@ nav ul a.active:hover {
   border: 2px solid rgba(180, 120, 255, .5);
   box-shadow: 0 0 24px rgba(130, 80, 255, .25);
 }
-
+.squidgame-logo-small {
+  width: 85px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 22px;
+  border: 2px solid rgba(180, 120, 255, .5);
+  box-shadow: 0 0 24px rgba(130, 80, 255, .25);
+  }
 .squidgame-title h2 {
   font-size: 24px;
   line-height: .9;
