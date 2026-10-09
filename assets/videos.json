@@ -1,274 +1,706 @@
 {
-    "videos": 
-    [
+  "videos": [
+    {
+      "file": "Christmas_days.mp4",
+      "preview": "Christmas_days.webp",
+      "en": {
+        "title": "Snow Theme for Christmas",
+        "description": "Implemented a snow-themed environment for the game in one day, configuring project materials and textures through custom scripts. Automated material setup and parameter configuration while ensuring full compatibility with the project's existing architecture, specific mechanics, and logic, as well as accounting for various texture types and in-game item types",
+        "note": ""
+      },
+      "ru": {
+        "title": "Снежная тема под Новый год",
+        "description": "За один день реализовал снежную тему для игры к Новому году, настроив материалы и текстуры проекта с помощью собственных скриптов. Автоматизировал настройку материалов и необходимых параметров с учетом существующей архитектуры, специфики и логики проекта, а также особенностей различных типов текстур и типов внутриигровых предметов",
+        "note": ""
+      }
+    },
+    {
+      "file": "Capture_points.mp4",
+      "preview": "Capture_points.webp",
+      "en": {
+        "title": "Point Capture",
+        "description": "Implemented client-side logic for visual effects, banners, audio, and animations for the point capture mechanic. Handled entering the capture point, the capture process, and dynamic changes to visual and audio effects based on the point state and team type, with multiplayer support",
+        "note": "The video was recorded during development. In the final version includes improved audio and visual effects"
+      },
+      "ru": {
+        "title": "Захват точки",
+        "description": "Реализовал клиентскую логику визуальных эффектов, баннеров, звуков и анимаций для механики захвата точки. Обработал вход на точку, процесс захвата и изменение визуальных и звуковых эффектов в зависимости от состояния точки и типа команды, с учетом мультиплеерной логики",
+        "note": "Видео записано в процессе разработки. В финальную версию вошли улучшенные звуки и визуальные эффекты"
+      }
+    },
+    {
+      "file": "Mount_grass_interaction.mp4",
+      "preview": "Mount_grass_interaction.webp",
+      "en": {
+        "title": "Mount",
+        "description": "Assembled and integrated the client-side riding mechanics for the mount, including VFX, SFX, and animations. Handled the behavior of both the character and the mount across all stages (idle, movement, turns, stopping, jumping, and landing), implemented smooth animation transitions between ability states for both entities, and programmed a dedicated handler for environmental interaction",
+        "note": ""
+      },
+      "ru": {
+        "title": "Маунт",
+        "description": "Реализовал клиентскую логику механики езды на маунте, включая сборку и интеграцию VFX, SFX и анимаций. Комплексно настроил поведение персонажа и маунта на всех этапах (стойка, движение, повороты, остановка, прыжок и приземление), обеспечил плавные анимационные переходы между состояниями для обеих сущностей, а также спрограммировал универсальный обработчик взаимодействия с окружающей средой",
+        "note": ""
+      }
+    },
+    {
+      "file": "Arena_Hero_Returning.mp4",
+      "preview": "Arena_Hero_Returning.webp",
+      "en": {
+        "title": "Arena Countdown",
+        "description": "Implemented a client-side countdown timer synchronized with the server, including audio feedback. Integrated VFX and SFX for the boundary zone and hit effect",
+        "note": "Proactively added a red fog effect and implemented support for different fog colors across maps. The proposal was not included in the final version, so the video shows a local modification; the final version uses the same blue fog color across all maps"
+      },
+      "ru": {
+        "title": "Обратный отсчет на арене",
+        "description": "Реализовал клиентский таймер обратного отсчета с синхронизацией с сервером и звуковым сопровождением. Интегрировал VFX и SFX ограничивающей зоны и эффект хита",
+        "note": "Инициативно добавил красный туман и реализовал возможность выбора его цвета для разных карт. Предложение не вошло в финальную версию, поэтому на видео показано локальное изменение. В финальной версии туман имеет единый синий цвет на всех картах"
+      }
+    },
+    {
+      "file": "Golems_1.mp4",
+      "preview": "Golems_1.webp",
+      "en": {
+        "title": "1. Golems: Stone and Small",
+        "description": "Responsible for the full implementation of two golems: coordinated animators, VFX artists, and audio specialists while personally integrating their assets into the game. Programmed the client-side logic for all abilities, attacks, and hit reactions. Including a stone roll, terrain-following curved laser beam, audio playback, and hit processing, while ensuring synchronization of all components",
+        "note": "The golems were almost entirely implemented by me. The update featuring the golems received positive feedback from the investor and was highly appreciated within the company. The original development footage was lost, so the presented recording was captured from a Twitch stream"
+      },
+      "ru": {
+        "title": "1. Големы: Камень и Маленький",
+        "description": "Отвечал за комплексную реализацию двух големов: координировал работу аниматоров, VFX и аудиоспециалистов, а также самостоятельно интегрировал созданные анимации, визуальные эффекты и звуки в игру. Программировал клиентскую логику всех способностей, атак и попаданий. Включая бросок камня, лазер с изгибом луча по рельефу террейна, логику воспроизведения звуков и обработки попаданий",
+        "note": "Големы были почти полностью реализованы мной. Обновление с големами получило положительную оценку со стороны инвестора и было высоко оценено внутри компании. Оригинальное видео процесса разработки было утеряно, поэтому представленная запись сделана с Twitch-стрима"
+      }
+    },
+    {
+      "file": "Golems_2.mp4",
+      "preview": "Golems_2.webp",
+      "en": {
+        "title": "2. Golems: Metal and Small",
+        "description": "Responsible for the full implementation of two golems: coordinated animators, VFX artists, and audio specialists while personally integrating their assets into the game. Programmed the client-side logic for all abilities, attacks, and hit reactions. Including a hook mechanic with a visually thrown hand mesh, terrain-following curved laser beam, audio playback, and hit processing, while ensuring synchronization of all components",
+        "note": "The golems were almost entirely implemented by me. The update featuring the golems received positive feedback from the investor and was highly appreciated within the company. The original development footage was lost, so the presented recording was captured from a Twitch stream"
+      },
+      "ru": {
+        "title": "2. Големы: Метал и Маленький",
+        "description": "Отвечал за комплексную реализацию двух големов: координировал работу аниматоров, VFX и аудиоспециалистов, а также самостоятельно интегрировал созданные анимации, визуальные эффекты и звуки в игру. Программировал клиентскую логику всех способностей, атак и попаданий. Включая механику хука с визуальным броском меша руки, лазер с изгибом луча по рельефу террейна, логику воспроизведения звуков и обработки попаданий",
+        "note": "Големы были почти полностью реализованы мной. Обновление с големами получило положительную оценку со стороны инвестора и было высоко оценено внутри компании. Оригинальное видео процесса разработки было утеряно, поэтому представленная запись сделана с Twitch-стрима"
+      }
+    },
+    {
+      "file": "Shaman_E.mp4",
+      "preview": "Shaman_E.webp",
+      "en": {
+        "title": "Lightning Strike Shaman Ability",
+        "description": "Programmed a reusable, generic handler for this type of ability, enabling unique and fully configurable Line Renderer effect shapes with adjustable parameters. Re-integrated the E Shaman ability that shoots a lightning strike from the character's hand at the selected target",
+        "note": "The original development footage was lost, so the presented recording was captured from a Twitch streams"
+      },
+      "ru": {
+        "title": "Способность Шамана \"Удар молнией\"",
+        "description": "Программировал универсальный переиспользуемый обработчик для способностей данного типа, позволяющий создавать уникальные и настраиваемые формы Line Renderer-эффектов с полной настройкой их параметров. Переинтегрировал E-шку способность шамана, которая стреляет молнией из руки в выбранную цель",
+        "note": "Оригинальное видео процесса разработки было утеряно, поэтому представленная запись сделана с Twitch-стримов"
+      }
+    },
+    {
+      "file": "ArchosaurSmall_grass_interaction.mp4",
+      "preview": "ArchosaurSmall_grass_interaction.webp",
+      "en": {
+        "title": "Small Archosaur Ability",
+        "description": "Assembled and integrated the ability on the client side, including VFX, SFX, and animations: takeoff, fireball launch, fireball flight, impact with the ground, return to the default stance, all required animation transitions between the stages of the ability, and environmental interactions",
+        "note": "Programmed a reusable, generic handler for this type of ability, enabling abilities to interact with the environment"
+      },
+      "ru": {
+        "title": "Способность маленького Архозавра",
+        "description": "Собирал и интегрировал способность на стороне клиента, включая VFX, SFX и анимации: взлёт, запуск огненного шара, полёт огненного шара, его столкновение с землёй, возврат в обычную стойку, а также все необходимые анимационные переходы между этапами способности и взаимодействие с окружающей средой",
+        "note": "Программировал универсальный переиспользуемый обработчик для способностей данного типа, позволяющий им взаимодействовать с окружающей средой"
+      }
+    },
+    {
+      "file": "Skillshot_RayCast_Optimization.mp4",
+      "preview": "Skillshot_RayCast_Optimization.webp",
+      "en": {
+        "title": "Terrain-Aware Effect Alignment System",
+        "description": "Developed systems for correctly aligning VFX and other visual effects with height variations after unique locations and terrains with different elevation profiles were introduced into the game. Implemented two approaches: correctly displaying trails perpendicular to the terrain surface and adapting the trajectories of moving ability effects to height variations, demonstrated with an axe throw. The developed systems were later reused for other trails, abilities, and visual effects",
+        "note": "Before these systems were implemented, abilities and visual effects were displayed extremely poorly on areas with height variations: effects could clip through the terrain, float in the air, or appear unnatural. Proposed and developed my own solution to this problem, which was adopted and later used for various abilities and visual effects. The solution received positive feedback and was applied to other similar systems"
+      },
+      "ru": {
+        "title": "Система адаптации эффектов к рельефу",
+        "description": "Разработал системы для корректного выравнивания VFX и других визуальных эффектов относительно перепадов высот после появления в игре уникальных локаций и террейнов с различным рельефом. Реализовал два подхода: корректное отображение следов перпендикулярно поверхности террейна и адаптацию траектории движущихся эффектов способностей к перепадам высот, на примере броска секиры. Разработанные системы впоследствии использовались для других следов, способностей и визуальных эффектов",
+        "note": "До внедрения этих систем способности и визуальные эффекты крайне некорректно отображались на участках с перепадами высот: эффекты могли проваливаться под поверхность террейна, зависать в воздухе или выглядеть неестественно. Предложил и разработал собственное решение этой проблемы, которое было принято и впоследствии использовалось для различных способностей и визуальных эффектов. Решение получило положительную оценку и было применено в других аналогичных системах"
+      }
+    },
+    {
+      "file": "Sinologist.mp4",
+      "preview": "Sinologist.webp",
+      "en": {
+        "title": "Sinologist",
+        "description": "Assembled and integrated all abilities on the client side, including VFX, SFX, and animations: an aura that detects invisible characters, hero detection, halberd throwing, halberd embedding into the ground, and its subsequent disappearance using a dissolve effect. Programmed 3 reusable, generic handlers for this type of ability: the first - a system for correctly displaying effect icons while accounting for the specifics of the isometric camera; the second - for moving objects along unique yet configurable trajectories; and the third - a universal handler for configurable dissolve effects",
+        "note": "The original development footage was lost, so the presented recording was captured from a Twitch stream"
+      },
+      "ru": {
+        "title": "Синологист",
+        "description": "Собирал и интегрировал все способности на стороне клиента, включая VFX, SFX и анимации: ауру, обнаруживающую невидимых персонажей, обнаружение героя, бросок алебарды, втыкание алебарды в землю и её последующее исчезновение с помощью dissolve-эффекта. Программировал 3 универсальных переиспользуемых обработчика для способностей данного типа: первый - систему корректного отображения иконочных эффектов с учетом особенностей изометрической камеры; второй - для перемещения объектов по уникальной, но настраиваемой траектории; третий - универсальный обработчик настраиваемого dissolve-эффекта",
+        "note": "Оригинальное видео процесса разработки было утеряно, поэтому представленная запись сделана с Twitch-стрима"
+      }
+    },
+    {
+      "file": "Shrine_teleportation_effect_interaction.mp4",
+      "preview": "Shrine_teleportation_effect_interaction.webp",
+      "en": {
+        "title": "1. Teleportation Shrine",
+        "description": "Programmed a reusable handler for a configurable dissolve effect. In the presented implementation, configured a fast blue dissolve effect with the weapon and then the character disappearing from bottom to top. Integrated VFX and SFX for all the teleportation effects in the game",
+        "note": ""
+      },
+      "ru": {
+        "title": "1. Святилище телепортации",
+        "description": "Программировал универсальный обработчик настраиваемого dissolve-эффекта. В представленной реализации настроил быстрый синий dissolve-эффект с последовательным исчезновением оружия, а затем персонажа снизу вверх. Интегрировал VFX и SFX для всех эффектов телепортации в игре",
+        "note": ""
+      }
+    },
+    {
+      "file": "Teleportation_Stone.mp4",
+      "preview": "Teleportation_Stone.webp",
+      "en": {
+        "title": "2. Teleportation Shrine",
+        "description": "Also fixed an issue causing environmental parameters, such as weather filters, color grading, cloud shadows, and other effects, to transition gradually during teleportation instead of switching instantly afterward",
+        "note": ""
+      },
+      "ru": {
+        "title": "2. Святилище телепортации",
+        "description": "Также исправил баг с постепенной сменой параметров окружения (погодные фильтры, цветовая гамма, тени от облаков и другие эффекты) при телепортации, обеспечив их мгновенное переключение после телепорта",
+        "note": ""
+      }
+    },
+    {
+      "file": "Synthesis_Machine.mp4",
+      "preview": "Synthesis_Machine.webp",
+      "en": {
+        "title": "Synthesis Machine Menu",
+        "description": "Assembled and integrated the menu on the client side, including VFX, SFX, and animations for the created items",
+        "note": "The original development footage was lost, so the presented recording was captured from a Twitch stream"
+      },
+      "ru": {
+        "title": "Меню Синтез Машины",
+        "description": "Собирал и интегрировал данное меню на стороне клиента, включая VFX, SFX и анимации создаваемых предметов",
+        "note": "Оригинальное видео процесса разработки было утеряно, поэтому представленная запись сделана с Twitch-стрима"
+      }
+    },
+    {
+      "file": "Lizard_Draco_Tornado_Swing.mp4",
+      "preview": "Lizard_Draco_Tornado_Swing.webp",
+      "en": {
+        "title": "Lizard Draco Ability - Tornado Swing",
+        "description": "Assembled and integrated the ability on the client side, including VFX, SFX, and animations. Programmed a reusable, generic handler for this type of ability, enabling environmental interactions",
+        "note": ""
+      },
+      "ru": {
+        "title": "Абилка Лизард Драко - Вихревой удар",
+        "description": "Собрал и интегрировал способность на стороне клиента, включая VFX, SFX и анимации. Программировал универсальный переиспользуемый обработчик для способностей данного типа, позволяющий им взаимодействовать с окружающей средой",
+        "note": ""
+      }
+    },
+    {
+      "file": "Archosaur_grass_interaction.mp4",
+      "preview": "Archosaur_grass_interaction.webp",
+      "en": {
+        "title": "Archosaur Ability",
+        "description": "Integrated VFX, SFX, and animations for the full ability sequence, including preparation, fire breath with environmental interaction, and returning to the default stance. Programmed a reusable, generic handler for this type of ability, enabling abilities to interact with the environment",
+        "note": "The video was recorded during development. The animation transition between the preparation and fire breath was refined"
+      },
+      "ru": {
+        "title": "Archosaur Ability",
+        "description": "Интегрировал VFX, SFX и анимации полной последовательности способности: подготовка, огненное дыхание с воздействием на окружающую среду и возврат в обычную стойку. Программировал универсальный переиспользуемый обработчик для способностей данного типа, позволяющий им взаимодействовать с окружающей средой",
+        "note": "Видео записано в процессе разработки. Анимационный переход между подготовкой и самим огненным дыханием был доработан"
+      }
+    },
+    {
+      "file": "ArchosaurBig_back_strikes.mp4",
+      "preview": "ArchosaurBig_back_strikes.webp",
+      "en": {
+        "title": "Archosaur Ability",
+        "description": "Integrated VFX, SFX, and animations for the Archosaur ability, including spike launching, falling and ground area creation, as well as trigger-based activation resulting in an explosion and damage",
+        "note": "The video was recorded in an empty test environment not present in the game to reduce the load on the game engine"
+      },
+      "ru": {
+        "title": "Способность Архозавра",
+        "description": "Интегрировал VFX, SFX и анимации способности Архозавра: запуск шипов из спины, их падение и создание области на земле, а также активацию при наступании с последующим взрывом и нанесением урона",
+        "note": "Видео снято в пустой тестовой локации, отсутствующей в игре, чтобы снизить нагрузку на игровой движок"
+      }
+    },
+    {
+      "file": "Set_selected_objects_perpendicular_to_terrain.mp4",
+      "preview": "Set_selected_objects_perpendicular_to_terrain.webp",
+      "en": {
+        "title": "Level Design Tool Module",
+        "description": "Developed an automated terrain-alignment tool by integrating a button and hotkey into the existing Level Design tool. Used raycasts at three points of the object to determine the surface orientation, construct a plane, and align the object accordingly",
+        "note": "The feature was implemented voluntarily as additional work at the request of the Level Design team and significantly reduced the amount of manual work required for object placement"
+      },
+      "ru": {
+        "title": "Модуль для Level Design",
+        "description": "Разработал инструмент автоматического выравнивания объектов по террейну, интегрировав кнопку и горячую клавишу в существующий Level Design tool. Для определения ориентации поверхности использовал Raycast в трех точках объекта с последующим построением плоскости и выравниванием объекта относительно нее",
+        "note": "Функция была реализована по собственной инициативе в рамках дополнительной работы в нерабочее время по просьбе команды Level Design и значительно сократила объем ручной работы при расстановке объектов"
+      }
+    },
+    {
+      "file": "Dendroid_Guard_GrassInteraction_E.mp4",
+      "preview": "Dendroid_Guard_GrassInteraction_E.webp",
+      "en": {
+        "title": "Dendroid Guard Ability",
+        "description": "Assembled and integrated the ability on the client side, including VFX, SFX, and animations: preparation, root movement, return to the default stance, all required animation transitions between the stages of the ability, environmental interactions, and other elements",
+        "note": "In the video, the character returns to the out-of-combat stance because the recording was made using cheats while out of combat. In normal gameplay, creatures use abilities only while in combat stance. Programmed a reusable, generic handler for this type of ability, enabling abilities to interact with the environment"
+      },
+      "ru": {
+        "title": "Способность Дендроид Гварда",
+        "description": "Собирал и интегрировал способность на стороне клиента, включая VFX, SFX и анимации: подготовку, движение корней, возврат в обычную стойку, все необходимые анимационные переходы между этапами способности, взаимодействие с окружающей средой и другие элементы",
+        "note": "На видео персонаж возвращается в небоевую стойку, так как запись была сделана с читами вне боя. В обычной игре существа используют способности только в боевой стойке. Программировал универсальный переиспользуемый обработчик для способностей данного типа, позволяющий им взаимодействовать с окружающей средой"
+      }
+    },
+    {
+      "file": "Dendroid_Guard_GrassInteraction_W.mp4",
+      "preview": "Dendroid_Guard_GrassInteraction_W.webp",
+      "en": {
+        "title": "Dendroid Guard Ability",
+        "description": "Assembled and integrated the ability on the client side, including VFX, SFX, and animations: preparation, ground slam, first and second explosions, return to the default stance, all required animation transitions between the stages of the ability, environmental interactions, and other elements",
+        "note": "In the video, the character returns to the out-of-combat stance because the recording was made using cheats while out of combat. In normal gameplay, creatures use abilities only while in combat stance. Programmed a reusable, generic handler for this type of ability, enabling abilities to interact with the environment"
+      },
+      "ru": {
+        "title": "Способность Дендроид Гварда",
+        "description": "Собирал и интегрировал способность на стороне клиента, включая VFX, SFX и анимации: подготовку, удар об землю, первый и второй взрывы, возврат в обычную стойку, все необходимые анимационные переходы между этапами способности, взаимодействие с окружающей средой и другие элементы",
+        "note": "На видео персонаж возвращается в небоевую стойку, так как запись была сделана с читами вне боя. В обычной игре существа используют способности только в боевой стойке. Программировал универсальный переиспользуемый обработчик для способностей данного типа, позволяющий им взаимодействовать с окружающей средой"
+      }
+    },
+    {
+      "file": "Dendroid_MA_GrassIntraction.mp4",
+      "preview": "Dendroid_MA_GrassIntraction.webp",
+      "en": {
+        "title": "Dendroid Guard Melee Attack",
+        "description": "Assembled and integrated the melee attack on the client side, including VFX, SFX, and animations: preparation, attack, all required animation transitions between the stages of the attack, environmental interactions, and other elements",
+        "note": "Programmed a reusable, generic handler for this type of ability, enabling it to interact with the environment"
+      },
+      "ru": {
+        "title": "Ближняя атака Дендроид Гварда",
+        "description": "Собирал и интегрировал ближнюю атаку на стороне клиента, включая VFX, SFX и анимации: подготовку, удар, все необходимые анимационные переходы между этапами атаки, взаимодействие с окружающей средой и другие элементы",
+        "note": "Программировал универсальный переиспользуемый обработчик для способностей данного типа, позволяющий им взаимодействовать с окружающей средой"
+      }
+    },
+    {
+      "file": "Lizard_Draco_Abilities.mp4",
+      "preview": "Lizard_Draco_Abilities.webp",
+      "en": {
+        "title": "Lizard Draco",
+        "description": "Programmed a reusable, generic handler for this type of ability, enabling unique and fully configurable Line Renderer effect shapes with adjustable parameters for the creature-summoning ability (Mant). Assembled and integrated all abilities on the client side, including VFX, SFX, and animations. Implemented the summoning of Mant creatures followed by their explosion, vertical and horizontal tail attacks with environmental interaction, and a bite attack. Programmed a reusable, generic handler for this type of ability, enabling abilities to interact with the environment",
+        "note": ""
+      },
+      "ru": {
+        "title": "Лизард Драко",
+        "description": "Программировал универсальный переиспользуемый обработчик для способностей данного типа, позволяющий создавать уникальные и настраиваемые формы Line Renderer-эффектов с полной настройкой их параметров для способности призыва существ (Мант). Собирал и интегрировал все способности на стороне клиента, включая VFX, SFX и анимации. Включая призыв Мант с последующим взрывом, вертикальный и горизонтальный удар хвостом с воздействием на окружающую среду, а также укус. Программировал универсальный переиспользуемый обработчик для способностей данного типа, позволяющий им взаимодействовать с окружающей средой",
+        "note": ""
+      }
+    },
+    {
+      "file": "Upgrade_Get_items_menu_cheat_panel.mp4",
+      "preview": "Upgrade_Get_items_menu_cheat_panel.webp",
+      "en": {
+        "title": "Get Items Menu Cheat",
+        "description": "Significantly expanded and improved the Get Items Menu testing cheat by adding numerous filters, categories, additional buttons, and other functionality while working within the complex architecture of a large-scale project. These in-game testing tools significantly simplified the testing process for the development team",
+        "note": "I independently developed the entire Cool Cheats category of in-game testing cheats. The original video demonstrating these tools was lost, but they significantly simplified and accelerated the testing process for the development team"
+      },
+      "ru": {
+        "title": "Чит меню получение предметов",
+        "description": "Значительно расширил и улучшил чит для тестирования \"Get Items Menu\", добавив множество фильтров, категорий, дополнительных кнопок и других функций с учетом сложной архитектуры крупного проекта. Данный набор внутриигровых инструментов значительно упростил процесс тестирования для команды разработчиков",
+        "note": "Самостоятельно разработал всю категорию внутриигровых читов \"Cool Cheats\". Видео с использованием этих инструментов было утеряно, однако они существенно упростили и ускорили процесс тестирования для команды разработки"
+      }
+    },
+    {
+      "file": "Unit_Spawn_Window.mp4",
+      "preview": "Unit_Spawn_Window.webp",
+      "en": {
+        "title": "Testing Cheat: Unit Spawning",
+        "description": "Optimized a number of testing tools. The video demonstrates the unit spawning menu as an example, which previously suffered from severe performance issues. Due to the project's specific architecture, programmers were reluctant to take on its optimization, so I independently investigated the issue and optimized the tool, significantly improving its performance",
+        "note": ""
+      },
+      "ru": {
+        "title": "Чит для тестирования: спавн юнитов",
+        "description": "Оптимизировал ряд инструментов для тестирования. На видео в качестве примера представлено меню спавна юнитов, которое ранее сильно зависало. Из-за специфичной архитектуры проекта программисты не хотели браться за его оптимизацию, поэтому я самостоятельно исследовал проблему и оптимизировал этот инструмент, значительно улучшив его производительность",
+        "note": ""
+      }
+    },
+    {
+      "file": "Remove_items_cheat.mp4",
+      "preview": "Remove_items_cheat.webp",
+      "en": {
+        "title": "Remove Items Cheat",
+        "description": "One of the testing cheats from the Cool Cheats category that I developed — Remove Items, designed to remove all items from the inventory. The tool was created at the personal request of the testing team",
+        "note": "Since its development was outside my main scope of responsibilities and was done alongside my regular workload, I dedicated unpaid overtime to implementing it"
+      },
+      "ru": {
+        "title": "Чит удаления предметов",
+        "description": "Один из читов разработанной мной категории Cool Cheats - Remove Items, предназначенный для удаления всех предметов из инвентаря. Данный инструмент был создан по личному запросу команды тестирования",
+        "note": "Поскольку его разработка не входила в мой основной пул задач и выполнялась параллельно с основной работой, я самостоятельно выделял для этого неоплачиваемое дополнительное время"
+      }
+    },
+    {
+      "file": "Werewolf_soldier_cheat_example.mp4",
+      "preview": "Werewolf_soldier_cheat_example.webp",
+      "en": {
+        "title": "Werewolf Soldier Ability In Development",
+        "description": "Programmed a testing cheat that visually displayed the actual damage areas of the abilities, which was required by multiple departments. Also integrated the ability on the client side, including the required VFX, SFX, and animations",
+        "note": "The video was recorded during development. The ability was later refined and properly integrated (next video)"
+      },
+      "ru": {
+        "title": "Способность Оборотня-солдата в разработке",
+        "description": "Программировал чит для тестирования, позволяющий визуально отображать фактическую зону нанесения урона способностей, что было необходимо для работы нескольких отделов. Также интегрировал способность на стороне клиента, включая необходимые VFX, SFX и анимации",
+        "note": "Видео было записано в процессе разработки. Позже способность была доработана и корректно интегрирована (следующее видео)"
+      }
+    },
+    {
+      "file": "Werewolf_soldier_spear_throw.mp4",
+      "preview": "Werewolf_soldier_spear_throw.webp",
+      "en": {
+        "title": "Werewolf Soldier Ability",
+        "description": "Assembled and integrated the ability on the client side, including VFX, SFX, and animations: throw preparation, axe throw, axe flight, embedding the axe into the ground, and subsequent axe pickup. Programmed two reusable, generic handlers for this type of ability: one for moving objects along unique yet configurable trajectories, and another for abilities where the visual effect is replaced by the actual in-game unit object at the end of its flight, with the required client-side logic for this transition",
+        "note": "The video was recorded in an empty test environment not present in the game to reduce the load on the game engine"
+      },
+      "ru": {
+        "title": "Способность Оборотня-солдата",
+        "description": "Собирал и интегрировал способность на стороне клиента, включая VFX, SFX и анимации: подготовку к броску, бросок, полёт топора, его втыкание в землю и последующее поднятие топора. Программировал два универсальных переиспользуемых обработчика для способностей данного типа: один - для перемещения объектов по уникальной, но настраиваемой траектории; второй - для способностей, в которых по завершении полёта визуальный эффект заменяется на реальный игровой объект юнита, с необходимой клиентской логикой такой подмены",
+        "note": "Видео снято в пустой тестовой локации, отсутствующей в игре, чтобы снизить нагрузку на игровой движок"
+      }
+    },
         {
-            "file": "troll_fat.mp4",
-            "preview": "troll_fat.webp",
-
-            "en": {
-                "title": "Character Assembly System",
-                "description": "Implemented a character assembly system from separate body parts. Added dynamic model customization and ensured that all character elements remain correctly synchronized."
-            },
-
-            "ru": {
-                "title": "Система сборки персонажа",
-                "description": "Реализовал систему сборки персонажа из отдельных частей тела. Добавил динамическую замену элементов модели и обеспечил корректную синхронизацию всех частей персонажа."
-            }
-        },
+      "file": "Rat_Werewolf_E_R.mp4",
+      "preview": "Rat_Werewolf_E_R.webp",
+      "en": {
+        "title": "Werewolf Rat Abilities",
+        "description": "Assembled and integrated the abilities on the client side, including VFX, SFX, and animations. Responsible for the client-side abilities logic, synchronization of all timings between its stages, and integration of other required elements",
+        "note": "In the video, the character returns to the out-of-combat stance because the recording was made using cheats while out of combat. Unfortunately, the sound effects were not recorded. In normal gameplay, creatures use abilities only in combat stance. The video was also recorded in an empty test environment not present in the game to reduce the load on the game engine"
+      },
+      "ru": {
+        "title": "Способности Оборотня-крысы",
+        "description": "Собирал и интегрировал способности на стороне клиента, включая VFX, SFX и анимации. Отвечал за клиентскую логику способностей, синхронизацию всех таймингов между их этапами и интеграцию других необходимых элементов",
+        "note": "На видео персонаж возвращается в небоевую стойку, так как запись была сделана с читами вне боя. К сожалению, звуковые эффекты не были записаны. В обычной игре существа используют способности только в боевой стойке. Видео также снято в пустой тестовой локации, отсутствующей в игре, чтобы снизить нагрузку на игровой движок"
+      }
+    },
+    {
+      "file": "Item_Drop_Customization.mp4",
+      "preview": "Item_Drop_Customization.webp",
+      "en": {
+        "title": "Item Drop Customization",
+        "description": "Implemented support for configuring a custom model or VFX for each type of Destroyable Object, which appears after the object is destroyed and remains visible until it is replaced with the actual item that can be picked up. This allowed unique visual effects to be used for different object types",
+        "note": "A fireball is intentionally shown in the video instead of the final VFX corresponding to this seed type to make the mechanic easier to understand"
+      },
+      "ru": {
+        "title": "Кастомизация выпадения предметов",
+        "description": "Реализовал возможность настраивать для каждого типа разрушаемых объектов (Destroyable Objects) собственную модель или VFX, которые появляются после разрушения объекта и отображаются до момента замены на реальный предмет, доступный для подбора. Это позволило использовать уникальные визуальные эффекты для разных типов обьектов",
+        "note": "На видео намеренно показан огненный шар вместо финального VFX, соответствующего данному типу семян, для лучшего понимания механики"
+      }
+    },
+    {
+      "file": "Rebel_Droid_Gunner.mp4",
+      "preview": "Rebel_Droid_Gunner.webp",
+      "en": {
+        "title": "Rebel Droid Gunner",
+        "description": "Assembled and integrated all abilities on the client side, including VFX, SFX, and animations: minigun firing, bullet trajectories, hit effects, reload, and ground effects from missed bullets. Programmed a reusable, generic handler for this type of ability, allowing additional effects to be triggered when an attack misses a character — in this case, a visual trail at the end of the bullet's trajectory",
+        "note": "The video also demonstrates a relatively new mechanic developed by me that is not present in the older recordings: separate hit-effect types for regular and critical hits depending on the attack type. In this case, a hit effect representing metal hitting flesh is used"
+      },
+      "ru": {
+        "title": "Бунтарь-дроид: пулемётчик",
+        "description": "Собирал и интегрировал все способности на стороне клиента, включая VFX, SFX и анимации: стрельбу из минигана, полёт пуль, хит-эффекты, перезарядку и визуальные эффекты в земле от промахнувшихся пуль. Программировал универсальный переиспользуемый обработчик для способностей данного типа, позволяющий вызывать дополнительные эффекты при промахе по персонажу - в данном случае визуальный след в конце полёта пули",
+        "note": "На видео также демонстрируется относительно новая механика, разработанная мной и отсутствующая в более старых записях: отдельные типы hit-эффектов для обычных и критических ударов в зависимости от типа атаки. В представленном случае используется hit-эффект попадания металла по плоти"
+      }
+    },
+    {
+      "file": "Swarm_Termine_Q_ability.mp4",
+      "preview": "Swarm_Termine_Q_ability.webp",
+      "en": {
+        "title": "Swarm Termine Ability",
+        "description": "Assembled and integrated the ability on the client side, including VFX, SFX, and animations: preparation, ground slam, return to the default stance, all required animation transitions between the stages of the ability, environmental interactions, and other elements. Programmed a reusable, generic handler for this type of ability, enabling it to interact with the environment",
+        "note": "In the video, the character returns to the out-of-combat stance because the recording was made using cheats while out of combat. In normal gameplay, creatures use abilities only while in combat stance"
+      },
+      "ru": {
+        "title": "Способность Болотного Термита",
+        "description": "Собирал и интегрировал способность на стороне клиента, включая VFX, SFX и анимации: подготовку, удар об землю, возврат в обычную стойку, все необходимые анимационные переходы между этапами способности, взаимодействие с окружающей средой и другие элементы. Программировал универсальный переиспользуемый обработчик для способностей данного типа, позволяющий им взаимодействовать с окружающей средой",
+        "note": "На видео персонаж возвращается в небоевую стойку, так как запись была сделана с читами вне боя. В обычной игре существа используют способности только в боевой стойке"
+      }
+    },
+    {
+      "file": "Sound_when_inventory_is_full.mp4",
+      "preview": "Sound_when_inventory_is_full.webp",
+      "en": {
+        "title": "Inventory Full Sound",
+        "description": "Integrated an audio effect triggered when the inventory becomes full",
+        "note": "The sound in the video is a test effect used to demonstrate the functionality. It was later replaced with a more suitable final version"
+      },
+      "ru": {
+        "title": "Звук переполнения инвентаря",
+        "description": "Интегрировал звуковой эффект, воспроизводимый при заполнении инвентаря",
+        "note": "Звук на видео является тестовым и используется для демонстрации работы механики. Позже он был заменён на более подходящий финальный вариант"
+      }
+    },
+    {
+      "file": "Item_inventory_move.mp4",
+      "preview": "Item_inventory_move.webp",
+      "en": {
+        "title": "Inventory Item Dragging",
+        "description": "Implemented logic to play different sounds when moving items in the inventory based on their item type",
+        "note": ""
+      },
+      "ru": {
+        "title": "Перетаскивание предметов в инвентаре",
+        "description": "Реализовал логику воспроизведения различных звуков при перемещении предметов в инвентаре в зависимости от их типа",
+        "note": ""
+      }
+    },
+    {
+      "file": "Woodraptor_grass_interaction.mp4",
+      "preview": "Woodraptor_grass_interaction.webp",
+      "en": {
+        "title": "Woodraptor Ability",
+        "description": "In the video, the character returns to the out-of-combat stance because the recording was made using cheats while out of combat. In normal gameplay, creatures use abilities only while in combat stance. Integrated VFX, SFX, and animations for the ability. Programmed a reusable, generic handler for this type of ability, enabling it to interact with the environment",
+        "note": ""
+      },
+      "ru": {
+        "title": "Способность Вудраптора",
+        "description": "На видео персонаж возвращается в небоевую стойку, так как запись была сделана с читами вне боя. В обычной игре существа используют способности только в боевой стойке. Интегрировал VFX, SFX и анимации для данной способности. Программировал универсальный переиспользуемый обработчик для способностей данного типа, позволяющий им взаимодействовать с окружающей средой",
+        "note": ""
+      }
+    },
+    {
+      "file": "Warmonger_Legionary_Male_W4_Landing.mp4",
+      "preview": "Warmonger_Legionary_Male_W4_Landing.webp",
+      "en": {
+        "title": "Hero Legionary Ability",
+        "description": "Assembled and integrated the ability on the client side, including VFX, SFX, and animations: jump preparation, jump, landing, return to the default stance, and all required animation transitions between the stages of the ability",
+        "note": "The video was recorded during development. The final version includes improved visual effects"
+      },
+      "ru": {
+        "title": "Способность Героя Легионера",
+        "description": "Собирал и интегрировал способность на стороне клиента, включая VFX, SFX и анимации: подготовку к прыжку, прыжок, приземление, возврат в обычную стойку, а также все необходимые анимационные переходы между этапами способности",
+        "note": "Видео записано в процессе разработки. В финальную версию вошли улучшенные визуальные эффекты"
+      }
+    },
+    {
+      "file": "Resurrection_timer_sound.mp4",
+      "preview": "Resurrection_timer_sound.webp",
+      "en": {
+        "title": "Resurrection",
+        "description": "Implemented audio feedback for the resurrection mechanic, including a client-side countdown timer and a sound played at the moment of resurrection",
+        "note": ""
+      },
+      "ru": {
+        "title": "Возрождение",
+        "description": "Реализовал звуковое сопровождение механики возрождения, включая клиентский таймер обратного отсчёта и звук, воспроизводимый непосредственно в момент возрождения",
+        "note": ""
+      }
+    },
+    {
+      "file": "Clown_Tractor_Mount.mp4",
+      "preview": "Clown_Tractor_Mount.webp",
+      "en": {
+        "title": "Clown Tractor Mount",
+        "description": "Assembled and integrated the client-side riding mechanics for this type of mount, including VFX, SFX, and animations",
+        "note": "The video was recorded in an empty test environment not present in the game to reduce the load on the game engine"
+      },
+      "ru": {
+        "title": "Маунт \"Клоунский трактор\"",
+        "description": "Собирал и интегрировал механику езды на стороне клиента для данного типа маунта, включая VFX, SFX и анимации",
+        "note": "Видео снято в пустой тестовой локации, отсутствующей в игре, чтобы снизить нагрузку на игровой движок"
+      }
+    },
+        {
+      "file": "Rat_Werewolf_W.mp4",
+      "preview": "Rat_Werewolf_W.webp",
+      "en": {
+        "title": "Werewolf Rat Ability",
+        "description": "Assembled and integrated the ability on the client side, including VFX, SFX, and animations. Responsible for the client-side ability logic, synchronization of all timings between its stages, and integration of other required elements",
+        "note": "In the video, the character returns to the out-of-combat stance because the recording was made using cheats while out of combat. Unfortunately, the sound effects were not recorded. In normal gameplay, creatures use abilities only in combat stance. The video was also recorded in an empty test environment not present in the game to reduce the load on the game engine"
+      },
+      "ru": {
+        "title": "Способность Оборотня-крысы",
+        "description": "Собирал и интегрировал способность на стороне клиента, включая VFX, SFX и анимации. Отвечал за клиентскую логику способности, синхронизацию всех таймингов между её этапами и интеграцию других необходимых элементов",
+        "note": "На видео персонаж возвращается в небоевую стойку, так как запись была сделана с читами вне боя. К сожалению, звуковые эффекты не были записаны. В обычной игре существа используют способности только в боевой стойке. Видео также снято в пустой тестовой локации, отсутствующей в игре, чтобы снизить нагрузку на игровой движок"
+      }
+    },
 
         {
-            "file": "troll_fat.mp4",
-            "preview": "troll_fat.webp",
-
-            "en": {
-                "title": "Character Animation Recording",
-                "description": "Developed functionality for recording and processing character animations. Integrated the recorded data into the existing animation workflow and adjusted the system to work with different character configurations."
-            },
-
-            "ru": {
-                "title": "Запись анимаций персонажа",
-                "description": "Разработал функциональность для записи и обработки анимаций персонажа. Интегрировал полученные данные в существующий процесс работы с анимациями и адаптировал систему под разные конфигурации персонажей."
-            }
-        },
-
+      "file": "Ranger_R.mp4",
+      "preview": "Ranger_R.webp",
+      "en": {
+        "title": "Saltation Ranger Ability",
+        "description": "Assembled and integrated the ability on the client side, including VFX, SFX, and animations: preparation, throwing incendiary projectiles, backward jump, landing, return to the default stance, all required animation transitions between the stages of the ability, and environmental interactions",
+        "note": "Programmed a reusable, generic handler for this type of ability, enabling environmental interactions. The video was recorded in an empty test environment not present in the game to reduce the load on the game engine, so the environmental interactions are not visible"
+      },
+      "ru": {
+        "title": "Способность Ренжера \"Сальтация\"",
+        "description": "Собирал и интегрировал способность на стороне клиента, включая VFX, SFX и анимации: подготовку, бросок поджигающих снарядов, прыжок назад, приземление, возврат в обычную стойку, все необходимые анимационные переходы между этапами способности и взаимодействие с окружающей средой",
+        "note": "Программировал универсальный обработчик для способностей данного типа, позволяющий им взаимодействовать с окружающей средой. Видео записано в пустой тестовой локации, отсутствующей в игре, чтобы снизить нагрузку на игровой движок, поэтому взаимодействие с окружающей средой на нём не отображается"
+      }
+    },
+    {
+      "file": "Troll_boss_rusty_circle_strike.mp4",
+      "preview": "Troll_boss_rusty_circle_strike.webp",
+      "en": {
+        "title": "Troll Rusty Boss Ability",
+        "description": "Assembled and integrated the ability on the client side, including VFX, SFX, and animations. Responsible for the client-side ability logic, synchronization of all timings between its stages, and integration of other required elements",
+        "note": "The video was recorded in an empty test environment not present in the game to reduce the load on the game engine"
+      },
+      "ru": {
+        "title": "Способность Троля Босса",
+        "description": "Собирал и интегрировал способность на стороне клиента, включая VFX, SFX и анимации. Отвечал за клиентскую логику способности, синхронизацию всех таймингов между её этапами и интеграцию других необходимых элементов",
+        "note": "Видео снято в пустой тестовой локации, отсутствующей в игре, чтобы снизить нагрузку на игровой движок"
+      }
+    },
+                    {
+      "file": "Mech_Spider_Dungeon.mp4",
+      "preview": "Mech_Spider_Dungeon.webp",
+      "en": {
+        "title": "Mech Spider Dungeon Mount",
+        "description": "Assembled and integrated the client-side riding mechanics for this type of mount, including VFX, SFX, and animations",
+        "note": "The video was recorded in an empty test environment not present in the game to reduce the load on the game engine"
+      },
+      "ru": {
+        "title": "Маунт \"Механический паук подземелье\"",
+        "description": "Собирал и интегрировал механику езды на стороне клиента для данного типа маунта, включая VFX, SFX и анимации",
+        "note": "Видео снято в пустой тестовой локации, отсутствующей в игре, чтобы снизить нагрузку на игровой движок"
+      }
+    },
+    {
+      "file": "Mount_Sounds.mp4",
+      "preview": "Mount_Sounds.webp",
+      "en": {
+        "title": "Mounting",
+        "description": "Assembled and integrated the client-side mounting mechanic, including VFX, SFX, and animations: preparation with audio feedback, appearance of the mount and character with a dissolve effect, all required animation transitions between the stages of the ability for both the mount and the character, environmental interactions, and other elements",
+        "note": "Programmed a universal handler for a configurable dissolve effect. In the presented implementation, configured a fast blue dissolve effect for the character's appearance on the mount"
+      },
+      "ru": {
+        "title": "Посадка на маунта",
+        "description": "Собирал и интегрировал механику посадки на маунта на стороне клиента, включая VFX, SFX и анимации: подготовку с звуковым сопровождением, появление маунта и персонажа с dissolve-эффектом, все необходимые анимационные переходы между этапами способности для маунта и героя, взаимодействие с окружающей средой и другие элементы",
+        "note": "Программировал универсальный обработчик настраиваемого dissolve-эффекта. В представленной реализации настроил быстрый синий dissolve-эффект для появления героя на маунте"
+      }
+    },
+    {
+      "file": "Play_sound_when_selecting_mount_in_preview_window_by_mount_type.mp4",
+      "preview": "Play_sound_when_selecting_mount_in_preview_window_by_mount_type.webp",
+      "en": {
+        "title": "Mount Menu",
+        "description": "Programmed client-side UI audio playback for the specific player in the mount menu, taking into account the complex architecture of the menu and the displayed character. Implemented support for unique sounds for different mount types",
+        "note": "The video was recorded during testing while the functionality was still being developed. In the final version, most mounts received unique sounds specifically for the UI menu"
+      },
+      "ru": {
+        "title": "Меню маунтов",
+        "description": "Программировал воспроизведение UI-звуков на стороне клиента для конкретного игрока в меню маунтов с учетом сложной архитектуры меню и отображаемого персонажа. Реализовал поддержку уникальных звуков для разных типов маунтов",
+        "note": "Видео записано в тестовой версии, когда функциональность только разрабатывалась. В финальной версии для большинства маунтов были добавлены уникальные звуки специально для UI-меню"
+      }
+    },
+            {
+      "file": "Troll_boss_rusty.mp4",
+      "preview": "Troll_boss_rusty.webp",
+      "en": {
+        "title": "Troll Rusty Boss",
+        "description": "Assembled and integrated the abilities on the client side, including VFX, SFX, and animations. Responsible for the client-side abilities logic, synchronization of all timings between its stages, and integration of other required elements",
+        "note": "The video contains a clip from a stream, as the original development recording was lost"
+      },
+      "ru": {
+        "title": "Троль Босс",
+        "description": "Собирал и интегрировал способности на стороне клиента, включая VFX, SFX и анимации. Отвечал за клиентскую логику способностей, синхронизацию всех таймингов между их этапами и интеграцию других необходимых элементов",
+        "note": "На видео представлен фрагмент стрима, так как оригинальная запись разработки была утеряна"
+      }
+    },
+    {
+      "file": "Fix_roof_dissolve_problem.mp4",
+      "preview": "Fix_roof_dissolve_problem.webp",
+      "en": {
+        "title": "Bug Fix Example",
+        "description": "Refactored the code and fixed an issue with asynchronous roof visibility switching when rapidly entering and exiting buildings. Resolved an incorrect roof state where it could remain invisible outside the building or visible inside it",
+        "note": ""
+      },
+      "ru": {
+        "title": "Пример Фикса бага",
+        "description": "Провёл рефакторинг кода и исправил ошибку асинхронного переключения видимости крыши при быстром входе и выходе из здания. Устранил некорректное состояние крыши, при котором она могла оставаться невидимой вне здания или видимой внутри него",
+        "note": ""
+      }
+    },
         {
-            "file": "troll_fat.mp4",
-            "preview": "troll_fat.webp",
-
-            "en": {
-                "title": "Texture Optimization",
-                "description": "Worked on texture optimization for game assets. Adjusted texture settings and compression to reduce memory usage while maintaining the required visual quality."
-            },
-
-            "ru": {
-                "title": "Оптимизация текстур",
-                "description": "Работал над оптимизацией текстур игровых объектов. Настроил параметры текстур и сжатия для снижения потребления памяти при сохранении необходимого качества изображения."
-            }
-        },
-
+      "file": "Equip_Weapons_With_Dissolve.mp4",
+      "preview": "Equip_Weapons_With_Dissolve.webp",
+      "en": {
+        "title": "Weapon Switching and Equipping with Dissolve",
+        "description": "Programmed a universal handler for a configurable dissolve effect. In the presented implementation, configured the handler and integrated dissolve effects for weapon switching and equipping",
+        "note": "The video was recorded in an empty test environment not present in the game to reduce the load on the game engine"
+      },
+      "ru": {
+        "title": "Смена и экипировка оружия с dissolve-эффектом",
+        "description": "Программировал универсальный обработчик настраиваемого dissolve-эффекта. В представленной реализации настроил обработчик и интегрировал dissolve-эффекты для смены и экипировки оружия",
+        "note": "Видео снято в пустой тестовой локации, отсутствующей в игре, чтобы снизить нагрузку на игровой движок"
+      }
+    },
         {
-            "file": "troll_fat.mp4",
-            "preview": "troll_fat.webp",
-
-            "en": {
-                "title": "Weather Map System",
-                "description": "Implemented functionality for controlling weather conditions across the game world. Added support for changing weather parameters based on map areas and configured the system to work with existing environment data."
-            },
-
-            "ru": {
-                "title": "Система погодных карт",
-                "description": "Реализовал систему управления погодными условиями в игровом мире. Добавил изменение параметров погоды в зависимости от участков карты и интегрировал систему с существующими данными окружения."
-            }
-        },
-
+      "file": "Sinologist_Pentagram.mp4",
+      "preview": "Sinologist_Pentagram.webp",
+      "en": {
+        "title": "Pentagram Sinologist Ability",
+        "description": "Assembled and integrated the ability on the client side, including VFX, SFX, and animations. Responsible for the client-side ability logic, synchronization of all timings between its stages, and integration of other required elements",
+        "note": "The video was recorded in an empty test environment not present in the game to reduce the load on the game engine"
+      },
+      "ru": {
+        "title": "Способность Синологиста \"Пентаграмма\"",
+        "description": "Собирал и интегрировал способность на стороне клиента, включая VFX, SFX и анимации. Отвечал за клиентскую логику способности, синхронизацию всех таймингов между её этапами и интеграцию других необходимых элементов",
+        "note": "Видео снято в пустой тестовой локации, отсутствующей в игре, чтобы снизить нагрузку на игровой движок"
+      }
+    },
+    {
+      "file": "Sinologist_Blade.mp4",
+      "preview": "Sinologist_Blade.webp",
+      "en": {
+        "title": "Sinologist Attacks",
+        "description": "Assembled and integrated the attacks on the client side, including VFX, SFX, and animations",
+        "note": "The video was recorded in an empty test environment not present in the game to reduce the load on the game engine"
+      },
+      "ru": {
+        "title": "Атаки Синологиста",
+        "description": "Собирал и интегрировал атаки на стороне клиента, включая VFX, SFX и анимации",
+        "note": "Видео снято в пустой тестовой локации, отсутствующей в игре, чтобы снизить нагрузку на игровой движок"
+      }
+    },
         {
-            "file": "troll_fat.mp4",
-            "preview": "troll_fat.webp",
-
-            "en": {
-                "title": "Post-Processing and Camera Effects",
-                "description": "Implemented and integrated post-processing and camera effects for different gameplay situations. Configured effect parameters and connected them to existing gameplay events."
-            },
-
-            "ru": {
-                "title": "Post-Processing и эффекты камеры",
-                "description": "Реализовал и интегрировал эффекты постобработки и камеры для различных игровых ситуаций. Настроил параметры эффектов и связал их с существующими игровыми событиями."
-            }
-        },
-
-        {
-            "file": "troll_fat.mp4",
-            "preview": "troll_fat.webp",
-
-            "en": {
-                "title": "Footprints on Curved Surfaces",
-                "description": "Implemented a footprint system that correctly adapts decals to uneven and curved surfaces. Added surface detection and adjusted the orientation and placement of footprints according to the environment."
-            },
-
-            "ru": {
-                "title": "Следы на изогнутых поверхностях",
-                "description": "Реализовал систему следов, которая корректно работает на неровных и изогнутых поверхностях. Добавил определение поверхности и настройку положения и ориентации следов в соответствии с окружением."
-            }
-        },
-
-        {
-            "file": "troll_fat.mp4",
-            "preview": "troll_fat.webp",
-
-            "en": {
-                "title": "Grass Reaction to Explosions",
-                "description": "Implemented an environmental reaction system for grass affected by explosions and other gameplay events. Added localized movement to create a more responsive interaction between effects and the environment."
-            },
-
-            "ru": {
-                "title": "Реакция травы на взрывы",
-                "description": "Реализовал систему реакции окружения на взрывы и другие игровые события. Добавил локальное движение травы, чтобы сделать взаимодействие эффектов с окружением более заметным."
-            }
-        },
-
-        {
-            "file": "troll_fat.mp4",
-            "preview": "troll_fat.webp",
-
-            "en": {
-                "title": "Magic VFX and Ability Effects",
-                "description": "Implemented gameplay-driven visual effects for magic abilities. Connected VFX behaviour to ability events and configured parameters such as timing, movement and impact effects."
-            },
-
-            "ru": {
-                "title": "VFX магии и эффектов способностей",
-                "description": "Реализовал визуальные эффекты для магических способностей. Связал поведение VFX с игровыми событиями способностей и настроил параметры анимации, движения и эффектов попадания."
-            }
-        },
-
-        {
-            "file": "troll_fat.mp4",
-            "preview": "troll_fat.webp",
-
-            "en": {
-                "title": "Ability Event System",
-                "description": "Integrated gameplay events into the ability system to control animations, visual effects and other related actions. Focused on keeping the implementation flexible and compatible with existing gameplay logic."
-            },
-
-            "ru": {
-                "title": "Система событий способностей",
-                "description": "Интегрировал игровые события в систему способностей для управления анимациями, визуальными эффектами и связанными действиями. Сделал реализацию гибкой и совместимой с существующей игровой логикой."
-            }
-        },
-
-        {
-            "file": "troll_fat.mp4",
-            "preview": "troll_fat.webp",
-
-            "en": {
-                "title": "Environment and Collision System",
-                "description": "Worked on environment and collision-related systems used by gameplay objects. Improved interaction between objects and the world while taking into account different surface and collision configurations."
-            },
-
-            "ru": {
-                "title": "Система окружения и коллизий",
-                "description": "Работал над системами окружения и коллизий, используемыми игровыми объектами. Улучшил взаимодействие объектов с игровым миром с учётом различных типов поверхностей и конфигураций коллизий."
-            }
-        },
-
-        {
-            "file": "troll_fat.mp4",
-            "preview": "troll_fat.webp",
-
-            "en": {
-                "title": "Debug and Cheat Panel",
-                "description": "Extended the internal debug and cheat panel with additional functionality. Added controls for testing gameplay states and accessing required variables and systems during development."
-            },
-
-            "ru": {
-                "title": "Debug и Cheat Panel",
-                "description": "Расширил внутреннюю debug-панель и набор инструментов для тестирования. Добавил управление игровыми состояниями и доступ к необходимым переменным и системам во время разработки."
-            }
-        },
-
-        {
-            "file": "troll_fat.mp4",
-            "preview": "troll_fat.webp",
-
-            "en": {
-                "title": "Gameplay Testing Tools",
-                "description": "Created internal tools to simplify testing of gameplay mechanics. Added controls for quickly reproducing different game states and reducing the amount of manual setup required during development."
-            },
-
-            "ru": {
-                "title": "Инструменты для тестирования механик",
-                "description": "Создавал внутренние инструменты для упрощения тестирования игровых механик. Добавил возможность быстро воспроизводить различные игровые состояния и сократил количество ручных действий при разработке."
-            }
-        },
-
-        {
-            "file": "troll_fat.mp4",
-            "preview": "troll_fat.webp",
-
-            "en": {
-                "title": "Code Refactoring and System Integration",
-                "description": "Refactored existing gameplay code and integrated new functionality into an established codebase. Focused on improving maintainability while preserving compatibility with existing systems."
-            },
-
-            "ru": {
-                "title": "Рефакторинг и интеграция систем",
-                "description": "Проводил рефакторинг существующего игрового кода и интегрировал новую функциональность в уже сформированную кодовую базу. Основное внимание уделял поддерживаемости кода и совместимости с существующими системами."
-            }
-        },
-
-        {
-            "file": "troll_fat.mp4",
-            "preview": "troll_fat.webp",
-
-            "en": {
-                "title": "Client-Server Synchronization",
-                "description": "Worked with gameplay systems in a client-server architecture. Implemented and adjusted synchronization logic to ensure that gameplay states and important object data remain consistent between client and server."
-            },
-
-            "ru": {
-                "title": "Клиент-серверная синхронизация",
-                "description": "Работал с игровыми системами в клиент-серверной архитектуре. Реализовывал и настраивал логику синхронизации, чтобы игровые состояния и важные данные объектов корректно передавались между клиентом и сервером."
-            }
-        },
-
-        {
-            "file": "troll_fat.mp4",
-            "preview": "troll_fat.webp",
-
-            "en": {
-                "title": "Dynamic Character Customization",
-                "description": "Implemented dynamic replacement of character equipment and visual elements. Ensured that model changes are correctly reflected in the final character appearance without breaking the existing animation setup."
-            },
-
-            "ru": {
-                "title": "Динамическая кастомизация персонажа",
-                "description": "Реализовал динамическую замену экипировки и визуальных элементов персонажа. Обеспечил корректное отображение изменений модели без нарушения существующей системы анимаций."
-            }
-        },
-
-        {
-            "file": "troll_fat.mp4",
-            "preview": "troll_fat.webp",
-
-            "en": {
-                "title": "Gameplay Camera System",
-                "description": "Implemented camera behaviour for different gameplay situations. Added control over camera movement and effects while integrating the functionality with existing gameplay events."
-            },
-
-            "ru": {
-                "title": "Система игровой камеры",
-                "description": "Реализовал поведение камеры для различных игровых ситуаций. Добавил управление движением и эффектами камеры и интегрировал функциональность с существующими игровыми событиями."
-            }
-        },
-
-        {
-            "file": "troll_fat.mp4",
-            "preview": "troll_fat.webp",
-
-            "en": {
-                "title": "VFX Optimization",
-                "description": "Optimized visual effects used during gameplay by adjusting effect behaviour and reducing unnecessary processing. Focused on maintaining the visual result while improving runtime performance."
-            },
-
-            "ru": {
-                "title": "Оптимизация VFX",
-                "description": "Оптимизировал визуальные эффекты, используемые во время игры, изменив их поведение и убрав лишние вычисления. Сохранил необходимый визуальный результат при улучшении производительности."
-            }
-        },
-
-        {
-            "file": "troll_fat.mp4",
-            "preview": "troll_fat.webp",
-
-            "en": {
-                "title": "Internal Developer Tool",
-                "description": "Developed an internal tool to simplify work with game systems during development. Added a convenient interface for accessing frequently used parameters and testing functionality without modifying production code."
-            },
-
-            "ru": {
-                "title": "Внутренний инструмент разработчика",
-                "description": "Разработал внутренний инструмент для упрощения работы с игровыми системами во время разработки. Добавил удобный интерфейс для доступа к часто используемым параметрам и тестирования функциональности без изменения основного игрового кода."
-            }
-        }
-    ]
+      "file": "Sinologist_Laser.mp4",
+      "preview": "Sinologist_Laser.webp",
+      "en": {
+        "title": "Laser Sinologist Ability",
+        "description": "Assembled and integrated the attacks on the client side, including VFX, SFX, and animations",
+        "note": "The video was recorded in an empty test environment not present in the game to reduce the load on the game engine"
+      },
+      "ru": {
+        "title": "Способность Синологиста \"Лазер\"",
+        "description": "Собирал и интегрировал способность на стороне клиента, включая VFX, SFX и анимации",
+        "note": "Видео снято в пустой тестовой локации, отсутствующей в игре, чтобы снизить нагрузку на игровой движок"
+      }
+    },
+        
+    {
+      "file": "Hits.mp4",
+      "preview": "Hits.webp",
+      "en": {
+        "title": "Hit Reaction System",
+        "description": "Developed a system that allows creatures and heroes to play different VFX and SFX depending on the attack type and the material hit. Implemented support for various combinations of attack types (sword, dagger, arrow, bullet, one-handed weapon, etc.) and materials (wood, bone, flesh, metal, and others), with an easy way to add new types and configure their interactions. Integrated test VFX and SFX for different combinations; some of them are not shown in the video, and the effects and sounds were further refined in the final version. Later extended the system with separate VFX and SFX for critical hits in addition to the standard combinations",
+        "note": "The video demonstrates an early version of the system and contains only some examples of its functionality. The effects and sounds were further refined in the final version. Critical hit effects are not shown in the video"
+      },
+      "ru": {
+        "title": "Система обработки попаданий",
+        "description": "Разработал систему, позволяющую существам и героям воспроизводить различные VFX и SFX в зависимости от типа атаки и материала, по которому произошло попадание. Реализовал поддержку различных комбинаций типов атак (меч, кинжал, стрела, пуля, одноручное оружие и т. д.) и материалов (дерево, кость, плоть, металл и другие) с возможностью легко добавлять новые типы и настраивать их взаимодействие. Интегрировал тестовые VFX и SFX для различных комбинаций; часть из них не представлена на видео, а в финальной версии эффекты и звуки были доработаны. Позже расширил систему поддержкой отдельных эффектов и звуков для критических попаданий в дополнение к обычным комбинациям",
+        "note": "Видео демонстрирует раннюю версию системы и содержит только некоторые примеры её работы. В финальной версии звуки и эффекты были доработаны. Критические попадания на видео не представлены"
+      }
+    },
+    {
+      "file": "Weather_Change.mp4",
+      "preview": "Weather_Change.webp",
+      "en": {
+        "title": "Weather Zones",
+        "description": "Maintained and extended the weather zone system as the number of zones increased and transitions between them were frequently changed across different locations. Fixed related issues, configured transitions between weather zones, and extended their functionality when required by adding additional filters and features. The video demonstrates one of the minor system issues: after the loading screen, the weather zone did not switch immediately and its parameters changed gradually instead",
+        "note": "The “Before” section also demonstrates how weather zones affect the game — they control various visual filters and environment parameters, gradually transitioning from one visual effect to another. In addition to the visible differences, weather zones also control cloud shadows, wind speed, and other parameters not shown in the video"
+      },
+      "ru": {
+        "title": "Погодные зоны",
+        "description": "Дорабатывал и поддерживал систему погодных зон при увеличении их количества и частых изменениях транзитов между зонами в различных локациях. Исправлял возникающие ошибки, настраивал переходы между погодными зонами и при необходимости расширял их функциональность, добавляя дополнительные фильтры и возможности. На видео продемонстрирован один из небольших багов системы: после загрузочного экрана погодная зона переключалась не сразу, а постепенно изменяла свои параметры",
+        "note": "В разделе “Before” также показано влияние погодных зон на игру — они управляют различными визуальными фильтрами и параметрами окружения, постепенно переключая одни визуальные эффекты на другие. Помимо видимых различий, погодные зоны также управляют тенями от облаков, скоростью ветра и другими параметрами, не представленными на видео"
+      }
+    }
+  ]
 }
