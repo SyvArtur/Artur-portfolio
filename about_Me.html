@@ -79,7 +79,7 @@
 	
     <div class="hero-text">
         <h1>ARTUR<br>SYVOKIN</h1>
-        <h2>UNITY DEVELOPER / TECHNICAL ARTIST</h2>
+        <h2>Unity/C# Developer</h2>
     </div>
     <div class="hero-graphics">
         <img src="assets/images/cubes.webp" alt="Decorative cubes">
@@ -87,10 +87,10 @@
 	
 	<div class="hero-bottom">
 		<p>
-			Developer with experience working on the large-scale MMORPG project Corepunk.
-			Specialized in game systems development, feature integration into existing codebases,
-			optimization, and creating tools for developers.
-			I enjoy diving into complex code and making it better.
+			Unity/C# Developer with 2 years of commercial experience working on the large-scale MMORPG Corepunk. Experienced in
+			C# development, client-server architecture, tools development, system optimization, debugging, and asset
+			integration. Focused on building scalable, maintainable, and reusable systems and working effectively with large
+			production codebases
 		</p>
 		<div class="contacts">
 			<div class="contact-item email-trigger" onclick="openMailModal()">
@@ -287,190 +287,217 @@
         </h2>
 
 		<div class="experience-item">
-			<h3>Technical Artist / Developer</h3>
-			
+			<h3>Unity Developer / Technical Artist</h3>
+		
 			<div class="squidgame-main">
-			<div>
-			<h4>Corepunk (MMORPG)</h4>
-			<span class="date">Mar 2024 – Mar 2026</span>
+				<div>
+					<h4>Corepunk (MMORPG)</h4>
+					<span class="date">Mar 2024 – February 2026</span>
+				</div>
+				<img src="assets/images/corepunk.webp" alt="corepunk logo" class="squidgame-logo-small">
 			</div>
-				<img
-					src="assets/images/corepunk.webp"
-					alt="corepunk logo"
-					class="squidgame-logo-small"
-				>
-			</div>
-			
-			<p>I have gained extensive experience working with client-server architecture and scalable systems in huge project, consistently focusing on writing clean, maintainable code that follows solid design principles. My role often involved refactoring and enhancing existing code, allowing me to contribute meaningfully to a mature, production-ready codebase. Throughout the development process, I collaborated closely with cross-functional teams across the full game development pipeline. Proficient with production tools like Jira, Notion, Slack, Jenkins, SVN, and Git, and have actively worked on feature implementation, optimization, and debugging in real production environments.
+		
+			<p> I gained extensive hands-on experience working with client-server architecture and
+				a large, production-ready codebase in a huge-scale MMORPG. I learned to design and implement scalable,
+				maintainable, and reusable systems, as well as safely extend and refactor existing code without disrupting
+				established functionality. My work involved gameplay programming, reusable effect handlers, internal tools and
+				workflow automation, debugging, and performance optimization. I also gained experience collaborating closely
+				with
+				cross-functional teams throughout the full game development pipeline
 			</p>
-			
 			<section class="portfolio-videos" id="portfolioVideos">
-			<div class="portfolio-videos__header">
-				<h2 class="portfolio-videos__title">
-					Examples of completed assignments
-				</h2>
-			</div>
+				<div class="portfolio-videos__header">
+					<h2 class="portfolio-videos__title">
+						Examples of completed assignments
+					</h2>
+				</div>
+		
+				<div class="portfolio-videos__pagination" id="portfolioVideoPagination">
+					<button type="button" class="portfolio-videos__page-button" id="portfolioVideoPrevious"
+						aria-label="Previous videos">
+						←
+					</button>
+		
+					<span class="portfolio-videos__page-info">
+						<input class="portfolio-videos__page-input" id="portfolioVideoPageInput"
+							type="number" min="1" step="1" value="1" aria-label="Page number">
+						<span id="portfolioVideoTotalPages">/ 1</span>
+					</span>
+		
+					<button type="button" class="portfolio-videos__page-button" id="portfolioVideoNext"
+						aria-label="Next videos">
+						→
+					</button>
+				</div>
 
-			<div
-				class="portfolio-videos__grid"
-				id="portfolioVideoGrid"
-			></div>
-
-			<div
-				class="portfolio-videos__pagination"
-				id="portfolioVideoPagination"
-			>
-			<button
-				type="button"
-				class="portfolio-videos__page-button"
-				id="portfolioVideoPrevious"
-				aria-label="Previous videos"
-			>
-				←
-			</button>
-
-			<span
-				class="portfolio-videos__page-info"
-				id="portfolioVideoPageInfo"
-			>
-				1 / 1
-			</span>
-
-			<button
-				type="button"
-				class="portfolio-videos__page-button"
-				id="portfolioVideoNext"
-				aria-label="Next videos"
-			>
-				→
-			</button>
-			</div>
-
-			<div
-				class="portfolio-player"
-				id="portfolioPlayer"
-				aria-hidden="true"
-			>
-
-			<div class="portfolio-player__top">
-				<span
-					class="portfolio-player__counter"
-					id="portfolioPlayerCounter"
-				>
-					1 / 1
-				</span>
-
-				<button
-					type="button"
-					class="portfolio-player__close"
-					id="portfolioPlayerClose"
-					aria-label="Close video"
-				>
-					×
-				</button>
-			</div>
-
-			<div class="portfolio-player__video-wrapper">
-				<button
-					type="button"
-					class="portfolio-player__navigation portfolio-player__navigation--left"
-					id="portfolioPlayerPrevious"
-					aria-label="Previous videos"
-				>
-					‹
-				</button>
-
-				<video
-					class="portfolio-player__video"
-					id="portfolioPlayerVideo"
-					controls
-					playsinline
-					preload="none"
-				></video>
-
-				<button
-					type="button"
-					class="portfolio-player__navigation portfolio-player__navigation--right"
-					id="portfolioPlayerNext"
-					aria-label="Next videos"
-				>
-					›
-				</button>
-			</div>
-
-
-			<div class="portfolio-player__info">
-				<h2
-					class="portfolio-player__title"
-					id="portfolioPlayerTitle"
-				></h2>
-				<p
-					class="portfolio-player__description"
-					id="portfolioPlayerDescription"
-				></p>
-			</div>
-		</div>
+				<div class="portfolio-videos__grid" id="portfolioVideoGrid"></div>
+		
+				<div class="portfolio-player" id="portfolioPlayer" aria-hidden="true">
+		
+					<div class="portfolio-player__top">
+						<span class="portfolio-player__counter" id="portfolioPlayerCounter">
+							1 / 1
+						</span>
+		
+						<button type="button" class="portfolio-player__close" id="portfolioPlayerClose"
+							aria-label="Close video">
+							×
+						</button>
+					</div>
+		
+					<div class="portfolio-player__video-wrapper">
+						<button type="button" class="portfolio-player__navigation portfolio-player__navigation--left"
+							id="portfolioPlayerPrevious" aria-label="Previous videos">
+							‹
+						</button>
+		
+						<video class="portfolio-player__video" id="portfolioPlayerVideo" controls playsinline
+							preload="none"></video>
+		
+						<button type="button" class="portfolio-player__navigation portfolio-player__navigation--right"
+							id="portfolioPlayerNext" aria-label="Next videos">
+							›
+						</button>
+					</div>
+		
+		
+					<div class="portfolio-player__info">
+						<h2 class="portfolio-player__title" id="portfolioPlayerTitle"></h2>
+						<p class="portfolio-player__description" id="portfolioPlayerDescription"></p>
+					</div>
+				</div>
 
 	</section>
 
 			<div class="experience-grid">
-
 				<div class="info-box">
-				  <h5>WORKING WITH CODE</h5>
-				  <ul>
-					<li>Analyzing and understanding existing codebases</li>
-					<li>Extending existing systems</li>
-					<li>Developing new gameplay logic</li>
-					<li>Fixing complex bugs</li>
-					<li>Refactoring and optimization</li>
-					<li>Integrating features into production code</li>
-				  </ul>
+			
+					<h5>Gameplay and Systems Architecture</h5>
+			
+					<ul>
+						<li>State and Animation Logic: Developed an animation transition system for smooth switching between hero
+							states
+							(running, walking, sneaking, stopping, jumping)</li>
+						<li>Modular Equipment System: Created a system for attaching weapons to heroes, allowing individual
+							positioning
+							of the same weapon types for different hero specializations</li>
+						<li>Asset Display and Configuration Systems: Programmed systems for managing parameters, displaying, and
+							utilizing resources (textures, materials, VFX, entities); developed algorithms for automatically
+							processing
+							and grouping assets into subgroups for specialized shaders with optimized parameters</li>
+						<li>Mass Entity Integration and Updates: Developed algorithms for batch configuration of game object
+							parameters
+							when introducing new features; automated dependency assignment, data table generation, and automatic
+							creation of in-game object icons</li>
+					</ul>
+			
 				</div>
-
+			
 				<div class="info-box">
-				  <h5>GRAPHICS & VISUALS</h5>
-				  <ul>
-					<li>Assembling characters from modular parts</li>
-					<li>Working with animations</li>
-					<li>Texture optimization</li>
-					<li>Weather maps</li>
-					<li>Post-processing and camera effects</li>
-				  </ul>
+			
+					<h5>Dynamic Environment and Combat Logic</h5>
+			
+					<ul>
+						<li>Terrain Adaptation: Developed systems for adapting trails, attacks, projectile flight, and other visual
+							effects to terrain; implemented correct alignment and trajectory adjustment relative to the surface to
+							prevent effects from clipping through the terrain and ensure they properly follow its slopes</li>
+						<li>Hit Reactions: Implemented a system for selecting VFX and SFX on hit based on weapon type and target
+							material, supporting all possible combinations. Extended the system with separate VFX and SFX for
+							critical
+							hits</li>
+						<li>World Interactivity: Developed logic for ability interactions with the environment, including explosive
+							waves with different shapes, lengths, intervals, and directions depending on the specific ability, as
+							well
+							as other configurable environmental interaction parameters</li>
+						<li>Weather and Location Zones: Took full responsibility for implementing and placing weather and location
+							zones
+							across maps, extending their functionality and fixing related issues</li>
+					</ul>
+			
 				</div>
-
+			
 				<div class="info-box">
-				  <h5>GAME WORLD & INTERACTIONS</h5>
-				  <ul>
-					<li>Footprints on curved surfaces</li>
-					<li>Grass wave effects from explosions</li>
-					<li>Environment and collision systems</li>
-				  </ul>
+			
+					<h5>Cross-Department Collaboration, Refactoring and Optimization</h5>
+			
+					<ul>
+						<li>Cross-Department Development: Actively collaborated with Game Design, Level Design, Animation, VFX, SFX,
+							and
+							R&D teams to implement new gameplay mechanics</li>
+						<li>Global Optimization: Identified and eliminated performance bottlenecks, refactored code, and performed
+							large-scale optimization of textures, materials, shaders, and visual effects. Developed tools for
+							automating
+							large-scale processing of assets and game entities, including automatic selection and configuration of
+							optimized shaders and parameters</li>
+						<li>Bug Fixing and Stabilization: Quickly resolved client-side logic issues and debugged incorrect behavior
+							of
+							abilities, UI, weather systems, and environmental interactions</li>
+						<li>Module Maintenance and Extension: Refactored and extended existing project systems based on requests
+							from
+							cross-functional teams</li>
+					</ul>
+			
 				</div>
-
+			
 				<div class="info-box">
-				  <h5>EFFECTS & MAGIC</h5>
-				  <ul>
-					<li>Creating VFX and magical effects</li>
-					<li>Integrating VFX and audio</li>
-					<li>Handling ability events</li>
-				  </ul>
+			
+					<h5>Pipeline Automation and Development Tools</h5>
+			
+					<ul>
+						<li>Asset Import Automation: Developed scripts for automated integration of new assets into the project,
+							including 3D models, textures, and animations, with automatic shader configuration based on the
+							integrated
+							object type, required database generation, icon creation, and more</li>
+						<li>Level & Game Design Tools: Improved, optimized, and extended the functionality of development tools
+							for
+							Game Design (Entity List) and Level Design (Map Editor), adding new features and workflow automation
+						</li>
+						<li>In-Game Testing Cheats: Developed a set of testing tools, including damage area and hitbox
+							visualization,
+							god mode, mob invisibility, increased movement speed, day/night switching, minimap unlocking, item
+							acquisition, inventory management, free camera, unit spawning, and other tools</li>
+					</ul>
+			
 				</div>
-
+			
 				<div class="info-box full-width">
-				  <h5>DEVELOPMENT TOOLS</h5>
-				  <ul>
-					<li>Developing internal tools for the team</li>
-					<li>Improving debug panels</li>
-					<li>Speeding up gameplay mechanics testing</li>
-				  </ul>
+			
+					<h5>Client-Side Visual Logic</h5>
+			
+					<ul>
+						<li>Ability Handlers: Developed approximately 50% of all client-side handlers in the project for managing
+							ability effect logic, visual effects, and sound playback</li>
+						<li>Reusable Visual Systems: Designed reusable systems for frequently used mechanics, including weapon
+							switching, teleportation, interactions with destructible objects, and more</li>
+						<li>Client-Side Synchronization: Implemented client-side logic for multiplayer mechanics (point capture,
+							timers,
+							UI elements, in-game chat, and more) based on server data, with safeguards against desynchronization
+						</li>
+						<li>VFX, SFX, and Animation Integration: Created and integrated visual and sound effects for abilities,
+							attacks,
+							UI elements, environmental features, and other game objects</li>
+						<li>Diverse Effects and Interactions: Created visual handlers for a wide range of gameplay mechanics, from
+							mounting and dismounting, buffs/debuffs, and basic attacks to resource gathering and interactions with
+							destructible objects</li>
+					</ul>
+			
 				</div>
+
 			</div>
 		</div>
         <div class="experience-item second-job">
-          <h3>Indie Game Developer</h3>
-          <span class="date">2021 – 2024</span>
-		  <p>Created a multiplayer game in Unity using OOP principles, Mirror networking, and version control with Git. Implemented client-server architecture and experimented with neural network training using ML-Agents.
-          </p>
+          <h3>Indie Developer</h3>
+          <span class="date">2021 – 2024, 2026 – 2027</span>
+		<p>Created a multiplayer game in Unity using OOP principles, Mirror networking, and Git for version control. Implemented
+			client-server architecture and experimented with neural network training using ML-Agents. Also developed several
+			small games, projects, websites, and automation tools for educational and university purposes. Created a Sudoku
+			game, independently implementing the puzzle generation algorithm; the game was later used for printing in a local
+			Ukrainian newspaper. Developed a Telegram bot that was actively used by multiple university groups during remote
+			learning. The bot automatically shared links to online classes and responded to natural-language queries about the
+			current, next, and upcoming classes, class end times, daily schedules, and the full weekly timetable. Explored
+			several larger game projects independently; some were eventually discontinued after underestimating their scope and
+			the time and resources required for solo development
+		</p>
 		</div>
     </div>
 
@@ -499,14 +526,15 @@
 		
 			<div>
 				<p>
-					An MMORPG with a large codebase
-					and complex architecture.
+					A large-scale MMORPG with a large codebase and architecture.
 				</p>
 
 				<ul>
-					<li>Game systems development</li>
-					<li>Maintenance and improvements</li>
-					<li>Optimization and developer tools</li>
+					<li>System Development</li>
+					<li>Client-Server Logic</li>
+					<li>Refactoring & Maintenance</li>
+					<li>Optimization & Tools</li>
+					<li>Dev Tools & Automation</li>
 				</ul>
 			</div>
 		</div>
@@ -531,9 +559,10 @@
 				</p>
 
 				<ul>
-					<li>Basic gameplay mechanics</li>
-					<li>UI and high score system</li>
+					<li>12-language localization</li>
+					<li>Google Play release</li>
 					<li>AdMob integration</li>
+					<li>Gameplay & data persistence</li>
 				</ul>
 			</div>
 		</div>
@@ -643,22 +672,22 @@
 		
     </div>
 
-    <div class="card projects-card">
-            <h2 class="section-title">
-                <img src="assets/images/goal-icon.webp" alt="">
-                WHAT I'M LOOKING FOR
-            </h2>
-	<p>
-		I am looking for a Unity Developer / Game Developer position
-		in a team where I can:
-	</p>
-
-	<ul class="simple-list">
-		<li>Work on complex systems</li>
-		<li>Develop and maintain code</li>
-		<li>Create tools and improve workflows</li>
-		<li>Contribute to building a high-quality game</li>
-	</ul>
+	<div class="card projects-card">
+		<h2 class="section-title">
+			<img src="assets/images/goal-icon.webp" alt="">
+			WHAT I'M LOOKING FOR
+		</h2>
+		<p>
+			I am looking for a C# Developer position
+			in a team where I can:
+		</p>
+	
+		<ul class="simple-list">
+			<li>Work on complex systems</li>
+			<li>Develop and maintain code</li>
+			<li>Create tools and improve workflows</li>
+			<li>Contribute to high-quality software</li>
+		</ul>
 	
 		<div class="availability" onclick="openMailModal()">
 		  Available for full-time work. Contact me / Send email
