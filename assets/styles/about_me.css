@@ -386,6 +386,7 @@ transition:
 
 .info-box h5 {
   margin-bottom: 12px;
+  font-family: "Inter", sans-serif;
   color: #b277ff;
   font-size: 20px;
   font-weight: 800;
@@ -857,7 +858,7 @@ c
   box-shadow: 0 0 24px rgba(130, 80, 255, .25);
   }
 .squidgame-title h2 {
-  font-size: 24px;
+  font-size: 23px;
   line-height: .9;
   font-weight: 800;
   margin-top: 8px;
@@ -1433,7 +1434,7 @@ nav a {
   }
 
   .info-box h5 {
-    font-size: 19px;
+    font-size: 18px;
   }
 
   .info-box li {
@@ -1553,8 +1554,29 @@ nav a {
    ========================================================= */
 
 .portfolio-videos {
+    position: relative;
     width: 100%;
     margin-top: 35px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+}
+
+.portfolio-videos::after {
+    content: "";
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    left: 10%;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(178, 119, 255, 0.48),
+        rgba(255, 255, 255, 0.2),
+        rgba(178, 119, 255, 0.48),
+        transparent
+    );
+    box-shadow: 0 0 12px rgba(147, 87, 255, 0.24);
 }
 
 .portfolio-videos__header {
@@ -1682,49 +1704,112 @@ nav a {
     align-items: center;
     justify-content: center;
 
-    gap: 16px;
+    gap: 12px;
 
     margin-top: 20px;
-	margin-bottom: 35px;
+    margin-bottom: 35px;
+    padding: 8px 12px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 1px solid rgba(178, 119, 255, 0.24);
+    border-radius: 16px;
+    background: rgba(12, 8, 34, 0.72);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.05),
+        0 8px 24px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(10px);
 }
 
 .portfolio-videos__page-button {
-    width: 38px;
-    height: 38px;
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    border: none;
-    border-radius: 8px;
+    border: 1px solid rgba(178, 119, 255, 0.32);
+    border-radius: 12px;
 
     cursor: pointer;
 
-    font-size: 20px;
+    font-size: 22px;
+    line-height: 1;
 
-    background: rgba(255, 255, 255, 0.08);
+    background: linear-gradient(145deg, rgba(178, 119, 255, 0.2), rgba(91, 48, 157, 0.16));
     color: inherit;
 
     transition:
         background 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
         transform 0.2s ease;
 }
 
 .portfolio-videos__page-button:hover:not(:disabled) {
-    background: rgba(255, 255, 255, 0.16);
-    transform: translateY(-1px);
+    background: linear-gradient(145deg, rgba(178, 119, 255, 0.38), rgba(91, 48, 157, 0.3));
+    border-color: rgba(199, 160, 255, 0.72);
+    box-shadow: 0 0 16px rgba(147, 87, 255, 0.24);
+    transform: translateY(-2px);
 }
 
 .portfolio-videos__page-button:disabled {
-    opacity: 0.3;
+    opacity: 0.38;
     cursor: default;
 }
 
 .portfolio-videos__page-info {
-    min-width: 50px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    min-width: 82px;
+    justify-content: center;
+
+    color: rgba(255, 255, 255, 0.72);
     font-size: 14px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+}
+
+.portfolio-videos__page-input {
+    width: 42px;
+    height: 36px;
+    padding: 0 4px;
+
+    border: 1px solid rgba(178, 119, 255, 0.36);
+    border-radius: 10px;
+    outline: none;
+
+    background: rgba(255, 255, 255, 0.07);
+    color: #fff;
+    font: inherit;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.portfolio-videos__page-input:focus {
+    border-color: #b277ff;
+    background: rgba(178, 119, 255, 0.13);
+    box-shadow: 0 0 0 3px rgba(178, 119, 255, 0.16);
+}
+
+.portfolio-videos__page-input::-webkit-inner-spin-button,
+.portfolio-videos__page-input::-webkit-outer-spin-button {
+    margin: 0;
+    appearance: none;
+}
+
+.portfolio-videos__page-input {
+    -moz-appearance: textfield;
 }
 
 
@@ -1912,7 +1997,7 @@ nav a {
 .portfolio-player__description {
     margin: 0 0 50px;
 
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.6;
 
     opacity: 0.8;
@@ -1927,7 +2012,7 @@ nav a {
 
     margin-top: 8px;
 
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.2;
 
     opacity: 0.45;

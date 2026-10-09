@@ -83,8 +83,12 @@ const nextPageButton = document.getElementById(
     "portfolioVideoNext"
 );
 
-const pageInfo = document.getElementById(
-    "portfolioVideoPageInfo"
+const pageInput = document.getElementById(
+    "portfolioVideoPageInput"
+);
+
+const totalPagesInfo = document.getElementById(
+    "portfolioVideoTotalPages"
 );
 
 
@@ -446,6 +450,46 @@ function createVideoCard(
 }
 
 
+function renderPlayerDescription(text) {
+
+    playerDescription.textContent =
+        "";
+
+
+    const descriptionText =
+        document.createElement("span");
+
+    descriptionText.className =
+        "portfolio-player__description-main";
+
+    descriptionText.textContent =
+        text.description;
+
+    playerDescription.appendChild(
+        descriptionText
+    );
+
+
+    if (text.note) {
+
+        const note =
+            document.createElement("span");
+
+        note.className =
+            "portfolio-player__description-note";
+
+        note.textContent =
+            text.note;
+
+        playerDescription.appendChild(
+            note
+        );
+
+    }
+
+}
+
+
 // =========================================================
 // OPEN PLAYER
 // =========================================================
@@ -524,31 +568,7 @@ function openPlayer(index) {
     // Description
     // -----------------------------------------------------
 
-	playerDescription.textContent = "";
-
-	const descriptionText =
-		document.createElement("span");
-
-	descriptionText.className =
-		"portfolio-player__description-main";
-
-	descriptionText.textContent =
-		text.description;
-
-	playerDescription.appendChild(descriptionText);
-
-	if (text.note) {
-		const note =
-			document.createElement("span");
-
-		note.className =
-			"portfolio-player__description-note";
-
-		note.textContent =
-			text.note;
-
-		playerDescription.appendChild(note);
-	}
+    renderPlayerDescription(text);
 
 
     // -----------------------------------------------------
@@ -757,8 +777,7 @@ function loadPlayerVideo(index) {
     // Description
     // -----------------------------------------------------
 
-    playerDescription.textContent =
-        text.description;
+    renderPlayerDescription(text);
 
 
     // -----------------------------------------------------
@@ -881,8 +900,14 @@ function updatePagination() {
         );
 
 
-    pageInfo.textContent =
-        `${currentPage} / ${totalPages}`;
+    pageInput.max =
+        String(totalPages);
+
+    pageInput.value =
+        String(currentPage);
+
+    totalPagesInfo.textContent =
+        `/ ${totalPages}`;
 
 
     previousPageButton.disabled =
@@ -950,6 +975,46 @@ function goToNextPage() {
 }
 
 
+function goToPageFromInput() {
+
+    const requestedPage =
+        Number(pageInput.value);
+
+    if (!Number.isFinite(requestedPage)) {
+
+        updatePagination();
+
+        return;
+
+    }
+
+
+    const totalPages =
+        Math.max(
+            1,
+            Math.ceil(
+                videos.length /
+                VIDEOS_PER_PAGE
+            )
+        );
+
+    currentPage =
+        Math.min(
+            totalPages,
+            Math.max(
+                1,
+                Math.floor(requestedPage)
+            )
+        );
+
+
+    renderPage();
+
+    updatePagination();
+
+}
+
+
 // =========================================================
 // EVENTS
 // =========================================================
@@ -963,6 +1028,27 @@ previousPageButton.addEventListener(
 nextPageButton.addEventListener(
     "click",
     goToNextPage
+);
+
+
+pageInput.addEventListener(
+    "change",
+    goToPageFromInput
+);
+
+pageInput.addEventListener(
+    "keydown",
+    (event) => {
+
+        if (event.key === "Enter") {
+
+            goToPageFromInput();
+
+            pageInput.blur();
+
+        }
+
+    }
 );
 
 
