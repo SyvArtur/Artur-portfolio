@@ -817,8 +817,13 @@ c
 
 .squidgame-layout {
   display: grid;
-  grid-template-columns: 350px 1fr;
+  grid-template-columns: minmax(0, 2.5fr) minmax(0, 1.5fr);
   gap: 34px;
+}
+
+.squidgame-right,
+.squid-feature > div {
+  min-width: 0;
 }
 
 .squidgame-left {
@@ -914,6 +919,19 @@ c
   color: #b9bfd9;
   line-height: 1.1;
     font-size: 14px;
+}
+
+.squid-feature h4,
+.squid-feature p {
+  overflow-wrap: normal;
+}
+
+html[lang="ru"] .squidgame-right .squid-feature h4 {
+  font-size: 14px;
+}
+
+html[lang="ru"] .squidgame-right .squid-feature p {
+  font-size: 13px;
 }
 
 .squidgame-right h3 {
@@ -1720,6 +1738,10 @@ nav a {
         inset 0 1px 0 rgba(255, 255, 255, 0.05),
         0 8px 24px rgba(0, 0, 0, 0.22);
     backdrop-filter: blur(10px);
+}
+
+#portfolioVideoGrid + .portfolio-videos__pagination {
+    margin-bottom: 12px;
 }
 
 .portfolio-videos__page-button {

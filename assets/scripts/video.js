@@ -71,24 +71,24 @@ const grid = document.getElementById(
 
 // Pagination
 
-const pagination = document.getElementById(
-    "portfolioVideoPagination"
+const pagination = document.querySelectorAll(
+    ".portfolio-videos__pagination"
 );
 
-const previousPageButton = document.getElementById(
-    "portfolioVideoPrevious"
+const previousPageButtons = document.querySelectorAll(
+    ".portfolio-videos__page-button--previous"
 );
 
-const nextPageButton = document.getElementById(
-    "portfolioVideoNext"
+const nextPageButtons = document.querySelectorAll(
+    ".portfolio-videos__page-button--next"
 );
 
-const pageInput = document.getElementById(
-    "portfolioVideoPageInput"
+const pageInputs = document.querySelectorAll(
+    ".portfolio-videos__page-input"
 );
 
-const totalPagesInfo = document.getElementById(
-    "portfolioVideoTotalPages"
+const totalPagesInfo = document.querySelectorAll(
+    ".portfolio-videos__page-total"
 );
 
 
@@ -529,8 +529,9 @@ function openPlayer(index) {
     grid.style.display =
         "none";
 
-    pagination.style.display =
-        "none";
+    pagination.forEach(
+        navigation => navigation.style.display = "none"
+    );
 
 
     // -----------------------------------------------------
@@ -699,8 +700,9 @@ function closePlayer(
 
     // Показываем pagination
 
-    pagination.style.display =
-        "";
+    pagination.forEach(
+        navigation => navigation.style.display = ""
+    );
 
 
     // Возвращаем прокрутку
@@ -900,28 +902,33 @@ function updatePagination() {
         );
 
 
-    pageInput.max =
-        String(totalPages);
+    pageInputs.forEach(
+        input => {
+            input.max = String(totalPages);
+            input.value = String(currentPage);
+        }
+    );
 
-    pageInput.value =
-        String(currentPage);
+    totalPagesInfo.forEach(
+        info => info.textContent = `/ ${totalPages}`
+    );
 
-    totalPagesInfo.textContent =
-        `/ ${totalPages}`;
+    previousPageButtons.forEach(
+        button => button.disabled = currentPage <= 1
+    );
 
+    nextPageButtons.forEach(
+        button => button.disabled = currentPage >= totalPages
+    );
 
-    previousPageButton.disabled =
-        currentPage <= 1;
-
-
-    nextPageButton.disabled =
-        currentPage >= totalPages;
-
-
-    pagination.style.display =
-        totalPages > 1
-            ? ""
-            : "none";
+    pagination.forEach(
+        navigation => {
+            navigation.style.display =
+                totalPages > 1
+                    ? ""
+                    : "none";
+        }
+    );
 
 }
 
@@ -975,10 +982,10 @@ function goToNextPage() {
 }
 
 
-function goToPageFromInput() {
+function goToPageFromInput(event) {
 
     const requestedPage =
-        Number(pageInput.value);
+        Number(event.currentTarget.value);
 
     if (!Number.isFinite(requestedPage)) {
 
@@ -1019,36 +1026,44 @@ function goToPageFromInput() {
 // EVENTS
 // =========================================================
 
-previousPageButton.addEventListener(
-    "click",
-    goToPreviousPage
+previousPageButtons.forEach(
+    button => button.addEventListener(
+        "click",
+        goToPreviousPage
+    )
 );
 
 
-nextPageButton.addEventListener(
-    "click",
-    goToNextPage
+nextPageButtons.forEach(
+    button => button.addEventListener(
+        "click",
+        goToNextPage
+    )
 );
 
 
-pageInput.addEventListener(
-    "change",
-    goToPageFromInput
+pageInputs.forEach(
+    input => input.addEventListener(
+        "change",
+        goToPageFromInput
+    )
 );
 
-pageInput.addEventListener(
-    "keydown",
-    (event) => {
+pageInputs.forEach(
+    input => input.addEventListener(
+        "keydown",
+        (event) => {
 
-        if (event.key === "Enter") {
+            if (event.key === "Enter") {
 
-            goToPageFromInput();
+                goToPageFromInput(event);
 
-            pageInput.blur();
+                event.currentTarget.blur();
+
+            }
 
         }
-
-    }
+    )
 );
 
 

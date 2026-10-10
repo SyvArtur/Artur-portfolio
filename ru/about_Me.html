@@ -119,7 +119,7 @@
 	<div class="hero-bottom">
 
 		<p>
-			Unity/C# разработчик с 2 годами коммерческого опыта работы над масштабной MMORPG Corepunk. Имею опыт разработки на
+			Unity/C# разработчик с 2+ годами коммерческого опыта работы над масштабной MMORPG Corepunk. Имею опыт разработки на
 			C#, работы с клиент-серверной архитектурой, создания инструментов, оптимизации систем, отладки и интеграции ассетов.
 			Фокусируюсь на создании масштабируемых, поддерживаемых и переиспользуемых систем, а также на работе с большими
 			production-кодовыми базами
@@ -148,9 +148,9 @@
 
 			<div class="contact-item">
 				<img src="../assets/images/linkedin.webp" alt="">
-				<a href="https://linkedin.com/in/artur-syvokin-73a1a3296"
+				<a href="https://linkedin.com/in/artur-syvokin"
 				   target="_blank" rel="noopener noreferrer">
-					linkedin.com/in/artur-syvokin-73a1a3296
+					linkedin.com/in/artur-syvokin
 				</a>
 			</div>
 
@@ -376,7 +376,7 @@
 			<div class="squidgame-main">
 			<div>
 			<h4>Corepunk (MMORPG)</h4>
-			<span class="date">Март 2024 – Февраль 2026</span>
+			<span class="date">Март 2024 – Сентябрь 2026</span>
 			</div>
 				<img
 					src="../assets/images/corepunk.webp"
@@ -405,12 +405,10 @@
 
     <div
         class="portfolio-videos__pagination"
-        id="portfolioVideoPagination"
     >
         <button
             type="button"
-            class="portfolio-videos__page-button"
-            id="portfolioVideoPrevious"
+            class="portfolio-videos__page-button portfolio-videos__page-button--previous"
             aria-label="Предыдущие видео"
         >
             ←
@@ -426,13 +424,12 @@
                 value="1"
                 aria-label="Номер страницы"
             >
-            <span id="portfolioVideoTotalPages">/ 1</span>
+            <span class="portfolio-videos__page-total">/ 1</span>
         </span>
 
         <button
             type="button"
-            class="portfolio-videos__page-button"
-            id="portfolioVideoNext"
+            class="portfolio-videos__page-button portfolio-videos__page-button--next"
             aria-label="Следующие видео"
         >
             →
@@ -443,6 +440,36 @@
         class="portfolio-videos__grid"
         id="portfolioVideoGrid"
     ></div>
+
+    <div class="portfolio-videos__pagination">
+        <button
+            type="button"
+            class="portfolio-videos__page-button portfolio-videos__page-button--previous"
+            aria-label="Предыдущие видео"
+        >
+            ←
+        </button>
+
+        <span class="portfolio-videos__page-info">
+            <input
+                class="portfolio-videos__page-input"
+                type="number"
+                min="1"
+                step="1"
+                value="1"
+                aria-label="Номер страницы"
+            >
+            <span class="portfolio-videos__page-total">/ 1</span>
+        </span>
+
+        <button
+            type="button"
+            class="portfolio-videos__page-button portfolio-videos__page-button--next"
+            aria-label="Следующие видео"
+        >
+            →
+        </button>
+    </div>
 
     <div
         class="portfolio-player"
@@ -684,8 +711,7 @@
 
                 <div>
                     <p>
-                        Мой первый учебный проект.
-                        Простая аркада на реакцию.
+                        Простая аркадная игра на реакцию.
                     </p>
                     <ul>
                         <li>Локализация на 12 языков</li>
@@ -721,43 +747,50 @@
 
                     </div>
 
-                    <p class="squidgame-description">
-                        Мой второй учебный проект.<br>
-                        3D многопользовательская игра от третьего лица, в которой игроки соревнуются
-                        в серии смертельных испытаний.
-                        <br>
-                        Быстрые раунды, простые правила и возрастающая сложность.
-                    </p>
+					<p class="squidgame-description">
+						Многопользовательская 3D-игра от третьего лица, где игроки соревнуются в череде смертельных испытаний.
+						<br>
+						Отличается динамичными раундами с разнообразными механиками, возрастающей сложностью и простыми правилами,
+						проверяющими реакцию и память игроков в стрессовых ситуациях.
+					</p>
 
                 </div>
 
-                <div class="squidgame-right">
-
-                    <div class="squid-feature">
-                        <img src="../assets/images/network-icon.webp" alt="">
-                        <div>
-                            <h4>Мультиплеер</h4>
-                            <p>Соревнуйтесь с другими игроками</p>
-                        </div>
-                    </div>
-
-                    <div class="squid-feature">
-                        <img src="../assets/images/controller-icon.webp" alt="">
-                        <div>
-                            <h4>Мини-игры</h4>
-                            <p>Разные механики в каждом испытании</p>
-                        </div>
-                    </div>
-
-                    <div class="squid-feature">
-                        <img src="../assets/images/ai-icon.webp" alt="">
-                        <div>
-                            <h4>ИИ противники</h4>
-                            <p>NPC, обученные с помощью ML-Agents</p>
-                        </div>
-                    </div>
-
-                </div>
+				<div class="squidgame-right">
+				
+					<div class="squid-feature">
+						<img src="../assets/images/network-icon.webp" alt="">
+						<div>
+							<h4>Мультиплеер</h4>
+							<p>Соревнуйтесь с другими игроками</p>
+						</div>
+					</div>
+				
+					<div class="squid-feature">
+						<img src="../assets/images/controller-icon.webp" alt="">
+						<div>
+							<h4>Мини-игры</h4>
+							<p>Разные механики в каждом испытании</p>
+						</div>
+					</div>
+				
+					<div class="squid-feature">
+						<img src="../assets/images/ai-icon.webp" alt="">
+						<div>
+							<h4>ИИ соперники</h4>
+							<p>NPC, обученные с помощью ML-Agents</p>
+						</div>
+					</div>
+				
+					<div class="squid-feature">
+						<img src="../assets/images/Cross.webp" alt="">
+				
+						<div>
+							<h4>Кроссплатформа</h4>
+							<p>Кроссплатформенность между ПК и мобильными устройствами</p>
+						</div>
+					</div>
+				</div>
 
             </div>
 
