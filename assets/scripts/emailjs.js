@@ -12,6 +12,35 @@
 			.classList.remove("active");
 	}
 
+	document.querySelectorAll("[data-copy-email]").forEach((button) => {
+		button.addEventListener("click", async (event) => {
+			event.stopPropagation();
+
+			const email = button
+				.closest(".email-trigger")
+				.querySelector(".email-trigger__address")
+				.textContent
+				.trim();
+			const status = button
+				.closest(".email-trigger")
+				.querySelector("[data-copy-status]");
+
+			try {
+				await navigator.clipboard.writeText(email);
+				status.textContent = button.dataset.copySuccess;
+			} catch (error) {
+				console.error("Failed to copy email address:", error);
+				status.textContent = button.dataset.copyError;
+			}
+		});
+	});
+
+	document.querySelectorAll(".email-trigger__address").forEach((link) => {
+		link.addEventListener("click", (event) => {
+			event.stopPropagation();
+		});
+	});
+
 	window.addEventListener("click", (e) => {
 		if (e.target.id === "mailModal") {
 			closeMailModal();

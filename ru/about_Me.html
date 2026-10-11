@@ -126,12 +126,25 @@
 		</p>
 
 		<div class="contacts">
-
+			<div class="contact-item work-eligibility">
+				<span>Есть право на работу в Ирландии</span>
+			</div>
 			<div class="contact-item email-trigger" onclick="openMailModal()">
 				<img src="../assets/images/mail.webp" alt="">
-				<span>Связаться по email</span>
+				<span class="email-trigger__label">Связаться по email:</span>
+				<a class="email-trigger__address" href="mailto:syvokinj2@gmail.com">syvokinj2@gmail.com</a>
+				<button class="email-trigger__copy" type="button" data-copy-email
+					data-copy-success="Скопировано!" data-copy-error="Не удалось скопировать"
+					aria-label="Скопировать email">
+					Копировать
+				</button>
+				<span class="email-trigger__status" data-copy-status aria-live="polite"></span>
 			</div>
-
+			<a class="contact-item cv-download" href="../assets/documents/CV_Artur_Syvokin.PDF"
+				download="CV_Artur_Syvokin.PDF">
+				<span aria-hidden="true">↓</span>
+				<span>Скачать резюме (PDF)</span>
+			</a>
 			<div class="contact-item">
 				<img src="../assets/images/location.webp" alt="">
 				<a href="https://maps.app.goo.gl/fdgHKaJCS9sBXbD99" target="_blank" rel="noopener noreferrer">
@@ -141,8 +154,8 @@
 
 			<div class="contact-item">
 				<img src="../assets/images/github.webp" alt="">
-				<a href="https://github.com/SyvArtur/SquidGame" target="_blank" rel="noopener noreferrer">
-					github
+				<a href="https://github.com/SyvArtur" target="_blank" rel="noopener noreferrer">
+					github/SyvArtur
 				</a>
 			</div>
 
@@ -212,7 +225,7 @@
 
 	<div class="stack-group">
 
-		<h3>ЗНАНИЕ ПАТТЕРНОВ ПРОЕКТИРОВАНИЯ</h3>
+		<h3>ПАТТЕРНЫ ПРОЕКТИРОВАНИЯ</h3>
 
 		<div class="tags">
 			<span>Observer</span>
@@ -240,6 +253,7 @@
 
 		<div class="tags">
 			<span>MySQL</span>
+			<span>SQLite</span>
 			<span>MongoDB</span>
 		</div>
 
@@ -249,13 +263,14 @@
 
 		<h3>ИНЖЕНЕРИЯ И АРХИТЕКТУРА</h3>
 
-		<div class="tags">
-			<span>System Design</span>
-			<span>Code Analysis</span>
-			<span>Refactoring</span>
-			<span>Integration</span>
-			<span>Production Code</span>
-		</div>
+			<div class="tags">
+				<span>System Design</span>
+				<span>Refactoring</span>
+				<span>Code Analysis</span>
+				<span>Performance Profiling</span>
+				<span>Integration</span>
+				<span>Production Code</span>
+			</div>
 
 	</div>
 
@@ -301,6 +316,7 @@
 
 	<div class="education-item">
 		<h3>БАКАЛАВР</h3>
+<p>Информационные технологии / Инженерия ПО,</p>
 		<p>Факультет информационных технологий,</p>
 		<p>Ужгородский национальный университет</p>
 	</div>
@@ -386,12 +402,15 @@
 			</div>
 
 		<p>
-			Получил значительный практический опыт работы с клиент-серверной архитектурой и большой production-ready кодовой
-			базой в масштабной MMORPG. Научился проектировать и реализовывать масштабируемые, поддерживаемые и переиспользуемые
-			системы, а также безопасно расширять и рефакторить существующий код без нарушения уже реализованной
-			функциональности. Моя работа включала программирование игровых механик, разработку переиспользуемых обработчиков
-			эффектов, внутренних инструментов и автоматизацию рабочих процессов, отладку и оптимизацию производительности. Также
-			получил опыт тесного взаимодействия с различными отделами в команде на протяжении всего процесса разработки игры.
+			Работал над масштабной MMORPG с клиент-серверной архитектурой и большой продакшн-кодовой базой. Разрабатывал
+			клиентские геймплейные системы, переиспользуемые обработчики способностей и эффектов, а также клиентскую логику
+			мультиплеерных механик на основе серверных данных. Создавал внутренние инструменты для Unity Editor и
+			автоматизацию пайплайна, которые упростили интеграцию ассетов и настройку игровых сущностей для всей команды.
+			Проектировал масштабируемые, поддерживаемые и переиспользуемые системы, безопасно расширял и рефакторил
+			существующий код без нарушения уже работающей функциональности. Занимался отладкой, стабилизацией и масштабной
+			оптимизацией производительности кода, шейдеров, материалов и визуальных эффектов. Взаимодействовал с отделами
+			геймдизайна, левел-дизайна, анимации, VFX, SFX и R&D на всех этапах разработки — от первого прототипа механики
+			до её финальной реализации в игре
 		</p>
 
 
@@ -633,9 +652,9 @@
 
 	<div class="experience-item second-job">
 
-		<h3>Indie Developer</h3>
+		<h3>Независимый разработчик</h3>
 
-		<span class="date">2021 – 2024, 2026</span>
+		<span class="date">2021 – 2024, 2026 - Present</span>
 		<p>
 			Разработал многопользовательскую игру на Unity с использованием принципов ООП, Mirror для сетевого взаимодействия и
 			Git для контроля версий. Реализовал клиент-серверную архитектуру и экспериментировал с обучением нейронных сетей с
@@ -646,10 +665,9 @@
 			университетских групп во время дистанционного обучения. Бот автоматически отправлял ссылки на онлайн-занятия и
 			отвечал на вопросы о текущей, следующей и предстоящих парах, времени окончания занятия, расписании на конкретный
 			день и полном расписании на неделю.
-			Самостоятельно работал над несколькими более крупными игровыми проектами; некоторые из них впоследствии были
-			прекращены из-за недооценки их масштаба, необходимых временных затрат и объёма работы для разработки в одиночку
-
-		</p>
+			Также создавал прототипы нескольких крупных самостоятельных игровых проектов, получив практический опыт проектирования
+			систем, оценки объёма работ и планирования
+			</p>
 
 	</div>
 
@@ -858,7 +876,7 @@
             ЧТО Я ИЩУ
         </h2>
 		<p>
-			Ищу позицию C# разработчика
+			Ищу позицию C# разработчика на полную занятость
 			в команде, где смогу:
 		</p>
 		

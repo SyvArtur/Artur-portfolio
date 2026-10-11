@@ -246,6 +246,33 @@ transition:
   width: 18px;
 }
 
+.work-eligibility {
+  color: #b9e8c7;
+  border-color: rgba(120, 210, 150, .28);
+  background: rgba(120, 210, 150, .06);
+}
+
+.cv-download {
+  gap: 7px;
+  border-color: rgba(178, 119, 255, .45);
+  background: linear-gradient(135deg, rgba(127, 79, 255, .24), rgba(168, 108, 255, .12));
+  color: #e5d3ff;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    transform .2s ease,
+    background .2s ease,
+    border-color .2s ease,
+    box-shadow .2s ease;
+}
+
+.cv-download:hover {
+  transform: translateY(-2px);
+  border-color: rgba(199, 160, 255, .8);
+  background: linear-gradient(135deg, rgba(127, 79, 255, .4), rgba(168, 108, 255, .24));
+  box-shadow: 0 0 16px rgba(147, 87, 255, .28);
+}
+
 .hero-graphics {
   display: flex;
   justify-content: center;
@@ -723,13 +750,39 @@ c
   transition: color .3s ease;
 }
 
-.email-trigger span {
+.email-trigger__label,
+.email-trigger__address {
   color: rgba(255, 255, 255, .5);
   transition: color .3s ease;
 }
 
-.email-trigger:hover span {
+.email-trigger:hover .email-trigger__label,
+.email-trigger:hover .email-trigger__address {
   color: yellow;
+}
+
+.email-trigger__address {
+  overflow-wrap: anywhere;
+}
+
+.email-trigger__copy {
+  padding: 3px 7px;
+  border: 1px solid rgba(141, 92, 255, .4);
+  border-radius: 5px;
+  background: rgba(141, 92, 255, .12);
+  color: #d6c2ff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.email-trigger__copy:hover {
+  background: rgba(141, 92, 255, .28);
+  color: #fff;
+}
+
+.email-trigger__status {
+  color: #b9bfd9;
+  font-size: 12px;
 }
 
 .projects-section {

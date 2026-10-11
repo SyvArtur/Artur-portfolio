@@ -93,10 +93,24 @@
 			production codebases
 		</p>
 		<div class="contacts">
+			<div class="contact-item work-eligibility">
+				<span>Eligible to work in Ireland</span>
+			</div>
 			<div class="contact-item email-trigger" onclick="openMailModal()">
 				<img src="assets/images/mail.webp" alt="">
-				<span>Send me an email </span>
+				<span class="email-trigger__label">Send me an email:</span>
+				<a class="email-trigger__address" href="mailto:syvokinj2@gmail.com">syvokinj2@gmail.com</a>
+				<button class="email-trigger__copy" type="button" data-copy-email data-copy-success="Copied!"
+					data-copy-error="Copy failed" aria-label="Copy email address">
+					Copy
+				</button>
+				<span class="email-trigger__status" data-copy-status aria-live="polite"></span>
 			</div>
+						<a class="contact-item cv-download" href="assets/documents/CV_Artur_Syvokin.PDF"
+				download="CV_Artur_Syvokin.PDF">
+				<span aria-hidden="true">↓</span>
+				<span>Download CV (PDF)</span>
+			</a>
 			<div class="contact-item">
 				<img src="assets/images/location.webp" alt="">
 				  <a href="https://maps.app.goo.gl/fdgHKaJCS9sBXbD99" target="_blank" rel="noopener noreferrer">
@@ -105,8 +119,8 @@
 			</div>
 			<div class="contact-item">
 				<img src="assets/images/github.webp" alt="">
-				<a href="https://github.com/SyvArtur/SquidGame" target="_blank" rel="noopener noreferrer">
-					github/SquidGame
+				<a href="https://github.com/SyvArtur" target="_blank" rel="noopener noreferrer">
+					github/SyvArtur
 				</a>
 			</div>
 			<div class="contact-item">
@@ -158,7 +172,7 @@
 				</div>
 			</div>
 			<div class="stack-group">
-			  <h3>KNOWLEDGE OF DESIGN PATTERN</h3>
+			  <h3>DESIGN PATTERNS</h3>
 			  <div class="tags">
 				<span>Observer</span>
 				<span>Factory</span>
@@ -181,18 +195,20 @@
 			  <h3>DATABASES</h3>
 			  <div class="tags">
 				<span>MySQL</span>
+				<span>SQLite</span>
 				<span>MongoDB</span>
 			  </div>
 			</div>
 			<div class="stack-group">
 			  <h3>ENGINEERING & ARCHITECTURE</h3>
-			  <div class="tags">
+			<div class="tags">
 				<span>System Design</span>
-				<span>Code Analysis</span>
 				<span>Refactoring</span>
+				<span>Code Analysis</span>
+				<span>Performance Profiling</span>
 				<span>Integration</span>
 				<span>Production Code</span>
-			  </div>
+			</div>
 			</div>
 			<div class="stack-group">
 			  <h3>TOOLS & WORKFLOW</h3>
@@ -203,6 +219,7 @@
 				<span>Jira</span>
 				<span>Notion</span>
 				<span>Rider</span>
+				<span>Profiler</span>
 				<span>Visual Studio</span>
 			  </div>
 			</div>
@@ -227,6 +244,7 @@
 
 			<div class="education-item">
 			  <h3>Bachelor's Degree</h3>
+			  <p>Computer Science / Software Engineering,</p>
 			  <p>Faculty of Information Technology,</p>
 			  <p>Uzhhorod National University</p>
 			</div>
@@ -292,18 +310,19 @@
 			<div class="squidgame-main">
 				<div>
 					<h4>Corepunk (MMORPG)</h4>
-					<span class="date">Mar 2024 – September 2026</span>
+					<span class="date">Mar 2024 – Sep 2026</span>
 				</div>
 				<img src="assets/images/corepunk.webp" alt="corepunk logo" class="squidgame-logo-small">
 			</div>
 		
-			<p> I gained extensive hands-on experience working with client-server architecture and
-				a large, production-ready codebase in a huge-scale MMORPG. I learned to design and implement scalable,
-				maintainable, and reusable systems, as well as safely extend and refactor existing code without disrupting
-				established functionality. My work involved gameplay programming, reusable effect handlers, internal tools and
-				workflow automation, debugging, and performance optimization. I also gained experience collaborating closely
-				with
-				cross-functional teams throughout the full game development pipeline
+			<p> Worked on a large-scale MMORPG with a client-server architecture and a large production codebase. Developed
+				client-side gameplay systems, reusable ability and effect handlers, and server-driven logic for multiplayer
+				mechanics. Built internal Unity Editor tools and pipeline automation that streamlined asset integration and
+				entity configuration for the whole team. Designed scalable, maintainable and reusable systems, and safely
+				extended and refactored existing code without disrupting established functionality. Handled debugging,
+				stabilization and large-scale performance optimization of code, shaders, materials and visual effects.
+				Collaborated with Game Design, Level Design, Animation, VFX, SFX and R&D teams across the full development
+				pipeline, from the first prototype of a mechanic to its final in-game implementation
 			</p>
 			<section class="portfolio-videos" id="portfolioVideos">
 				<div class="portfolio-videos__header">
@@ -505,16 +524,15 @@
 		</div>
         <div class="experience-item second-job">
           <h3>Indie Developer</h3>
-          <span class="date">2021 – 2024, 2026</span>
+          <span class="date">2021 – 2024, 2026 - Present</span>
 		<p>Created a multiplayer game in Unity using OOP principles, Mirror networking, and Git for version control. Implemented
 			client-server architecture and experimented with neural network training using ML-Agents. Also developed several
 			small games, projects, websites, and automation tools for educational and university purposes. Created a Sudoku
 			game, independently implementing the puzzle generation algorithm; the game was later used for printing in a local
 			Ukrainian newspaper. Developed a Telegram bot that was actively used by multiple university groups during remote
 			learning. The bot automatically shared links to online classes and responded to natural-language queries about the
-			current, next, and upcoming classes, class end times, daily schedules, and the full weekly timetable. Explored
-			several larger game projects independently; some were eventually discontinued after underestimating their scope and
-			the time and resources required for solo development
+			current, next, and upcoming classes, class end times, daily schedules, and the full weekly timetable. Also built
+			prototypes of several larger solo game projects, gaining hands-on experience in system design, scoping and planning
 		</p>
 		</div>
     </div>
@@ -704,7 +722,7 @@
 			WHAT I'M LOOKING FOR
 		</h2>
 		<p>
-			I am looking for a C# Developer position
+			Looking for a full-time C# Developer position
 			in a team where I can:
 		</p>
 	
